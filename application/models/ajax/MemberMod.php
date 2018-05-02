@@ -348,7 +348,7 @@ class MemberMod extends CI_Model
                         'nationality' => $this->input->post('nationality'), 'position_a' => $this->input->post('position_a'), 'position_b' => $this->input->post('position_b'),
                         'back_number' => $this->input->post('back_number'), 'foot' => $this->input->post('foot'), 'fav_club' => $this->input->post('fav_club'),
                         'fav_player' => $this->input->post('back_number'), 'fav_coach' => $this->input->post('foot'),
-                        'father' => $this->input->post('father'), 'mother' => $this->input->post('mother'));
+                        'father' => $this->input->post('father'), 'mother' => $this->input->post('mother'), 'active' => 1);
         }
 
         if ($this->input->post('act') > 0) {
