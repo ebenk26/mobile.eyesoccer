@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://localhost/das.eyesoccer.id/assets/themes/v1/css/style.css">
+    <link rel="stylesheet" href="http://localhost/das.eyesoccer.id/assets/themes/v1/css/dashboard.css">
+    <link rel="stylesheet" href="http://localhost/das.eyesoccer.id/assets/css/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/css/style.css">
+    <link rel="stylesheet" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/css/dashboard.css">
+    <link rel="stylesheet" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/css/font-awesome/css/fontawesome-all.css">
+</head>
+
+<body class="m-pd-t-100 body-responsive">
+    <div class="container stc">
+        <div class="container m-bar">
+            <i class="fas fa-bars" onclick="myFunction()"></i>
+            <i class="far fa-envelope" onclick="functionNotifInbox()"></i>  <span id="signNotifInbox">1</span>
+            <i class="far fa-bell" onclick="functionNotification()"></i>    <span id="signNotification" class="l83">1</span>
+        </div>
+        <i class="fas fa-sign-in-alt login-ic"></i>
+        <div class="fl-r img-pic">
+            <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+        </div>
+    </div>
+    <div class="responsif-add-100px">
+        <div id="menuDashboard" class="menu-dashboard bg243" style="display:none;">
+            <div class="container bg-menu-pic">
+                <div class="menu-pic">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/d.jpg" alt="">
+                </div>
+            </div>
+            <div class="container menu-dash">
+                <a class="active" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyeprofile/klub">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyeprofile.png" alt="">Eye Profile</a>
+                <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyetube">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyetube.png" alt="">Eye Tube</a>
+                <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyenews">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyenews.png" alt="">Eye News</a>
+                <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyeme">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic-eyeme.png" alt="">Eye Me</a>
+                <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyemarket">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyemarket.png" alt="">Eye Market</a>
+                <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyevent">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyevent.png" alt="">EyeVent</a>
+            </div>
+        </div>
+    </div>
+    <div id="isiContent" style="filter:none;">
+        <div class="container nav-dashboard">
+            <div class="nav-dash">
+                <ul>
+                    <li>ALL</li>
+                    <LI>Klub</li>
+                    <li>Eyeme</li>
+                    <li>Eyetube</li>
+                    <li class="active">Tulisan Kamu</li>
+                    <li>Analytics</li>
+                </ul>
+            </div>
+        </div>
+        <div class="responsif-add-100px">
+            <div class="container">
+                <div class="tulisankamu">
+                    <span>Title</span>
+                    <input type="text">
+                    <span>Upload Foto Peristiwa</span>
+                    <div class="up-foto">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <span>Kredit Foto</span>
+                    <input type="text">
+                    <span>Dipublikasikan Oleh</span>
+                    <input type="text">
+                    <div class="edit-foto">
+                        <div class="ed-foto">
+                            <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/d.jpg" alt="">
+                        </div>
+                        <a href=""><span>Edit Foto Penulis</span></a>
+                    </div>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <div class="container tx-c simpan" style="background-color: unset;">
+                    <button class="klik-dsn">SUBMIT TO VERIFICATION</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- INBOX NOTIFICATION -->
+    <div class="container dash-notif" id="notifInbox" style="display: none;">
+        <div class="panah-notif"></div>
+        <div class="title-notif">
+            <span class="container">Kotak Masuk</span>
+        </div>
+        <div class="notific">
+            <a href="" class="container inbox-dashboard">
+                <div class="container img-inbox-dashboard">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+                </div>
+                <div class="text-inbox">
+                    <span class="time">12:15</span>
+                    <span class="sender">eyesoccer</span>
+                    <span class="title">ayo update data kamu ...</span>
+                    <span class="preview">Hallo Dila, ayo update data kamu...</span>
+                </div>
+                <div class="bb2g"></div>
+            </a>
+            <!-- <a href="" class="container inbox-dashboard">
+                <div class="container img-inbox-dashboard">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+                </div>
+                <div class="text-inbox">
+                    <span class="time">12:15</span>
+                    <span class="sender">eyesoccer</span>
+                    <span class="title">ayo update data kamu ...</span>
+                    <span class="preview">Hallo Dila, ayo update data kamu...</span>
+                </div>
+                <div class="bb2g"></div>
+            </a> -->
+        </div>
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="container dash-notif" id="notifications" style="display: none;">
+        <div class="panah-notif2"></div>
+        <div class="title-notif">
+            <span class="container">Notifikasi</span>
+        </div>
+        <div class="notific">
+            <a href="" class="container inbox-dashboard">
+                <div class="container img-inbox-dashboard">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+                </div>
+                <div class="text-inbox2">
+                    <span>Rika Aulia</span>
+                    <span>melihat profil kamu</span>
+                </div>
+                <div class="bb2g"></div>
+            </a>
+            <!-- <a href="" class="container inbox-dashboard">
+                <div class="container img-inbox-dashboard">
+                    <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+                </div>
+                <div class="text-inbox2">
+                    <span>Rika Aulia</span>
+                    <span>melihat profil kamu</span>
+                </div>
+                <div class="bb2g"></div>
+            </a> -->
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menuDashboard");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function closeFunction() {
+            var y = document.getElementById("welcome");
+            if (y.style.display == "block") {
+                y.style.display = "none";
+            }
+        }
+        function functionNotifInbox() {
+            var y = document.getElementById("notifInbox");
+            var p = document.getElementById("isiContent");
+            var q = document.getElementById("signNotifInbox");
+            var a = document.getElementById("notifications");
+            if (y.style.display == "none") {
+                y.style.display = "block";
+                q.style.display = "none";
+                p.style.filter = "blur(20px)";
+                a.style.display = "none";
+                
+            } else {
+                y.style.display = "none";
+                p.style.filter = "unset";
+            }
+        }
+        function functionNotification() {
+            var a = document.getElementById("notifications");
+            var b = document.getElementById("isiContent");
+            var c = document.getElementById("signNotification");
+            var y = document.getElementById("notifInbox");
+            if (a.style.display == "none") {
+                a.style.display = "block";
+                c.style.display = "none";
+                b.style.filter = "blur(20px)";
+                y.style.display = "none";
+            } else {
+                a.style.display = "none";
+                b.style.filter = "unset";
+            }
+        }
+    </script>
+</body>
+
+</html>

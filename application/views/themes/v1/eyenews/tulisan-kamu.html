@@ -1,0 +1,787 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="http://m.eyesoccer.id/assets/themes/v1//css/style.css" rel="stylesheet" type="text/css">
+
+	<style type="text/css">
+		#st-1 {
+			font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+			;
+			direction: ltr;
+			display: block;
+			opacity: 1;
+			text-align: center;
+			z-index: 94034;
+		}
+
+		#st-1.st-animated {
+			-moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+			-ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+			-o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+			-webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+			transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+		}
+
+		#st-1.st-hidden {
+			opacity: 0;
+		}
+
+		#st-1 .st-btn {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			-moz-transition: opacity 0.2s ease-in, top 0.2s ease-in;
+			-ms-transition: opacity 0.2s ease-in, top 0.2s ease-in;
+			-o-transition: opacity 0.2s ease-in, top 0.2s ease-in;
+			-webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in;
+			transition: opacity 0.2s ease-in, top 0.2s ease-in;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 12px;
+			height: 32px;
+			line-height: 32px;
+			margin-right: 8px;
+			padding: 0 10px;
+			position: relative;
+			text-align: center;
+			top: 0;
+			vertical-align: top;
+			white-space: nowrap;
+		}
+
+		#st-1 .st-btn:last-child {
+			margin-right: 0;
+		}
+
+		#st-1 .st-btn>svg {
+			height: 16px;
+			width: 16px;
+			position: relative;
+			top: 8px;
+			vertical-align: top;
+		}
+
+		#st-1 .st-btn>img {
+			height: 16px;
+			width: 16px;
+			position: relative;
+			top: 8px;
+			vertical-align: top;
+		}
+
+		#st-1 .st-btn>span {
+			-moz-transition: all 0.2s ease-in;
+			-ms-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			-webkit-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+			color: #fff;
+			display: inline-block;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+			min-width: 60px;
+			opacity: 1;
+			padding: 0 6px;
+			position: relative;
+			vertical-align: top;
+		}
+
+		#st-1.st-has-labels .st-btn {
+			min-width: 120px;
+		}
+
+		#st-1.st-has-labels .st-btn.st-remove-label {
+			min-width: 50px;
+		}
+
+		#st-1.st-has-labels .st-btn.st-remove-label>span {
+			display: none;
+		}
+
+		#st-1.st-has-labels .st-btn.st-hide-label>span {
+			display: none;
+		}
+
+		#st-1 .st-total {
+			color: #555;
+			display: inline-block;
+			font-weight: 500;
+			line-height: 12px;
+			margin-right: 0;
+			max-width: 80px;
+			padding: 4px 8px;
+			text-align: center;
+		}
+
+		#st-1 .st-total.st-hidden {
+			display: none;
+		}
+
+		#st-1 .st-total>span {
+			font-size: 16px;
+			line-height: 17px;
+			display: block;
+			padding: 0;
+		}
+
+		#st-1 .st-total>span.st-shares {
+			font-size: 9px;
+			line-height: 9px;
+		}
+
+		#st-1.st-justified {
+			display: flex;
+			text-align: center;
+		}
+
+		#st-1.st-justified .st-btn {
+			-moz-flex: 1;
+			-ms-flex: 1;
+			-webkit-flex: 1;
+			flex: 1;
+		}
+
+		#st-1 .st-btn:hover {
+			opacity: .8;
+			top: -4px;
+		}
+
+		#st-1 .st-btn[data-network='facebook'] {
+			background-color: #3B5998;
+		}
+
+		#st-1 .st-btn[data-network='twitter'] {
+			background-color: #55acee;
+		}
+
+		#st-1 .st-btn[data-network='whatsapp'] {
+			background-color: #25d366;
+		}
+
+		#st-1 .st-btn[data-network='pinterest'] {
+			background-color: #CB2027;
+		}
+
+		#st-1 .st-btn[data-network='linkedin'] {
+			background-color: #0077b5;
+		}
+
+		#st-1 .st-btn[data-network='sharethis'] {
+			background-color: #95D03A;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<i id="menu" class="material-icons f-l">menu</i>
+		<a href="http://m.eyesoccer.id/">
+			<img src="http://m.eyesoccer.id/assets/img/logo.png" alt="">
+		</a>
+		<!-- <a class="nav-link" href="http://m.eyesoccer.id/eyemarket/keranjang/">
+			<img src="http://m.eyesoccer.id/assets/eyemarket/user/images/icons/keranjang.png" alt="">
+		</a> -->
+		<i id="src" class="material-icons f-r">search</i>
+		<a href="member" style="color: #8ec429;">
+			<i class="material-icons f-r" style="transform: rotate(-90deg);padding:  10px 0px;">system_update_alt</i>
+		</a>
+	</nav>
+
+	<div class="crumb" style="margin-bottom: 0px;">
+		<ul>
+			<li>
+				<a href="http://m.eyesoccer.id/" style="display: unset">Home</a>
+			</li>
+			<li>
+				<a href="http://m.eyesoccer.id/eyenews" style="display: unset">Eyenews</a>
+			</li>
+			<li>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Liga" style="display: unset">Liga</a>
+			</li>
+			<li>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Liga/Liga Indonesia" style="display: unset">Liga Indonesia</a>
+			</li>
+		</ul>
+	</div>
+	<div id="reqdetail" class="loaddetail" action="eyenews" loading="off" clean="clsdetail" style="display: block;">
+
+		<div class="container enews-detail">
+			<h1>Diingatkan Kepala Sekolah, Saddil Ramdani Tidak Ikut Persela ke Makassar</h1>
+			<img src="http://static.eyesoccer.id/v1/cache/images/7173-pekan-1-persela-vs-persebaya-3003-babak-1-website-1300x_.jpg" alt="Diingatkan Kepala Sekolah, Saddil Ramdani Tidak Ikut Persela ke Makassar"
+			 width="100%">
+			<div class="container profile-writer">
+				<span style="float: right;margin-right: 15px;font-size: 12px;">
+					Credit : Saddil Ramdani - Foto/LIB </span>
+				<div class="container">
+					<div class="img-radius img-pp p-r">
+						<img src="http://static.eyesoccer.id/v1/cache/images/1519793206557_logo_login.png/small" alt="">
+					</div>
+					<h3>Bayu Mahendra</h3>
+					<span>31 menit lalu - 8 view</span>
+					<i class="far fa-comment openComment" aria-hidden="false" style="color: #8ec429;float: right;margin-top: -35px;margin-right: 15px;font-size: 30px;">
+						<div class="openComment"></div>
+					</i>
+				</div>
+				<div class="container tx-c share">
+					<div class="sharethis-inline-share-buttons st-inline-share-buttons  st-center st-animated" data-url="https://www.eyesoccer.id/eyenews/detail/diingatkan-kepala-sekolah-saddil-ramdani-tidak-ikut-persela-ke-makassar-f4a279f"
+					 id="st-1">
+						<div class="st-total st-hidden">
+							<span class="st-label"></span>
+							<span class="st-shares">
+								Shares
+							</span>
+						</div>
+						<div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+							<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+								<g>
+									<path d="m21.7 16.7h5v5h-5v11.6h-5v-11.6h-5v-5h5v-2.1c0-2 0.6-4.5 1.8-5.9 1.3-1.3 2.8-2 4.7-2h3.5v5h-3.5c-0.9 0-1.5 0.6-1.5 1.5v3.5z"></path>
+								</g>
+							</svg>
+
+						</div>
+						<div class="st-btn" data-network="twitter" style="display: inline-block;">
+							<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+								<g>
+									<path d="m31.5 11.7c1.3-0.8 2.2-2 2.7-3.4-1.4 0.7-2.7 1.2-4 1.4-1.1-1.2-2.6-1.9-4.4-1.9-1.7 0-3.2 0.6-4.4 1.8-1.2 1.2-1.8 2.7-1.8 4.4 0 0.5 0.1 0.9 0.2 1.3-5.1-0.1-9.4-2.3-12.7-6.4-0.6 1-0.9 2.1-0.9 3.1 0 2.2 1 3.9 2.8 5.2-1.1-0.1-2-0.4-2.8-0.8 0 1.5 0.5 2.8 1.4 4 0.9 1.1 2.1 1.8 3.5 2.1-0.5 0.1-1 0.2-1.6 0.2-0.5 0-0.9 0-1.1-0.1 0.4 1.2 1.1 2.3 2.1 3 1.1 0.8 2.3 1.2 3.6 1.3-2.2 1.7-4.7 2.6-7.6 2.6-0.7 0-1.2 0-1.5-0.1 2.8 1.9 6 2.8 9.5 2.8 3.5 0 6.7-0.9 9.4-2.7 2.8-1.8 4.8-4.1 6.1-6.7 1.3-2.6 1.9-5.3 1.9-8.1v-0.8c1.3-0.9 2.3-2 3.1-3.2-1.1 0.5-2.3 0.8-3.5 1z"></path>
+								</g>
+							</svg>
+
+						</div>
+						<div class="st-btn" data-network="whatsapp" style="display: inline-block;">
+							<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+								<g>
+									<path d="m25 21.7q0.3 0 2.2 1t2 1.2q0 0.1 0 0.3 0 0.8-0.4 1.7-0.3 0.9-1.6 1.5t-2.2 0.6q-1.3 0-4.3-1.4-2.2-1-3.8-2.6t-3.3-4.2q-1.6-2.3-1.6-4.3v-0.2q0.1-2 1.7-3.5 0.5-0.5 1.2-0.5 0.1 0 0.4 0t0.4 0.1q0.4 0 0.6 0.1t0.3 0.6q0.2 0.5 0.8 2t0.5 1.7q0 0.5-0.8 1.3t-0.7 1q0 0.2 0.1 0.3 0.7 1.7 2.3 3.1 1.2 1.2 3.3 2.2 0.3 0.2 0.5 0.2 0.4 0 1.2-1.1t1.2-1.1z m-4.5 11.9q2.8 0 5.4-1.1t4.5-3 3-4.5 1.1-5.4-1.1-5.5-3-4.5-4.5-2.9-5.4-1.2-5.5 1.2-4.5 2.9-2.9 4.5-1.2 5.5q0 4.5 2.7 8.2l-1.7 5.2 5.4-1.8q3.5 2.4 7.7 2.4z m0-30.9q3.4 0 6.5 1.4t5.4 3.6 3.5 5.3 1.4 6.6-1.4 6.5-3.5 5.3-5.4 3.6-6.5 1.4q-4.4 0-8.2-2.1l-9.3 3 3-9.1q-2.4-3.9-2.4-8.6 0-3.5 1.4-6.6t3.6-5.3 5.3-3.6 6.6-1.4z"></path>
+								</g>
+							</svg>
+
+						</div>
+						<div class="st-btn" data-network="pinterest" style="display: inline-block;">
+							<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+								<g>
+									<path d="m37.3 20q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3q-2.4 0-4.8-0.7 1.3-2 1.7-3.6 0.2-0.8 1.2-4.7 0.5 0.8 1.7 1.5t2.5 0.6q2.7 0 4.8-1.5t3.3-4.2 1.2-6.1q0-2.5-1.4-4.7t-3.8-3.7-5.7-1.4q-2.4 0-4.4 0.7t-3.4 1.7-2.5 2.4-1.5 2.9-0.4 3q0 2.4 0.8 4.1t2.7 2.5q0.6 0.3 0.8-0.5 0.1-0.1 0.2-0.6t0.2-0.7q0.1-0.5-0.3-1-1.1-1.3-1.1-3.3 0-3.4 2.3-5.8t6.1-2.5q3.4 0 5.3 1.9t1.9 4.7q0 3.8-1.6 6.5t-3.9 2.6q-1.3 0-2.2-0.9t-0.5-2.4q0.2-0.8 0.6-2.1t0.7-2.3 0.2-1.6q0-1.2-0.6-1.9t-1.7-0.7q-1.4 0-2.3 1.2t-1 3.2q0 1.6 0.6 2.7l-2.2 9.4q-0.4 1.5-0.3 3.9-4.6-2-7.5-6.3t-2.8-9.4q0-4.7 2.3-8.6t6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"></path>
+								</g>
+							</svg>
+
+						</div>
+						<div class="st-btn" data-network="linkedin" style="display: inline-block;">
+							<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+								<g>
+									<path d="m13.3 31.7h-5v-16.7h5v16.7z m18.4 0h-5v-8.9c0-2.4-0.9-3.5-2.5-3.5-1.3 0-2.1 0.6-2.5 1.9v10.5h-5s0-15 0-16.7h3.9l0.3 3.3h0.1c1-1.6 2.7-2.8 4.9-2.8 1.7 0 3.1 0.5 4.2 1.7 1 1.2 1.6 2.8 1.6 5.1v9.4z m-18.3-20.9c0 1.4-1.1 2.5-2.6 2.5s-2.5-1.1-2.5-2.5 1.1-2.5 2.5-2.5 2.6 1.2 2.6 2.5z"></path>
+								</g>
+							</svg>
+
+						</div>
+						<div class="st-btn st-last" data-network="sharethis" style="display: inline-block;">
+							<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+								<g>
+									<path d="m30 26.8c2.7 0 4.8 2.2 4.8 4.8s-2.1 5-4.8 5-4.8-2.3-4.8-5c0-0.3 0-0.7 0-1.1l-11.8-6.8c-0.9 0.8-2.1 1.3-3.4 1.3-2.7 0-5-2.3-5-5s2.3-5 5-5c1.3 0 2.5 0.5 3.4 1.3l11.8-6.8c-0.1-0.4-0.2-0.8-0.2-1.1 0-2.8 2.3-5 5-5s5 2.2 5 5-2.3 5-5 5c-1.3 0-2.5-0.6-3.4-1.4l-11.8 6.8c0.1 0.4 0.2 0.8 0.2 1.2s-0.1 0.8-0.2 1.2l11.9 6.8c0.9-0.7 2.1-1.2 3.3-1.2z"></path>
+								</g>
+							</svg>
+
+						</div>
+					</div>
+					<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a81408ae45fbb001342fedf&amp;product=inline-share-buttons"></script>
+				</div>
+			</div>
+			<div class="container-94 news-capt">
+				<p style="margin-bottom: 50px;font-size: .9em;">
+				</p>
+				<p class="text-justify">
+
+				</p>
+				<p class="text-justify">MAKASSAR - Lawatan Persela ke markas PSM dalam pekan ketiga GO-JEK LIGA 1 2018 tidak disertai penyerang sayap andalan
+					mereka, Saddil Ramdani. Pemain yang merupakan anggota timnas U-19 dan timnas U-23 itu berhalangan berangkat memperkuat
+					Persela.</p>
+<!-- BEDANYA CUMA INI -->
+				<span class="artklasl" style="
+		display:  block;
+		width:  100%;
+		text-align:  center;
+		font-size:  .9em;
+		font-weight:  600;
+		color: #9E9E9E;
+	">
+					<a href="" style="
+		padding: 8px 20px;
+		border-radius: 25px;
+		border:  1px solid;
+	">lihat artikel asli &gt;</a>
+				</span>
+
+				<p></p>
+			</div>
+
+			<!-- IKLAN -->
+			<div class="container">
+				<div class="box-flyad">
+					<div class="flyad">
+						<div class="content-flyad">
+							<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- EyesoccerMobile 4b#NewsDetailBackGround -->
+							<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-7635854626605122" data-ad-slot="5121030944"
+							 data-adsbygoogle-status="done">
+								<ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;">
+									<ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;">
+										<iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true"
+										 scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}"
+										 id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:300px;height:600px;"></iframe>
+									</ins>
+								</ins>
+							</ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+							<!-- <span style="font-size: 7em;font-weight: 100;position: fixed;text-align: center;top: 20%;color: white;">ini iklan yaa</span> -->
+							<img style="position: absolute;top: 0px;left:  0px;" src="http://m.eyesoccer.id//assets/img/bwv.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- EMOTICON -->
+			<div class="container-94" style="background-color: white;padding: 10px 0px 20px;">
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotproud" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="proud" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/bangga.png" alt="">
+						</div>
+						<span>0</span>
+						<span>bangga</span>
+					</a>
+					<!--<a class="emoticon" type_emot="proud">
+						<div class="img-box">
+							<img src="img/emoji/bangga.png" alt="">
+						</div>
+						<span></span>
+						<span>bangga</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotinspired" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="inspired" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/bingung.png" alt="">
+						</div>
+						<span>0</span>
+						<span>terinspirasi</span>
+					</a>
+					<!--<a class="emoticon" type_emot="inspired">
+						<div class="img-box">
+							<img style="margin-top:  -6px;" src="img/emoji/bingung.png" alt="">
+						</div>
+						<span class="replace_inspired"></span>
+						<span>terinspirasi</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemothappy" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="happy" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/gembira.png" alt="">
+						</div>
+						<span>0</span>
+						<span>gembira</span>
+					</a>
+					<!--<a class="emoticon" type_emot="happy">
+						<div class="img-box box-img-90">
+							<img src="img/emoji/gembira.png" alt="">
+						</div>
+						<span class="replace_happy"></span>
+						<span>gembira</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotsad" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="sad" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/sedih.png" alt="">
+						</div>
+						<span>0</span>
+						<span>sedih</span>
+					</a>
+					<!--<a class="emoticon" type_emot="sad">
+						<div class="img-box">
+							<img src="img/emoji/sedih.png" alt="">
+						</div>
+						<span class="replace_sad"></span>
+						<span>sedih</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotangry" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="angry" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/suka.png" alt="">
+						</div>
+						<span>0</span>
+						<span>marah</span>
+					</a>
+					<!--<a class="emoticon" type_emot="angry">
+						<div class="img-box">
+							<img style="margin-top:  -6px;" src="img/emoji/suka.png" alt="">
+						</div>
+						<span class="replace_angry"></span>
+						<span>marah</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotfear" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="fear" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/takut.png" alt="">
+						</div>
+						<span>0</span>
+						<span>takut</span>
+					</a>
+					<!--<a class="emoticon" type_emot="fear">
+						<div class="img-box">
+							<img src="img/emoji/takut.png" alt="">
+						</div>
+						<span class="replace_fear"></span>
+						<span>takut</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotfun" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="fun" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/terhibur.png" alt="">
+						</div>
+						<span>0</span>
+						<span>terhibur</span>
+					</a>
+					<!--<a class="emoticon" type_emot="fun">
+						<div class="img-box">
+							<img src="img/emoji/terhibur.png" alt="">
+						</div>
+						<span class="replace_fun"></span>
+						<span>terhibur</span>
+					</a>-->
+				</div>
+				<div class="col-3 col-emoji">
+					<a href="javascript:void(0)" id="reqemotshock" class="form_post" action="home" loading="off">
+						<input type="hidden" name="fn" value="set_emot" class="cinput">
+						<input type="hidden" name="channel" value="eyenews" class="cinput">
+						<input type="hidden" name="type" value="shock" class="cinput">
+						<input type="hidden" name="id" value="d6b5b6924f7f8118104cd3e3921deeac" class="cinput">
+						<div class="img-box">
+							<img src="http://m.eyesoccer.id/assets/themes/v1//img/emoji/terkejut.png" alt="">
+						</div>
+						<span>0</span>
+						<span>terkejut</span>
+					</a>
+					<!--<a class="emoticon" type_emot="shock">
+						<div class="img-box">
+							<img src="img/emoji/terkejut.png" alt="">
+						</div>
+						<span class="replace_shock"></span>
+						<span>terkejut</span>
+					</a>-->
+				</div>
+			</div>
+
+		</div>
+		<script>
+			$(document).ready(function () {
+				$(".fb-comments").attr("data-href", "https://www.eyesoccer.id/eyenews/detail/diingatkan-kepala-sekolah-saddil-ramdani-tidak-ikut-persela-ke-makassar-f4a279f");
+				// $(".emoticon").click(function(){
+				// console.log($(this).attr("type_emot"));
+				// id = $("#eyenews_id").val();
+				// tipe = $(this).attr("type_emot");
+				// link = "eyenews";
+				// tbl         = "tbl_eyenews";
+				// kanal       = "eyenews";
+				// sub_field   = "news_";
+
+				// $.ajax({
+
+				// type: "POST",
+				// data: { 'type': tipe, 'id': id, 'link': link, 'tbl': tbl, 'kanal': kanal, 'sub_field': sub_field, 'select_id': 'eyenews_id' },
+				// url: "http://m.eyesoccer.id/home/set_emot/" + id,
+				// dataType: "json",
+
+				// success: function (data) {
+				// $(".replace_"+tipe).empty().html(data.html);
+				// }
+
+				// });
+				// })
+
+				$(".crumb").html("");
+				$(".crumb").append("<ul><li><a href='http://m.eyesoccer.id/' style='display: unset'>Home</a></li><li><a href='http://m.eyesoccer.id/eyenews' style='display: unset'>Eyenews</a></li><li><a href='http://m.eyesoccer.id/eyenews/kategori/Liga' style='display: unset'>Liga</a></li><li><a href='http://m.eyesoccer.id/eyenews/kategori/Liga/Liga Indonesia' style='display: unset'>Liga Indonesia</a></li>");
+			});
+		</script>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="container enews-detail">
+		<div class="container m-b-15" style="margin-top: -35px !important; background-color: #fafafa;">
+			<h3 class="h3-red">VIDEO</h3>
+			<div class="carousel slide t-30 over-x">
+				<div role="listbox" class="carousel-inner w-max">
+					<div class="box item active no-decoration">
+						<div id="reqtube" class="loadtube" action="eyetube" loading="off" clean="clstube" style="display: block;">
+							<a href="http://m.eyesoccer.id/eyetube/detail/highlights-gol-perempat-final-liga-champion-leg-1-sevilla-vs-bayern-munchen-d1e4e96">
+								<div class="video-thumb">
+									<div class="v-thumb-img">
+										<img src="http://static.eyesoccer.id/v1/cache/images/040420181129-sequence-02-still001.jpg" alt="Highlights Gol Perempat Final Liga Champions LEG 1 (SEVILLA VS BAYERN MUNCHEN)">
+									</div>
+									<h2>Highlights Gol Perempat Final Liga Champions LEG 1 (SEVILLA VS BAYERN MUNCHEN)</h2>
+									<span>22 jam lalu - 18 view</span>
+								</div>
+							</a>
+							<a href="http://m.eyesoccer.id/eyetube/detail/match-preview-liga-champion-liverpool-vs-man-city-2018-a56970a">
+								<div class="video-thumb">
+									<div class="v-thumb-img">
+										<img src="http://static.eyesoccer.id/v1/cache/images/040420189594-pre-livcit-thumb.jpg" alt="Match Preview Liga Champions Liverpool vs Man City 2018">
+									</div>
+									<h2>Match Preview Liga Champions Liverpool vs Man City 2018</h2>
+									<span>23 jam lalu - 117 view</span>
+								</div>
+							</a>
+
+
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- NATIVE ADS -->
+			<div class="container enews-detail" style="display:none;">
+				<div class="container m-b-15" style="margin-top: -35px !important; background-color: #fafafa;">
+					<h3 class="h3-red">BACA JUGA</h3>
+					<div class="carousel slide t-30 over-x">
+						<div role="listbox" class="carousel-inner w-max">
+							<div class="box item active no-decoration">
+								<a href="">
+									<div class="video-thumb fafa">
+										<div class="v-thumb-img">
+											<img src="" alt="">
+										</div>
+									</div>
+								</a>
+								<a href="">
+									<div class="video-thumb fafa">
+										<div class="v-thumb-img">
+											<img src="" alt="">
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- NATIVE ADS 2 -->
+			<!-- iklan tampil di sela konten "berita terkait", tapil setiap 5 konten yang ada di infiniti scroll (berita terkait) -->
+			<div class="container-94 m-b-20 unset" style="display:none;">
+				<a href="">
+					<div class="etube-content etube-content-detail pd-t-10">
+						<div class="v-etube v-etube-detail v-etube-res">
+							<img src="http://static.eyesoccer.id/v1/cache/images/3772-Nanak.jpg/small" alt="">
+						</div>
+						<h1>Resmi! Bali United Lepas Ngurah Nanak ke Semen Padang</h1>
+						<span>45 menit lalu</span>
+						<span>6 view</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="container-94 m-b-20 unset">
+			<span class="up-next-etube" style="margin-top: 23px;">Berita Terkait</span>
+			<div id="reqterkait" class="reqterkait">
+				<a href="http://m.eyesoccer.id/eyenews/detail/persib-belum-bisa-andalan-victor-igbonefo-6ed2e1a">
+					<div class="etube-content etube-content-detail pd-t-10">
+						<div class="v-etube v-etube-detail v-etube-res">
+							<img src="http://static.eyesoccer.id/v1/cache/images/1969-pekan-2-sriwijaya-fc-vs-persib-0204-website-010418-1300x_.jpg/small"
+							 alt="">
+						</div>
+						<h1>Persib Belum Bisa Andalan Victor Igbonefo</h1>
+						<span>24 menit lalu</span>
+						<span>6 view</span>
+					</div>
+				</a>
+				<a href="http://m.eyesoccer.id/eyenews/detail/2-pilar-persipura-harus-absen-lawan-ps-tira-f653d0e">
+					<div class="etube-content etube-content-detail pd-t-10">
+						<div class="v-etube v-etube-detail v-etube-res">
+							<img src="http://static.eyesoccer.id/v1/cache/images/3695-pekan-1-persipura-vs-persela-2403-website-2i8c9842-1300x_.jpg/small"
+							 alt="">
+						</div>
+						<h1>2 Pilar Persipura Harus Absen Lawan PS Tira</h1>
+						<span>26 menit lalu</span>
+						<span>4 view</span>
+					</div>
+				</a>
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- KOMENTAR -->
+	<div class="container-comment">
+		<span class="up-next-etube" style="padding-left: 10px !important;color: #212121 !important;">Komentar</span>
+		<span id="close" class="up-next-etube" style="float:right; padding-right: 10px;">
+			<i class="material-icons">close</i>
+		</span>
+		<div class="fb-comments fb_iframe_widget" data-href="https://www.eyesoccer.id/eyenews/detail/diingatkan-kepala-sekolah-saddil-ramdani-tidak-ikut-persela-ke-makassar-f4a279f"
+		 data-numposts="5" fb-xfbml-state="rendered">
+			<span style="height: 0px; width: 550px;">
+				<iframe id="fd903e829ef56c" name="f2796ab3db8262" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=478665635841729&amp;channel_url=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FFdM1l_dpErI.js%3Fversion%3D42%23cb%3Df363e3e6bafaec8%26domain%3Dm.eyesoccer.id%26origin%3Dhttp%253A%252F%252Fm.eyesoccer.id%252Ff1dbc86015449c8%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fwww.eyesoccer.id%2F%2Feyenews%2Fdetail%2Fdiingatkan-kepala-sekolah-saddil-ramdani-tidak-ikut-persela-ke-makassar-f4a279f&amp;locale=id_ID&amp;numposts=5&amp;sdk=joey&amp;version=v2.10&amp;width=550"
+				 style="border: none; overflow: hidden; height: 0px; width: 550px;"></iframe>
+			</span>
+		</div>
+	</div>
+	<div class="box-notif">
+		<div class="box-notif-content">
+			<a href="">Tambahkan ke</a>
+			<a href="">Laporkan</a>
+		</div>
+	</div>
+	<!-- SEARCHBOX -->
+	<div id="srcbox" class="searchbox">
+		<input class="input_search" type="search" name="search" placeholder="cari apa hari ini?">
+		<button id="srcSub" type="button">
+			<a onclick="Search()">Cari</a>
+		</button>
+
+		<div class="close"></div>
+	</div>
+
+	<!-- MENU -->
+	<div id="xMenu" class="menu">
+		<div class="m-top">
+			<span class="m-log" href="#">
+				<i class="material-icons xClose">clear</i>
+			</span>
+			<a class="m-reg" href="http://m.eyesoccer.id/member">
+				<i class="material-icons">input</i>Login</a>
+		</div>
+		<span>kanal</span>
+		<a href="http://m.eyesoccer.id/eyeprofile/klub">
+			<img src="http://m.eyesoccer.id/assets/themes/v1/img/ic_eyeprofile.png" alt="">Eye Profile</a>
+		<a href="http://m.eyesoccer.id/eyetube">
+			<img src="http://m.eyesoccer.id/assets/themes/v1/img/ic_eyetube.png" alt="">Eye Tube</a>
+		<a href="http://m.eyesoccer.id/eyenews">
+			<img src="http://m.eyesoccer.id/assets/themes/v1/img/ic_eyenews.png" alt="">Eye News</a>
+		<a href="http://m.eyesoccer.id/eyeme">
+			<img src="http://m.eyesoccer.id/assets/themes/v1/img/ic-eyeme.png" alt="">Eye Me</a>
+		<a href="http://m.eyesoccer.id/eyemarket">
+			<img src="http://m.eyesoccer.id/assets/themes/v1/img/ic_eyemarket.png" alt="">Eye Market</a>
+		<a href="http://m.eyesoccer.id/eyevent">
+			<img src="http://m.eyesoccer.id/assets/themes/v1/img/ic_eyevent.png" alt="">Eye Vent</a>
+
+		<div class="menu-ketegori">
+			<span>kategori</span>
+			<div id="reqcat" class="loadcat" action="eyenews" loading="off" clean="clscat" style="display: block;">
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Di Pinggir Lapangan" title="Di Pinggir Lapangan">Di Pinggir Lapangan</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Liga" title="Liga">Liga</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Pembinaan" title="Pembinaan">Pembinaan</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Peristiwa" title="Peristiwa">Peristiwa</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Prediksi" title="Prediksi">Prediksi</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Soccer Sains" title="Soccer Sains">Soccer Sains</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Soccer Seri" title="Soccer Seri">Soccer Seri</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Tulisan Kamu" title="Tulisan Kamu">Tulisan Kamu</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Ulas Tuntas" title="Ulas Tuntas">Ulas Tuntas</a>
+				<a href="http://m.eyesoccer.id/eyenews/kategori/Umpan Lambung" title="Umpan Lambung">Umpan Lambung</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "161779511204364"); fbq("set", "agent", "tmgoogletagmanager", "161779511204364"); fbq("track", "PageView");</script>
+
+	<script>
+		function Search() {
+			location.href = 'http://m.eyesoccer.id/home/search?q=' + $('.input_search').val() + '';
+		}
+		$('.input_search').bind("enterKey", function (e) {
+			Search();
+		});
+		$('.input_search').keyup(function (e) {
+			if (e.keyCode == 13) {
+				$(this).trigger("enterKey");
+			}
+		});
+	</script>
+	<!-- FOOTER -->
+	<footer>
+		<p>Copyright 2017 eyesoccer.id. All Rights Reserved.</p>
+		<p>
+			<a href="http://m.eyesoccer.id/tentang-kami">Tentang Kami</a> |
+			<a href="http://m.eyesoccer.id/tim-eyesoccer">Tim Eyesoccer</a> |
+			<a href="http://m.eyesoccer.id/pedoman-media-siber">Pedoman Media Siber</a>
+		</p>
+		<p>
+			<a href="http://m.eyesoccer.id/kebijakan-privasi">Kebijakan Privasi</a> |
+			<a href="http://m.eyesoccer.id/panduan-komunitas">Panduan Komunitas</a> |
+			<a href="http://m.eyesoccer.id/kontak">Kontak</a> |
+			<a href="http://m.eyesoccer.id/karir">Karir</a>
+		</p>
+		<p>
+			<a href="http://www.dmca.com/Protection/Status.aspx?ID=8b682fda-a66a-44db-9ff9-04dae8a124fc&amp;refurl=http://m.eyesoccer.id/eyenews/detail/diingatkan-kepala-sekolah-saddil-ramdani-tidak-ikut-persela-ke-makassar-f4a279f"
+			 title="DMCA.com Protection Status" class="dmca-badge">
+				<img src="//images.dmca.com/Badges/dmca-badge-w100-5x1-08.png?ID=8b682fda-a66a-44db-9ff9-04dae8a124fc" alt="DMCA.com Protection Status">
+			</a>
+			<script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+		</p>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

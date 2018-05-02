@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Author</title>
+    <link rel="stylesheet" href="http://localhost/mob.eyesoccer.id/assets/themes/v1/css/style.css">
+    <script src="http://localhost/mob.eyesoccer.id/assets/js/jquery-2.0.2.min.js"></script>
+</head>
+
+<body>
+    <div class="container tx-c mt20">
+        <div class="pp-author m-0">
+            <img src="http://localhost/mob.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+        </div>
+        <h2 class="cg">Author Name</h2>
+        <div class="auth-line m-0"></div>
+        <div class="container mt20 author-details tab">
+            <span id="tabProfil" class="tabs active" active="true">PROFIL</span>
+            <span id="tabAktifitas" class="tabs">AKTIFITAS</span>
+            <span id="tabStatistik" class="tabs">STATISTIK</span>
+            <div class="bb1g"></div>
+            <div class="tabProfil" style="margin: 10px 0px;">
+                <p style="margin: 10px 0px;">biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author biografi author </p>
+            </div>
+            <div class="tabAktifitas container" style="display:none;">
+                <div style="margin: 10px 0px;">
+                    <div class="container auth-news-content">
+                        <a href="">
+                            <div class="newnews">
+                                <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                            </div>
+                            <span>The Title of The Content</span>
+                            <span class="time">11 menit lalu - 1995 views</span>
+                        </a>
+                    </div>
+                    <div class="container auth-news-content">
+                        <a href="">
+                            <div class="newnews">
+                                <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                            </div>
+                            <span>The Title of The Content</span>
+                            <span class="time">11 menit lalu - 1995 views</span>
+                        </a>
+                    </div>
+                    <div class="container auth-news-content">
+                        <a href="">
+                            <div class="newnews">
+                                <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                            </div>
+                            <span>The Title of The Content</span>
+                            <span class="time">11 menit lalu - 1995 views</span>
+                        </a>
+                    </div>
+                    <div class="container auth-news-content">
+                        <a href="">
+                            <div class="newnews">
+                                <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                            </div>
+                            <span>The Title of The Content</span>
+                            <span class="time">11 menit lalu - 1995 views</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabStatistik" style="display:none;">
+                <table style="margin: 10px 0px;">
+                    <tr>
+                        <td>Jumlah Post</td>
+                        <td>999</td>
+                    </tr>
+                    <tr>
+                        <td>Total Viewers</td>
+                        <td>99999999</td>
+                    </tr>
+                    <tr>
+                        <td>Rata-rata View / Post</td>
+                        <td>9999</td>
+                    </tr>
+                    <tr>
+                        <td>Viewers 500 - 1000</td>
+                        <td>99999</td>
+                    </tr>
+                    <tr>
+                        <td>Viewers > 1000</td>
+                        <td>999999</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="container author-details">
+            <span>EYENEWS TERPOPULER OLEH AUTHOR NAME</span>
+            <div class="bb1g"></div>
+            <div class="mt20">
+                <div class="container auth-news-content">
+                    <a href="">
+                        <div class="newnews">
+                            <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                        </div>
+                        <span>The Title of The Content</span>
+                        <span class="time">11 menit lalu - 1995 views</span>
+                    </a>
+                </div>
+                <div class="container auth-news-content">
+                    <a href="">
+                        <div class="newnews">
+                            <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                        </div>
+                        <span>The Title of The Content</span>
+                        <span class="time">11 menit lalu - 1995 views</span>
+                    </a>
+                </div>
+                <div class="container auth-news-content">
+                    <a href="">
+                        <div class="newnews">
+                            <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                        </div>
+                        <span>The Title of The Content</span>
+                        <span class="time">11 menit lalu - 1995 views</span>
+                    </a>
+                </div>
+                <div class="container auth-news-content">
+                    <a href="">
+                        <div class="newnews">
+                            <img src="http://localhost/mob.eyesoccer.id/assets/themes/v1/img/a.jpg" alt="">
+                        </div>
+                        <span>The Title of The Content</span>
+                        <span class="time">11 menit lalu - 1995 views</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(document).on('click','.tabs',function(){
+                var id = $(this).attr('id');
+                $('.author-details .tabs').each(function(){
+                    if($(this).attr('active')){
+                        $(this).removeAttr('active');
+                        var idx = $(this).attr('id');
+                        $('.'+idx).hide();
+                        $(this).removeClass('active');
+                    }
+                })
+                $('.'+id).fadeIn('medium');
+                $('#'+id).attr('active', true);
+                $('#'+id).addClass('active');
+            })
+        });
+    </script>
+</body>
+
+</html>

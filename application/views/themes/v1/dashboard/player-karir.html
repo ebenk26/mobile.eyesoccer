@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/css/style.css">
+    <link rel="stylesheet" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/css/dashboard.css">
+    <link rel="stylesheet" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/css/font-awesome/css/fontawesome-all.css">
+</head>
+
+<body class="m-pd-t-100 body-responsive">
+    <div class="container stc">
+        <div class="container m-bar">
+            <i class="fas fa-bars" onclick="myFunction()"></i>
+            <i class="far fa-envelope"></i> <span>1</span>
+            <i class="far fa-bell"></i>     <span class="l83">1</span>
+        </div>
+        <i class="fas fa-sign-in-alt login-ic"></i>
+        <div class="fl-r img-pic">
+            <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/img/eyeme/user-discover.png" alt="">
+        </div>
+    </div>
+    <div id="menuDashboard" class="menu-dashboard bg243" style="display:none;">
+        <div class="container bg-menu-pic">
+            <div class="menu-pic">
+                <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/d.jpg" alt="">
+            </div>
+        </div>
+        <div class="container menu-dash">
+            <a class="active" href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyeprofile/klub"><img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyeprofile.png" alt="">Eye Profile</a>
+            <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyetube"><img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyetube.png" alt="">Eye Tube</a>
+            <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyenews"><img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyenews.png" alt="">Eye News</a>
+            <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyeme"><img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic-eyeme.png" alt="">Eye Me</a>
+            <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyemarket"><img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyemarket.png" alt="">Eye Market</a>
+            <a href="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/eyevent"><img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/ic_eyevent.png" alt="">EyeVent</a>
+    
+        </div>
+    </div>
+    <div class="container nav-dashboard">
+        <div class="nav-dash">
+            <ul>
+                <li>ALL</li>
+                <li class="active">Player</li>
+                <li>Eyeme</li>
+                <li>Eyetube</li>
+                <li>Tulisan Kamu</li>
+                <li>Analytics</li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-dashboard">
+        <div class="container bg-menu-pic bg243">
+            <div class="menu-pic">
+                <img src="http://localhost:8081/project/aplikasi/eyesoccer/liveeye/das.eyesoccer.id/assets/themes/v1/img/d.jpg" alt="">
+            </div>
+        </div>
+        <div class="player-tabs bg243">
+            <div class="container player-tab" id="player-tab">
+                <span id="form-player">Profil</span>
+                <span id="form-karir" class="active">Karir</span>
+                <span id="form-penghargaan">Penghargaan</span>
+                <span id="form-galeri">Galeri</span>
+            </div>
+        </div>
+        <!-- karir -->
+        <div class="container">
+            <div class="form-profil-dash" id="form-karir">
+                <span>Tahun</span>
+                <input type="text" placeholder="data player">
+                <span>Turnamen</span>
+                <input type="text" placeholder="data player">
+                <span>Negara</span>
+                <input type="text" placeholder="data player">
+                <span>Ranking</span>
+                <input type="text" placeholder="data player">
+                <span>Pelatih</span>
+                <input type="text" placeholder="data player">
+                <span>Klub</span>
+                <input type="text" placeholder="data player">
+                <span>Nomor Punggung</span>
+                <input type="text" placeholder="data player">
+            </div>
+            <div class="container tx-c simpan">
+                <button class="klik-dsn">SIMPAN</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menuDashboard");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
