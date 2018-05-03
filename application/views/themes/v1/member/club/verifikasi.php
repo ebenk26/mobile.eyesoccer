@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-xs-8 pd-t-19 edits dftr-pemain">
                     <span>Nama Lengkap</span>
-                    <span>No. Kartu Keluarga</span>
+                    <span>No. KK</span>
                     <span>No. Identitas</span>
                     <span>Registrasi</span>
                 </div>
