@@ -126,7 +126,7 @@
 }
 .stc{
     padding: 10px;
-    background-color: rgb(62 62 62) !important;
+    background-color: #333 !important;
     position: fixed;
     top: 0px;
     z-index: 10;
