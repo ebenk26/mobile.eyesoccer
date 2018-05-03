@@ -9,7 +9,7 @@
         <div class="col-xs-8 pd-t-19 edits dftr-pemain">
             <span><?= $ver->name; ?></span>
             <span>No. Kartu Keluarga : <?= $ver->no_kk; ?></span>
-            <span>No. KTP/NIK/Kartu Pelajar : <?= $ver->no_ktp; ?></span>
+            <span>No. Identitas : <?= $ver->no_ktp; ?></span>
             <span>Registrasi : <?= date('d M Y', strtotime($ver->date_create)); ?></span>
         </div>
     </div>
