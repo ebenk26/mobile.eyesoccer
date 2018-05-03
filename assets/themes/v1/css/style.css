@@ -4272,7 +4272,7 @@ video::-webkit-media-controls-panel {
     position:  absolute;right:  5px;top:  5px;font-size:  1em;
 }
 .to-open{
-    display: none;
+    /* display: none; */
 }
 .sbpbtn{
     /* position: fixed; */
@@ -4371,4 +4371,9 @@ input[type="file"]{
 #tab-ofisial .user-data{
     box-shadow: 0 1px 11px -5px #727277;
     overflow: hidden;
+}
+.slfdh{
+    position: absolute;
+    width: 100%;
+    left: 0px;
 }
