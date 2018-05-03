@@ -32,7 +32,7 @@
                 <div class="col-xs-8 pd-t-19 edits dftr-pemain">
                     <span>Nama Lengkap</span>
                     <span>No. Kartu Keluarga</span>
-                    <span>No. KTP/NIK/Kartu Pelajar</span>
+                    <span>No. Identitas</span>
                     <span>Registrasi</span>
                 </div>
             </div>
