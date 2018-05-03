@@ -217,12 +217,6 @@
             <!-- Fajar Ulin Nuha -->
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
-    <!-- <div class="section-box-popup to-open" style="width: 100%;height: 100vh;">
-        <div class="box-popup" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin:  unset;">
-            <i class="material-icons sbpclose to-close">clear</i>
-            <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/2018_Asian_Games_logo.svg/1200px-2018_Asian_Games_logo.svg.png" alt="">
-        </div>
-    </div> -->
     <div class="modal" id="popopo" role="dialog">
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;">
             <div class="box-popup">
