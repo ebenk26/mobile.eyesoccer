@@ -126,13 +126,11 @@
 }
 .stc{
     padding: 10px;
-    background-color: rgb(62 62 62) !important;
+    background-color: #333 !important;
     position: fixed;
     top: 0px;
     z-index: 10;
     box-sizing: border-box;
-    left: 0px;
-    right: 0px;
 }
 .img-pic{
     width: 30px;
