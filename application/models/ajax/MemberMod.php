@@ -238,8 +238,9 @@ class MemberMod extends CI_Model
             'no_kk' => $no_kk,
             'no_ktp' => $no_ktp,
         );
-        $res = $this->excurl->reqCurlapp('register-player', $query, array('file_kk', 'file_ktp', 'file_akte', 'file_ijazah', 'file_passport', 'file_bukurek', 'file_ibukandung', 'file_srtrekssb'));
-        // var_dump($res);exit();
+
+        $files = array('file_photo', 'file_kk', 'file_ktp', 'file_akte', 'file_ijazah', 'file_passport', 'file_bukurek', 'file_ibukandung', 'file_srtrekssb');
+        $res = $this->excurl->reqCurlapp('register-player', $query, $files);
         $arr = $this->library->errorMessage($res);
 
         if ($res->status == 'Success') {
@@ -973,8 +974,7 @@ class MemberMod extends CI_Model
 
     function __verifyapp()
     {
-        $id_reg = $this->input->post('id_reg');
-        $query  = array('id' => $id_reg, 'player' => '');
+        $query  = array('id' => $this->input->post('id_reg'), 'player' => $this->input->post('id_play'));
         $res = $this->excurl->reqCurlapp('verify-player', $query);
         $arr = $this->library->errorMessage($res);
 

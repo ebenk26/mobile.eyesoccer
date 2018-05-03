@@ -16,7 +16,12 @@
                 <a href="<?php echo base_url('member/verifikasi/?act=' . $ver->id); ?>" title="Edit">
                     <i class="far fa-edit mg-r10" style="float:right; font-size:.9em;"></i>
                 </a>
-                <div class="col-xs-12 pd-t-19 edits dftr-pemain">
+                <div class="col-xs-4 edits">
+                    <div class="img-round">
+                        <img src="<?php echo $ver->url_photo; ?>" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-8 pd-t-19 edits dftr-pemain">
                     <span><?= $ver->name; ?></span>
                     <span>No. Kartu Keluarga : <?= $ver->no_kk; ?></span>
                     <span>No. KTP/NIK/Kartu Pelajar : <?= $ver->no_ktp; ?></span>

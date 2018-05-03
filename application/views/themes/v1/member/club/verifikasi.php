@@ -23,7 +23,12 @@
             <input type='hidden' name='fn' value='verify' class='cinput'>
             <div class="x-form-daftar-pemain row">
                 <i class="far fa-edit" style="float:right; font-size:.9em;"></i>
-                <div class="col-xs-12 pd-t-19 edits dftr-pemain">
+                <div class="col-xs-4 edits">
+                    <div class="img-round">
+                        <img src="<?php echo SUBCDN."assets/img/eyeme/user-discover.png"; ?>" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-8 pd-t-19 edits dftr-pemain">
                     <span>Nama Lengkap</span>
                     <span>No. Kartu Keluarga</span>
                     <span>No. KTP/NIK/Kartu Pelajar</span>

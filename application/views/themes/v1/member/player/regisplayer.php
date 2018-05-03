@@ -13,7 +13,7 @@
                     <tr>
                         <td>Klub <span class="cl-red">*</span></td>
                         <td>
-                            <input type="text" id="club" name="club" placeholder="Input disini untuk mencari klub" class="form_keyup" action="member" fn="listclub" wait loading="off">
+                            <input type="text" id="club" name="club" placeholder="Input disini untuk mencari klub" autocomplete="off" class="form_keyup" action="member" fn="listclub" wait loading="off">
                             <input type="hidden" name="slug" id="slug">
                             <span class="err msgclub"></span>
                             <div id='showclub'></div>
@@ -27,6 +27,13 @@
                     <td>
                         <input type="text" name="name">
                         <span class="err msgname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Photo <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="file" name="file_photo">
+                        <span class="err msgfile_photo"></span>
                     </td>
                 </tr>
                 <tr>

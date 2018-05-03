@@ -1,27 +1,41 @@
 <?php foreach ($verify as $ver): ?>
 
     <div class="x-form-daftar-pemain row">
-        <table>
+        <div class="col-xs-4 edits">
+            <div class="img-round">
+                <img src="<?php echo $ver->url_photo; ?>" alt="">
+            </div>
+        </div>
+        <div class="col-xs-8 pd-t-19 edits dftr-pemain">
+            <span><?= $ver->name; ?></span>
+            <span>No. Kartu Keluarga : <?= $ver->no_kk; ?></span>
+            <span>No. KTP/NIK/Kartu Pelajar : <?= $ver->no_ktp; ?></span>
+            <span>Registrasi : <?= date('d M Y', strtotime($ver->date_create)); ?></span>
+        </div>
+    </div>
+
+    <div class="x-form-daftar-pemain row">
+        <!--<table>
             <tr>
                 <td style="width: 150px">Nama</td>
-                <td>: <?= $ver->name; ?></td>
+                <td>: <?/*= $ver->name; */?></td>
             </tr>
             <tr>
                 <td>No. KK
                 </th>
-                <td>: <?= ($ver->no_kk == "") ? '-' : $ver->no_kk; ?></td>
+                <td>: <?/*= ($ver->no_kk == "") ? '-' : $ver->no_kk; */?></td>
             </tr>
             <tr>
                 <td>No. Ktp
                 </th>
-                <td>: <?= ($ver->no_ktp == "") ? '-' : $ver->no_ktp; ?></td>
+                <td>: <?/*= ($ver->no_ktp == "") ? '-' : $ver->no_ktp; */?></td>
             </tr>
             <tr>
                 <td>Registrasi
                 </th>
-                <td>: <?= date('d M Y', strtotime($ver->date_create)); ?></td>
+                <td>: <?/*= date('d M Y', strtotime($ver->date_create)); */?></td>
             </tr>
-        </table>
+        </table>-->
         <p class="semibold-grey">Lampiran</p>
         <div class="container over-x">
             <table class="w-max tabel-lampiran">
@@ -110,7 +124,7 @@
                 </tr>
             </table>
         </div>
-        <a href="javascript:void(0)" title="Setujui" id="approve_<?php echo $ver->id; ?>" class="form_post" action="member" fn="verifyapp"
+        <a href="javascript:void(0)" id="approve_<?php echo $ver->id; ?>" class="form_post" action="member" fn="verifyapp"
            confirm="Apakah anda yakin menerima pendaftar ini?">
             <span class="klik-dsn m-0"> Approve </span>
             <input type="hidden" name="id_reg" value="<?php echo $ver->id; ?>" class="cinput">
@@ -121,8 +135,8 @@
     <?php if (count($ver->players) > 0): ?>
         <div class="x-form-daftar-pemain row">
             <p class="semibold-grey">Pemain Dengan Nama yang Sama</p>
-            <table>
-                <?php foreach ($ver->players as $pl): ?>
+            <?php foreach ($ver->players as $pl): ?>
+                <table>
                     <tr>
                         <td style="width: 150px">Nama</td>
                         <td>: <?= $pl->name; ?></td>
@@ -139,10 +153,15 @@
                         <td>Aktif</td>
                         <td>: <?= ($pl->is_active > 0) ? 'Iya' : 'Tidak' ; ?></td>
                     </tr>
-                <?php endforeach ?>
-            </table>
-            <span class="klik-dsn m-0"> Approve </span>
-            <!-- pake id player -->
+                </table>
+                <a href="javascript:void(0)" id="approve_<?php echo $pl->id; ?>" class="form_post" action="member" fn="verifyapp"
+                   confirm="Apakah anda yakin menerima pendaftar ini?">
+                    <span class="klik-dsn m-0"> Approve </span>
+                    <input type="hidden" name="id_play" value="<?php echo $pl->id; ?>" class="cinput">
+                    <input type="hidden" name="id_reg" value="<?php echo $ver->id; ?>" class="cinput">
+                    <input type="hidden" name="name" value="<?php echo $ver->name; ?>" class="cinput">
+                </a>
+            <?php endforeach ?>
         </div>
     <?php endif ?>
 
