@@ -30,6 +30,7 @@ class MemberMod extends CI_Model
             $v = $res->data;
             $sess = array(
                 'id' => $v->id,
+                'id_member' => $v->id_member,
                 'username' => $v->username,
                 'fullname' => $v->fullname,
                 'name' => $v->name,
@@ -118,6 +119,7 @@ class MemberMod extends CI_Model
                 $v = $res->data[0];
                 $sess = array(
                     'id' => $v->id,
+                    'id_member' => $v->id_member,
                     'username' => $v->username,
                     'fullname' => $v->fullname,
                     'name' => $v->name,
