@@ -733,17 +733,21 @@
     float: left;
 }
 .edits{
-        box-sizing: border-box;
+    box-sizing: border-box;
     padding-right: 0;
     padding-left: 0;
     padding-top: 0;
+    width: 33.33%;
 }
 /*  */
 .dftr-pemain{
     padding: 0 0 12px 12px;
     font-size: .7em;
     letter-spacing: .5px;
-    width: max-content;
+    width: 66.66%;
+}
+.edits.dftr-pemain{
+    width: 66.66%;
 }
 /* #isiContent{
     margin-top: -3px;
@@ -998,4 +1002,11 @@ select{
     font-weight: 500;
     float: right;
     margin-right: 20px;
+}
+.edits.dftr-pemain span{
+    white-space: nowrap;
+    width: 90%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
