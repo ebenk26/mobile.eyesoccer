@@ -217,11 +217,12 @@
             <!-- Fajar Ulin Nuha -->
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
-    <button type="button" class="btn-blue" id="popobtn" data-toggle="modal" data-target="#popopo" style="position:  fixed;top:  50%;right: -70px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 156px;">ASIAN GAMES 2018</button>
-    <div class="modal fade" id="popopo" role="dialog">
+    <!-- <button type="button" class="btn-blue" id="popobtn" data-toggle="modal" data-target="#popopo" style="position:  fixed;top:  50%;right: -70px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 156px;">ASIAN GAMES 2018</button> -->
+    <div class="modal fadeinDown" id="popopo" role="dialog">
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
             <div class="box-popup">
                 <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position:  relative;float:  right;top:  -10px;right:  7px;" type="button" class="close" data-dismiss="modal">&times; </button>
+                <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3>
                 <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/2018_Asian_Games_logo.svg/1200px-2018_Asian_Games_logo.svg.png" alt="">
             </div>
         </div>
@@ -229,7 +230,7 @@
   
 </div>
     <script>
-    // jQuery('#popopo').modal('show').on('hide.bs.modal')
+    jQuery('#popopo').modal('show').on('hide.bs.modal')
     // $(document).ready(function(){
     //     $("#popobtn").click(function(){
     //         $("#popopo").modal();
