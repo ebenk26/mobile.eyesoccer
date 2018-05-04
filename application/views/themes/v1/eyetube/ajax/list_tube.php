@@ -1,5 +1,5 @@
 <div class="etube-home" style="padding: unset;">
-    <div class="container top-menu-ketegori over-x" style="margin-top: 55px;">
+    <div class="container top-menu-ketegori over-x" style="margin-top: 55px;border-bottom: 1px solid gainsboro;margin-bottom: 10px;">
         <div class="w-max">
             <a href="<?php echo base_url();?>eyetube/kategori/Highlight">HIGHLIGHT</a>
             <a href="<?php echo base_url();?>eyetube/kategori/Profile-SSB">PROFILE SSB</a>

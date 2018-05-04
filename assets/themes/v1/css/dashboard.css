@@ -39,13 +39,13 @@
     background-color: white !important;
 }
 .bg243{
-    background-color: rgb(243 243 243) !important;
+    background-color: #F3F3F3 !important;
 }
 .bg250{
-    background-color: rgb(250 250 250) !important;
+    background-color: #FAFAFA !important;
 }
 .menu-dashboard{
-    /* background-color: rgb(243 243 243); */
+    /* background-color: #F3F3F3; */
     height: 100vh;
     position: fixed;
     z-index: 1;
@@ -103,7 +103,7 @@
     text-shadow: 0 2px 4px #0000006e;
 }
 .nav-dashboard{
-    background-color: rgb(255 226 78);
+    background-color: #FFE24E;
     padding: 10px 0;
     width: 100%;
     max-width: 768px;
@@ -136,7 +136,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid rgb(62 62 62);
+    border: 1px solid #3E3E3E;
     position: relative;
     overflow: hidden;
 }
@@ -157,7 +157,7 @@
 .daftar-pemain span{
     display: block;
     letter-spacing: .4pt;
-    color: rgb(62 62 62);
+    color: #3E3E3E;
     padding: 2px;
 }
 .daftar-pemain span:nth-of-type(1){
@@ -171,7 +171,7 @@
 }
 .klik-dsn{
     color: white;
-    background-color: rgb(255, 208, 0);
+    background-color: #FFD000;
     padding: 8px 30px 9px !important;
     border: none;
     border-radius: 20px;
@@ -193,7 +193,7 @@
 }
 .klik-dsn.gray{
     background-color: gray !important;
-    box-shadow: inset 0 0 10px rgb(85, 85, 85);
+    box-shadow: inset 0 0 10px #555555;
 }
 .klik-dsn:focus{
     box-shadow: 0 0 7px gray;
@@ -212,7 +212,7 @@
     font-weight: 500;
     padding: 2px 5px;
     border-radius: 8px;
-    background-color: rgb(200 0 0);
+    background-color: #C80000;
     position: absolute;
     left: 45px;
     top: 10px;
@@ -226,7 +226,7 @@
     box-shadow: 0 0 3px gainsboro;
     display: block;
     margin-bottom: 10px;
-    background: rgb(253 253 253);
+    background: #FDFDFD;
 }
 .bg-menu-pic{
     padding: 30px 0px;
@@ -254,7 +254,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .menu-dash a.active{
-    background-color: rgb(238 238 238);
+    background-color: #EEEEEE;
 }
 .menu-dash a img{
     position: relative;
@@ -269,14 +269,14 @@
 }
 .menu-dashboard h5{
     font-weight: 500;
-    color: rgb(62 62 62);
+    color: #3E3E3E;
     margin: 0;
     padding: 15px 20px;
 }
 .form-profil-dash span, .form-profil-dash input{
     width: 100%;
     font-size: .8em;
-    color: rgb(62 62 62);
+    color: #3E3E3E;
 }
 .form-profil-dash span{
     display: block;
@@ -285,12 +285,12 @@
 }
 .form-profil-dash input{
     border: none;
-    border-bottom: 2px solid rgb(243 243 243);
+    border-bottom: 2px solid #F3F3F3;
     padding: 8px 0;
     letter-spacing: .5px;
 }
 .simpan{
-    background-color: rgb(243 243 243);
+    background-color: #F3F3F3;
     padding: 20px 0;
 }
 .nav-dash li.active{
@@ -307,7 +307,7 @@
     padding: 0 50px;
 }
 .player-tab span.active{
-    color: rgb(245 166 35);
+    color: #F5A623;
 }
 .player-galeri{
     width: 135px;
@@ -357,7 +357,7 @@
     padding: 20px !important;
 }
 .up-foto{
-    border: 1.5px solid rgb(234, 234, 234);
+    border: 1.5px solid #EAEAEA;
     border-radius: 7px;
     width: 100px;
     height: 60px;
@@ -373,7 +373,7 @@
     height: 50px;
     border-radius: 50%;
     position: relative;
-    background-color: rgb(216 216 216);
+    background-color: #D8D8D8;
     display: inline-block;
     overflow: hidden;
 }
@@ -386,7 +386,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    color: rgb(216 216 216);
+    color: #D8D8D8;
 }
 .edit-foto a{
     position: relative;
@@ -398,7 +398,7 @@
     box-sizing: border-box;
     font-size: .8em;
     font-weight: 500;
-    color: rgb(62 62 62);
+    color: #3E3E3E;
     display: block;
 }
 .tulisankamu span{
@@ -416,16 +416,16 @@
     box-sizing: border-box;
     border-radius: 7px;
     border: 1px solid rgba(222, 222, 222, 0.35);
-    box-shadow: 0 2px rgb(181, 181, 181);
+    box-shadow: 0 2px #B5B5B5;
     font: unset;
     margin-top: 15px;
 }
 .tube-eye{
-    color: rgb(62 62 62);
+    color: #3E3E3E;
     box-shadow: 0 2px 4px -1px #00000031;
     margin: 10px;
     border-radius: 7px;
-    background-color: rgb(250 250 250);
+    background-color: #FAFAFA;
     height: 220px;
     overflow: hidden;
 }
@@ -502,7 +502,7 @@
     font-size: .85em;
 }
 .menu-analytic span.active{
-    background-color: rgb(62 62 62);
+    background-color: #3E3E3E;
     color: white;
 }
 .graph{
@@ -523,7 +523,7 @@
     border-radius: 3px;
 }
 .d-w-m span.active{
-    background-color: rgb(62 62 62);
+    background-color: #3E3E3E;
     color: white;
 }
 .dash-notif{
@@ -549,7 +549,7 @@
     top: -57px;
     left: 53px;
     z-index: 2;
-    background-color: rgb(230 229 224);
+    background-color: #E6E5E0;
 }
 .panah-notif2{
     left: 89.5px !important;
@@ -558,7 +558,7 @@
     width: 100%;
     min-height: 38px;
     z-index: 3;
-    background-color: rgb(230 229 224);
+    background-color: #E6E5E0;
     position: relative;
     top: -63px;
 }
@@ -629,14 +629,14 @@
 }
 .text-inbox span.preview{
     font-size: .7em;
-    color: rgb(62 62 62);
+    color: #3E3E3E;
 }
 .bb2g{
-    border-bottom: 2px solid rgb(224 224 224);
+    border-bottom: 2px solid #E0E0E0;
     margin-top: 10px;
 }
 .nav-dashboard2{
-    background-color: rgb(255 226 78);
+    background-color: #FFE24E;
     padding: 4px 0;
     width: 100%;
     height: 40px;
@@ -662,7 +662,7 @@
     width: 100%;
     height: 40px;
     overflow-x: auto;
-    background-color: rgb(224, 224, 224);
+    background-color: #E0E0E0;
 }
 .submenus{
     width: max-content;
@@ -683,7 +683,7 @@
     box-shadow: 0 1px 3px gainsboro;
     display: block;
     margin: 0px 10px 10px !important;
-    background: rgb(253 253 253);
+    background: #FDFDFD;
     min-height: 90px;
     position: relative;
     letter-spacing: .5px;
@@ -907,7 +907,7 @@ select{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    color: rgb(216 216 216);
+    color: #D8D8D8;
     height: 100%;
 }
 .top-edit{
@@ -996,7 +996,7 @@ select{
     margin: 0px;
 }
 .btn-white-orange{
-    color: rgb(255, 208, 0);
+    color: #FF6C00;
     text-transform: uppercase;
     font-size: .7em;
     font-weight: 500;

@@ -26,7 +26,7 @@
                 <a class="active" href="#content1">Info</a>
             </div> -->
 			<div class="container tab-sub-menu">
-					<a href="<?php echo base_url();?>eyeprofile/klub" class="active">info</a>
+					<a href="<?php echo base_url();?>eyeprofile/klub" class="active">Klub</a>
 					<a href="<?php echo base_url();?>eyeprofile/pemain/<?= $slug; ?>" style="border-left: 1px solid;border-right:  1px solid;border-color: white;">pemain</a>
 					<a href="<?php echo base_url();?>eyeprofile/official/<?= $slug; ?>">ofisial</a>
 					<!-- <a href="">perangkat pertandingan</a>
