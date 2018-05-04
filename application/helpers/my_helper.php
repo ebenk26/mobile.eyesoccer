@@ -728,7 +728,7 @@ function loginAvaTop($hasLogin){
 				</a>';
     } else {
         return '<i id="src" class="material-icons f-r">search</i>
-				<a href="member" style="color: #8ec429;">
+				<a href="'.base_url('member').'" style="color: #8ec429;">
 					<div class="pprofile">
 						<img src="'.SUBCDN.'assets/img/eyeme/user-discover.png" alt="">
 					</div>
