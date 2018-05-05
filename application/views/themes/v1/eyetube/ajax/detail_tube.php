@@ -31,7 +31,7 @@ if ($tube) {
     </video>
     <div class="etube-v-title-mobile">
         <h1><?= $tube->data->title; ?></h1>
-        <i class="far fa-comment komen-tube to-close" aria-hidden="false" style="padding-top: 20px;"><div class="openComment to-open">asdgsdfg</div></i>
+        <!-- <i class="far fa-comment komen-tube to-close" aria-hidden="false" style="padding-top: 20px;"><div class="openComment to-open"></div></i> -->
         <!-- <i class="heightControl2 material-icons arrow-right-etube">arrow_drop_up</i>
         <i class="material-icons arrow-right-etube heightControl">arrow_drop_down</i> -->
         <span><?php echo relative_time($this->library->datenormal($tube->data->createon)); ?> lalu - oleh <?= $tube->data->fullname; ?> - <?= $tube->data->tube_view; ?> kali diputar</span>
