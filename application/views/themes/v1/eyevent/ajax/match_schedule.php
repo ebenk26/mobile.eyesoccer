@@ -7,7 +7,7 @@ background-color:#fdd79f38;
 }
 .livechanel{
             color:#d19595;
-			padding: 3px 0px;
+			padding: 3px 10px;
 			border-radius: 15px;
 			background-color:#e6e6e652;
 }
@@ -48,7 +48,7 @@ background-color:#fdd79f38;
                 ?>
                 <tr class="listmatch">
                     <?php      
-                            if(($value->liga_a=='Liga Lainnya') OR ($value->liga_a=='Liga International'))
+                            if(!isset($value->liga_a) OR empty($value->liga_a))
                             {
                                 echo "<td class='tx-r'><a href='#no_detail_club'>".$value->team_a."</a></td>";
                             }
@@ -63,7 +63,7 @@ background-color:#fdd79f38;
                         <br>
                         <?= $value->match_schedule; ?><br><br>
                         <span <?php
-                                if($value->match_live==NULL)
+                                if(empty($value->match_live))
                                 {
                                     $live='>';
                                 }
@@ -78,7 +78,7 @@ background-color:#fdd79f38;
                     </td>
                     <td style="width: 25px;"><img style="width: 100%" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
                     <?php      
-                            if(($value->liga_b=='Liga Lainnya') OR ($value->liga_b=='Liga International'))
+                            if(!isset($value->liga_b) OR empty($value->liga_b))
                             {
                                 echo "<td class='tx-l'><a href='#no_detail_club'_".$value->team_b.">".$value->team_b."</a></td>";
                             }
@@ -103,8 +103,7 @@ background-color:#fdd79f38;
                 ?>
                 <tr class="listmatch">
                 <?php      
-                    
-                    if(($value->liga_a=='Liga Lainnya') OR ($value->liga_a=='Liga International'))
+                    if(!isset($value->liga_a) OR empty($value->liga_a))
                     {
                         echo "<td class='tx-r'><a href='#no_detail_club'>".$value->team_a."</a></td>";
                     }
@@ -119,7 +118,7 @@ background-color:#fdd79f38;
                         <br>
                         <?= $value->match_schedule; ?><br><br>
                         <span <?php
-                                if($value->match_live==NULL)
+                                if(empty($value->match_live))
                                 {
                                     $live='>';
                                 }
@@ -134,7 +133,7 @@ background-color:#fdd79f38;
                     </td>
                     <td style="width: 25px;"><img style="width: 100%" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
                     <?php      
-                            if(($value->liga_b=='Liga Lainnya') OR ($value->liga_b=='Liga International'))
+                            if(!isset($value->liga_b) OR empty($value->liga_b))
                             {
                                 echo "<td class='tx-l'><a href='#no_detail_club'_".$value->team_b.">".$value->team_b."</a></td>";
                             }
@@ -159,7 +158,7 @@ background-color:#fdd79f38;
                 ?>
                 <tr class="listmatch">
                 <?php
-                    if(($value->liga_a=='Liga Lainnya') OR ($value->liga_a=='Liga International'))
+                    if(!isset($value->liga_a) OR empty($value->liga_a))
                     {
                         echo "<td class='tx-r'><a href='#no_detail_club'>".$value->team_a."</a></td>";
                     }
@@ -175,7 +174,7 @@ background-color:#fdd79f38;
                         <br>
                         <?= $value->match_schedule; ?><br><br>
                         <span <?php
-                                if($value->match_live==NULL)
+                                if(empty($value->match_live))
                                 {
                                     $live='>';
                                 }
@@ -190,7 +189,7 @@ background-color:#fdd79f38;
                     </td>
                     <td style="width: 25px;"><img style="width: 100%" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
                     <?php      
-                            if(($value->liga_b=='Liga Lainnya') OR ($value->liga_b=='Liga International'))
+                            if(!isset($value->liga_b) OR empty($value->liga_b))
                             {
                                 echo "<td class='tx-l'><a href='#no_detail_club'_".$value->team_b.">".$value->team_b."</a></td>";
                             }
