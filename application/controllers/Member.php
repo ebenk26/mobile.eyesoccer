@@ -70,7 +70,7 @@ class Member extends CI_Controller
         $data['meta_desc'] = $this->config->item('meta_desc');
         $data['meta_keyword'] = $this->config->item('meta_keyword');
 
-        $this->load->view($this->__theme() . 'template', $data);
+        $this->load->view($this->__theme() . 'member/template', $data);
     }
 
     function logout()
