@@ -2,7 +2,7 @@
     <form class='form_multi' action="<?php echo base_url('member'); ?>" enctype="multipart/form-data">
         <label class="btn-white-orange fl-r" style="margin:  unset;">
             <i class="fas fa-plus mg-r5"></i>Upload Photo
-            <input type="file" name="fupload" id="filepic" style="display: none;" accept="image/*">
+            <input type="file" name="fupload" id="filepic" style="display: none;">
         </label>
         <input type="hidden" name="fn" class="cinput" value="uploadgalericlub">
         <input type="hidden" name="act" class="cinput" value="1">

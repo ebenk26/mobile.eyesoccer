@@ -27,7 +27,7 @@
         <div class="full-width">
             <label class="btn-blue disp-block mg-b10 mg-b15">
                 Upload Photo
-                <input type="file" name="fupload" id="filepic" style="display: none;" accept="image/*">
+                <input type="file" name="fupload" id="filepic" style="display: none;">
             </label>
         </div>
     </div>

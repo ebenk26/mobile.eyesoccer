@@ -13,7 +13,7 @@ if ($klubdetail) {
             <div class="full-width">
                 <label class="btn-blue">
                     Ganti Logo
-                    <input id="file_pic" name="logo" type="file" style="display: none;" accept="image/*">
+                    <input id="file_pic" name="logo" type="file" style="display: none;">
                 </label>
             </div>
         </div>
@@ -164,7 +164,7 @@ if ($klubdetail) {
 							<?php
 								if ($v[0]->legalitas_pt == '') {
 							?>
-									<input id="legal_pt" type="file" name="legal_pt" accept="image/*">
+									<input id="legal_pt" type="file" name="legal_pt">
 							<?php
 								}
 							?>
@@ -178,7 +178,7 @@ if ($klubdetail) {
 							<?php
 								if ($v[0]->legalitas_kemenham == '') {
 							?>
-									<input id="legal_kemenham" type="file" name="legal_kemenham" accept="image/*">
+									<input id="legal_kemenham" type="file" name="legal_kemenham">
 							<?php
 								}
 							?>
@@ -192,7 +192,7 @@ if ($klubdetail) {
 							<?php
 								if ($v[0]->legalitas_npwp == '') {
 							?>
-									<input id="legal_npwp" type="file" name="legal_npwp" accept="image/*">
+									<input id="legal_npwp" type="file" name="legal_npwp">
 							<?php
 								}
 							?>
@@ -206,7 +206,7 @@ if ($klubdetail) {
 							<?php
 								if ($v[0]->legalitas_dirut == '') {
 							?>
-									<input id="legal_dirut" type="file" name="legal_dirut" accept="image/*">
+									<input id="legal_dirut" type="file" name="legal_dirut">
 							<?php
 								}
 							?>
