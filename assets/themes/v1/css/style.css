@@ -137,7 +137,7 @@ nav img{
 .x-c input{
     background-color: transparent;
     border: none;
-    color: rgb(70, 68, 68);
+    color: #464444;
     font-size: 1em;
 }
 .x-c i{
@@ -351,7 +351,7 @@ nav img{
     margin: 2.5px;
     height: 10px !important;
     width: 10px !important;
-    background-color: rgb(238, 238, 238);
+    background-color: #EEEEEE;
     border-radius: 50%;
     border: none;
 }
@@ -490,7 +490,7 @@ table, .tx-l{
 }
 .bx-nav i{
     color: gray;
-    background-color: rgb(230, 230, 230);
+    background-color: #E6E6E6;
     border-radius: 50%;
 }
 .bx-nav i:hover{
@@ -2121,7 +2121,7 @@ ul, li {
 .info-list li{
     display: block;
     padding: 12px;
-    color: rgb(168, 168, 168);
+    color: #A8A8A8;
     font-size: .9em;
 }
 .info-list li:nth-of-type(2n+2){
@@ -2137,7 +2137,7 @@ ul, li {
 }
 .box-icon-sosmed i{
     margin: 0px 7%;
-    background-color: rgb(238, 238, 238);
+    background-color: #EEEEEE;
     border-radius: 50%;
     width: 18px;
     height: 18px;
