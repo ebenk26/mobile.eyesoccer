@@ -1,246 +1,207 @@
-
-<br>
-<br>
-<br>
-<div id="popupKalender" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="m-event-kalender">
-                <div id="z"></div>
-                <div id="pick-date">
-                    <input type="hidden" name="fn" value="pick_match" class="cinput">
-                    <input type="hidden" name="date" value="" id="picked-date" class="cinput">
-                    <input type="hidden" name="txtdate" value="" id="text-date" class="cinput">
-                    <input type="hidden" name="page" value="jadwal" class="cinput">
-                </div>
-                <button id="pick-date" class="btn-white-g form_post" type="button" style="margin-left: 8.75%;" data-dismiss="modal" action="eyevent"> 
-                    Lihat
-                </button>
-                <button class="btn-white-g btn-white-g-block" type="button" data-dismiss="modal">tutup</button>
+<style>
+.listmatch:hover{
+background-color:#fdd79f38;
+}
+.clubname {
+    text-transform: uppercase;
+}
+.livechanel{
+            color:#d19595;
+			padding: 3px 10px;
+			border-radius: 15px;
+			background-color:#e6e6e652;
+}
+.livechanel:hover{
+    background-color: #dddddd;
+}
+</style>
+<div class="container bg-g">
+    <div class="t-tab">
+        <div id='boxtab'>
+            <div class="day-choose">
+                <a class="day-choose" id="jadwal-yest" onclick="tabmenu(this.id, 'a', 'table', 'day-choose', 't-active')">
+                    Kemarin
+                    <span><?= date('d F', strtotime($kemarin["tanggalnya"])); ?></span>
+                </a>
+            </div>
+            <div class="day-choose">
+                <a class="day-choose t-active" id="jadwal-today" onclick="tabmenu(this.id, 'a', 'table', 'day-choose', 't-active')" active="true">
+                    Hari ini
+                    <span><?= date('d F', strtotime($hari_ini["tanggalnya"])); ?></span>
+                </a>
+            </div>
+            <div class="day-choose">
+                <a class="day-choose" id="jadwal-tmrw" onclick="tabmenu(this.id, 'a', 'table', 'day-choose', 't-active')">
+                    Besok
+                    <span><?= date('d F', strtotime($besok["tanggalnya"])); ?></span>
+                </a>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
-    <h2 class="thjadwalhasil">JADWAL PERTANDINGAN</h2>
-    <!-- <select id="pilih-liga" class="lc">
-        <option>Semua Liga/Kompetisi</option>
-        <?php 
-            foreach ($all_liga as $value)
-            {
-        ?>
-                <option value="<?= $value['id_event']; ?>">
-                    <?= $value['title']; ?>
-                </option>
-        <?php
-            }
-        ?>
-        
-    </select> -->
-    <button type="button" class="lihat-jadwal" data-toggle="modal" data-target="#popupKalender" style="
-    margin-bottom: 20px;
-">Pilih Tanggal Jadwal Lainnya</button>
-
-    <div id="body-jp">
-                
-    </div>
-    
-    <div class="container bg-g">
-        <div class="t-tab">
-            <div id='boxtab'>
-                <div class="day-choose">
-                    <a class="day-choose t-active" id="jadwal-today" onclick="tabmenu(this.id, 'a', 'table', 'day-choose', 't-active')" active="true">
-                        Hari ini
-                        <span><?= date('d F', strtotime($hari_ini["tanggalnya"])); ?></span>
-                    </a>
-                </div>
-                <div class="day-choose">
-                    <a class="day-choose" id="jadwal-tmrw" onclick="tabmenu(this.id, 'a', 'table', 'day-choose', 't-active')">
-                        Besok
-                        <span><?= date('d F', strtotime($besok["tanggalnya"])); ?></span>
-                    </a>
-                </div>
-                <div class="day-choose">
-                    <a class="day-choose" id="jadwal-lusa" onclick="tabmenu(this.id, 'a', 'table', 'day-choose', 't-active')">
-                        Lusa
-                        <span><?= date('d F', strtotime($lusa["tanggalnya"])); ?></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <table class="table border-b" id="jadwal-today">
-        <tbody>
-        <?php
-            if ($match_today) {
-                $match_today = json_decode($match_today);
-                foreach ($match_today->data as $value) {
+<table class="table border-b" id="jadwal-yest" style="display: none;">
+    <tbody>
+    <?php
+        if ($match_yest) {
+            $match_yest = json_decode($match_yest);
+            foreach ($match_yest->data as $value) {
+                ?>
+                <tr class="listmatch">
+                    <?php      
+                            if(!isset($value->liga_a) OR empty($value->liga_a))
+                            {
+                                echo "<td class='tx-r'><a href='#no_detail_club_".$value->team_a."'>".$value->team_a."'</a></td>";
+                            }
+                            else
+                            {   
+                                echo "<td class='tx-r'><a href=".$value->url_team_a.">".$value->team_a."</a></td>";
+                            }
                     ?>
-                    <tr>
-                        <td class="tx-r" style="width: 30%;"><?= $value->team_a; ?>
-                            <!-- <a href="<?= $value->url_team_a; ?>"> -->
-                            <!-- </a> -->
-                        </td>
-                        <td class="tx-c"><img style="width:20px;position:relative;top:-5px;" src="<?= $value->url_logo_a; ?>/small" alt="<?= $value->team_a; ?>"></td>
-                        <td class="tx-c" style="width:15%;">
-                            <?= $value->event; ?>
-                            <br>
-                            <?= $value->match_schedule; ?>
-                            <span class="t-live"><?= $value->match_live; ?></span>
-                        </td>
-                        <td class="tx-c"><img style="width:20px;position:relative;top:-5px;" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
-                        <td class="tx-l" style="width: 30%;">
-                            <!-- <a href="<?= $value->url_team_a; ?>"> -->
-                            <?= $value->team_b; ?>
-                            <!-- </a> -->
-                        </td>
-                    </tr>
-                    <?php
-                }
-            }
-        ?>
-        </tbody>
-    </table>
-    <table class="table border-b" id="jadwal-tmrw" style="display: none;">
-        <tbody>
-        <?php
-            if ($match_tomorrow) {
-                $match_tomorrow = json_decode($match_tomorrow);
-                foreach ($match_tomorrow->data as $value) {
+                    <td style="width: 25px;"><img align="absmiddle"style="width: 100%" src="<?= $value->url_logo_a; ?>/small" alt="<?= $value->team_a; ?>"></td>
+                    <td class="tx-c">
+                        <?= $value->event; ?>
+                        <br>
+                        <?= $value->match_schedule; ?><br><br>
+                        <span <?php
+                                if(empty($value->match_live))
+                                {
+                                    $live='>';
+                                }
+                                else
+                                {
+                                    $live=' class="livechanel">'.$value->match_live;
+                                }
+
+                                echo $live;
+                                ?>
+                        </span>
+                    </td>
+                    <td style="width: 25px;"><img style="width: 100%" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
+                    <?php      
+                            if(!isset($value->liga_b) OR empty($value->liga_b))
+                            {
+                                echo "<td class='tx-l'><a href='#no_detail_club_".$value->team_b."'>".$value->team_b."</a></td>";
+                            }
+                            else
+                            {   
+                                echo "<td class='tx-l'><a href=".$value->url_team_b.">".$value->team_b."</a></td>";
+                            }
                     ?>
-                    <tr>
-                        <td class="tx-r" style="width: 30%;"><?= $value->team_a; ?>
-                            <!-- <a href="<?= $value->url_team_a; ?>"> -->
-                            <!-- </a> -->
-                        </td>
-                        <td class="tx-c"><img style="width:20px;position:relative;top:-5px;" src="<?= $value->url_logo_a; ?>/small" alt="<?= $value->team_a; ?>"></td>
-                        <td class="tx-c" style="width:15%;">
-                            <?= $value->event; ?>
-                            <br>
-                            <?= $value->match_schedule; ?>
-                            <span class="t-live"><?= $value->match_live; ?></span>
-                        </td>
-                        <td class="tx-c"><img style="width:20px;position:relative;top:-5px;" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
-                        <td class="tx-l" style="width: 30%;">
-                            <!-- <a href="<?= $value->url_team_a; ?>"> -->
-                            <?= $value->team_b; ?>
-                            <!-- </a> -->
-                        </td>
-                    </tr>
-                    <?php
-                }
+                </tr>
+                <?php
             }
-        ?>
-        </tbody>
-    </table>
-    <table class="table border-b" id="jadwal-lusa" style="display: none;">
-        <tbody>
-        <?php
-            if ($match_lusa) {
-                $match_lusa = json_decode($match_lusa);
-                foreach ($match_lusa->data as $value) {
+        }
+    ?>
+    </tbody>
+</table>
+<table class="table border-b" id="jadwal-today">
+    <tbody>
+    <?php
+        if ($match_today) {
+            $match_today = json_decode($match_today);
+            foreach ($match_today->data as $value) {
+                ?>
+                <tr class="listmatch">
+                <?php      
+                    if(!isset($value->liga_a) OR empty($value->liga_a))
+                    {
+                        echo "<td class='tx-r'><a href='#no_detail_club_".$value->team_a."'>".$value->team_a."</a></td>";
+                    }
+                    else
+                    {   
+                        echo "<td class='tx-r'><a href=".$value->url_team_a.">".$value->team_a."</a></td>";
+                    }
+                ?>
+                    <td style="width: 25px;"><img align="absmiddle"style="width: 100%" src="<?= $value->url_logo_a; ?>/small" alt="<?= $value->team_a; ?>"></td>
+                    <td class="tx-c">
+                        <?= $value->event; ?>
+                        <br>
+                        <?= $value->match_schedule; ?><br><br>
+                        <span <?php
+                                if(empty($value->match_live))
+                                {
+                                    $live='>';
+                                }
+                                else
+                                {
+                                    $live=' class="livechanel">'.$value->match_live;
+                                }
+
+                                echo $live;
+                                ?>
+                        </span>
+                    </td>
+                    <td style="width: 25px;"><img style="width: 100%" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
+                    <?php      
+                            if(!isset($value->liga_b) OR empty($value->liga_b))
+                            {
+                                echo "<td class='tx-l'><a href='#no_detail_club_".$value->team_b."'>".$value->team_b."</a></td>";
+                            }
+                            else
+                            {   
+                                echo "<td class='tx-l'><a href=".$value->url_team_b.">".$value->team_b."</a></td>";
+                            }
                     ?>
-                    <tr>
-                        <td class="tx-r" style="width:30%;"><?= $value->team_a; ?>
-                            <!-- <a href="<?= $value->url_team_a; ?>"> -->
-                            <!-- </a> -->
-                        </td>
-                        <td class="tx-c"><img style="width:20px;position:relative;top:-5px;" src="<?= $value->url_logo_a; ?>/small" alt="<?= $value->team_a; ?>"></td>
-                        <td class="tx-c" style="width:15%;">
-                            <?= $value->event; ?>
-                            <br>
-                            <?= $value->match_schedule; ?>
-                            <span class="t-live"><?= $value->match_live; ?></span>
-                        </td>
-                        <td class="tx-c"><img style="width:20px;position:relative;top:-5px;" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
-                        <td class="tx-l" style="width:30%;">
-                            <!-- <a href="<?= $value->url_team_a; ?>"> -->
-                            <?= $value->team_b; ?>
-                            <!-- </a> -->
-                        </td>
-                    </tr>
-                    <?php
-                }
+                </tr>
+                <?php
             }
-        ?>
-        </tbody>
-    </table>
-</div>
-
-<script>
-    $('#z').datepicker({
-        inline: true,
-        altField: '#d',
-        onSelect: function() { 
-                tgl = $(this).datepicker('getDate');
-                                
-                $('#hdn-date').val(tgl);
-                console.log(tgl);
-                var tanggal = tgl.getDate();
+        }
+    ?>
+    </tbody>
+</table>
+<table class="table border-b" id="jadwal-tmrw" style="display: none;">
+    <tbody>
+    <?php
+        if ($match_tomorrow) {
+            $match_tomorrow = json_decode($match_tomorrow);
+            foreach ($match_tomorrow->data as $value) {
+                ?>
+                <tr class="listmatch">
+                <?php
+                    if(!isset($value->liga_a) OR empty($value->liga_a))
+                    {
+                        echo "<td class='tx-r'><a href='#no_detail_club_".$value->team_a."'>".$value->team_a."</a></td>";
+                    }
+                    else
+                    {   
+                        echo "<td class='tx-r'><a href=".$value->url_team_a.">".$value->team_a."</a></td>";
+                    }
+                ?>
+                <td style="width: 25px;"><img align="absmiddle"style="width: 100%" src="<?= $value->url_logo_a; ?>/small" alt="<?= $value->team_a; ?>"></td>
                 
-                var monthNames = ["January", "February", "March", "April", "May", "June",
-                  "July", "August", "September", "October", "November", "December"
-                ];
-                var bulan       = tgl.getMonth() + 1;
-                var nm_bulan    = monthNames[tgl.getMonth()];
+                    <td class="tx-c">
+                        <?= $value->event; ?>
+                        <br>
+                        <?= $value->match_schedule; ?><br><br>
+                        <span <?php
+                                if(empty($value->match_live))
+                                {
+                                    $live='>';
+                                }
+                                else
+                                {
+                                    $live=' class="livechanel">'.$value->match_live;
+                                }
 
-                var tahun = tgl.getFullYear();
-
-                var txt_tanggal     = tahun+"-"+bulan+"-"+tanggal;
-
-                console.log(txt_tanggal);
-
-                $('#picked-date').val(txt_tanggal);
-                $('#text-date').val(tanggal + " " + nm_bulan + " " + tahun);
+                                echo $live;
+                                ?>
+                        </span>
+                    </td>
+                    <td style="width: 25px;"><img style="width: 100%" src="<?= $value->url_logo_b; ?>/small" alt="<?= $value->team_b; ?>"></td>
+                    <?php      
+                            if(!isset($value->liga_b) OR empty($value->liga_b))
+                            {
+                                echo "<td class='tx-l'><a href='#no_detail_club_".$value->team_b."'>".$value->team_b."</a></td>";
+                            }
+                            else
+                            {   
+                                echo "<td class='tx-l'><a href=".$value->url_team_b.">".$value->team_b."</a></td>";
+                            }
+                    ?>
+                </tr>
+                <?php
             }
-    });
-
-    $('#pilih-liga').change(function(event) {
-        var liganya     = $(this).val();
-        window.location.replace("<?= base_url(); ?>eyevent/jadwal-pertandingan/"+liganya);
-    });
-
-    // $('#d').change(function(){
-    //     $('#z').datepicker('setDate', $(this).val());
-    // });
-    // $("#popupKalender").modal();
-
-    // $(document).ready(function(){
-    //     $("#btn-date").on("click", function(){
-
-    //         var tanggal = tgl.getDate();
-            
-    //         var monthNames = ["January", "February", "March", "April", "May", "June",
-    //           "July", "August", "September", "October", "November", "December"
-    //         ];
-    //         var bulan       = tgl.getMonth() + 1;
-    //         var nm_bulan    = monthNames[tgl.getMonth()];
-
-    //         var tahun = tgl.getFullYear();
-
-    //         var txt_tanggal     = tahun+"-"+bulan+"-"+tanggal;
-
-    //         $('#jp').attr('style', 'display:block');
-    //         $('#ajax-tgl-jadwal').html(tanggal + " " + nm_bulan + " " + tahun);
-    //         console.log(txt_tanggal);
-
-    //         var urlnya = "<?= base_url(); ?>Eyevent/get_jadwal/"+txt_tanggal;
-    //         var page = "jadwal";
-            
-    //         $.ajax({
-    //             url: urlnya,
-    //             type: 'POST',
-    //             dataType: 'json',
-    //             data: {txt_tanggal: txt_tanggal,page: page},
-    //         })
-    //         .done(function(result) {
-
-    //             // console.log(result.body);
-    //             $('#body-jp').html('');
-    //             $('#body-jp').append(result.body);
-                
-    //         });
-    //     });
-    // });
-
-</script>
+        }
+    ?>
+    </tbody>
+</table>

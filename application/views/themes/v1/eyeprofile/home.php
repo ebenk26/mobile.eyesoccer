@@ -17,9 +17,9 @@
                 <img src=""
                     alt="">
 			</div> -->
-			<img style="position:  absolute;top:  0px;left:  0px;height:  100%;width:  100%;z-index:  0;box-sizing:  border-box;border-radius: 7px;" class="dncla" src="https://www.eyesoccer.id/assets/img/banner/1065X255px.png" alt="">
-			<img style="height: 90px;position:  absolute;top: 0px;left: -30px;" class="dncla" src="http://www.kemenpora.go.id/view/assets/img/Kemenpora2.png" alt="">
-			<img style="height: 40px;position:  absolute;top: 30px;right: 10px;" class="dncla" src="https://static.eyesoccer.id/v1/cache/images/1520431772278_logo_eyesoccer.png" alt="">
+			<img style="position:  absolute;top:  0px;left:  0px;height:  100%;width:  100%;z-index:  0;box-sizing:  border-box;border-radius: 7px;" class="dncla" src="<?php echo SUBCDN."assets/$folder/img/bannerligausiamudakjbcs.jpg"; ?>" alt="">
+			<img style="height: 50px;position:  absolute;top: 0px;left: -15px;" class="dncla" src="http://www.kemenpora.go.id/view/assets/img/Kemenpora2.png" alt="">
+			<img style="height: 30px;position:  absolute;top: 8px;right: 10px;" class="dncla" src="https://static.eyesoccer.id/v1/cache/images/1520431772278_logo_eyesoccer.png" alt="">
 			<a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><span class="button-open sbpbtn">Daftarkan SSB Kamu</span></a>
             <h2 class="h2-text-bottom sdfkjs"><?php echo urldecode($slug);?></h2>
             <!-- <div class="container tab-eprofile">

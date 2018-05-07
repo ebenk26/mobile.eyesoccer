@@ -217,7 +217,7 @@
             <!-- Fajar Ulin Nuha -->
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
-    <!-- <button type="button" class="btn-blue" id="popobtn" data-toggle="modal" data-target="#popopo" style="position:  fixed;top:  50%;right: -70px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 156px;">ASIAN GAMES 2018</button> -->
+    <a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><button type="button" class="btn-blue" style="position:  fixed;top:  50%;right: -88px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 190px;background-color: #2196F3;box-shadow: 0 0 10px -3px #03A9F4;">DAFTARKAN SSB KAMU</button></a>
     <div class="modal fadeinDown" id="popopo" role="dialog">
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
             <div class="box-popup">

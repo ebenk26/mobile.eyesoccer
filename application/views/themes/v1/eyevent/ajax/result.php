@@ -2,6 +2,15 @@
     .show {
         display: unset;
     }
+    .match_WIN{background-color:#034c00a1;}
+    .match_LOSE{background-color:#b70000ab;}
+    .match_DRAW{background-color:#d6a100a6;}
+    .match_score{background-color:#080808;border-radius:15px;padding:15px;margin:1px;font-size:25px;font-weight:bold;color:#CCC;}
+    .match_WIN:hover{background-color:#034c00;}
+    .match_LOSE:hover{background-color:#b70000;}
+    .match_DRAW:hover{background-color:#d6a100;}
+    .match_score:hover{background-color:#080808;border-radius:15px;padding:15px;margin:1px;font-size:25px;font-weight:bold;color:#CCC;}
+    a.club_name{font-weight:bold;text-transform:uppercase;align:left;}
 </style>
 <div class="container" style="margin-top: 50px;">
     <div id="popupKalender" class="modal fade" role="dialog">
@@ -63,6 +72,9 @@
                     $match_yest = json_decode($match_yest);
                     foreach ($match_yest->data as $value) 
                     {
+                        if($value->score_a > $value->score_b){$class_a="WIN";$class_b="LOSE";}
+                        elseif($value->score_a < $value->score_b){$class_a="LOSE";$class_b="WIN";}
+                        else{$class_a="DRAW";$class_b="DRAW";}
             ?>
                         <tr>
                             <td class="pu">
@@ -72,18 +84,38 @@
                                             <td colspan="3" class="lgsd"><?= $value->event; ?></td>
                                         </tr>
                                         <tr class="tl">
-                                            <td>
+                                            <td class="match_<?=$class_a;?>" width="2"></td>
+                                            <td width="50" align="left">
                                                 <img src="<?= $value->url_logo_a; ?>/small" alt="">
                                             </td>
-                                            <td><?= $value->team_a; ?></td>
-                                            <td><?= $value->score_a; ?></td>
+                                            <?php      
+                                                if(!isset($value->liga_a) OR empty($value->liga_a))
+                                                {
+                                                    echo "<td align='left'><a href='#no_detail_club_".$value->team_a."' class='club_name'>".$value->team_a."</a></td>";
+                                                }
+                                                else
+                                                {   
+                                                    echo "<td align='left'><a href='".$value->url_team_a."' class='club_name'>".$value->team_a."</a></td>";
+                                                }
+                                            ?>
+                                            <td width="50" align="center"><div class="match_score"><?= $value->score_a;?></div></td>
                                         </tr>
                                         <tr class="tl">
-                                            <td>
-                                                <img src="<?= $value->url_logo_b; ?>/small" alt="">
+                                            <td class="match_<?=$class_b;?>" width="2"></td>
+                                            <td width="50" align="left">
+                                                <img src="<?=$value->url_logo_b;?>/small" alt="">
                                             </td>
-                                            <td><?= $value->team_b; ?></td>
-                                            <td><?= $value->score_b; ?></td>
+                                            <?php      
+                                                if(!isset($value->liga_b) OR empty($value->liga_b))
+                                                {
+                                                    echo "<td align='left'><a href='#no_detail_club_".$value->team_b."' class='club_name'>".$value->team_b."</a></td>";
+                                                }
+                                                else
+                                                {   
+                                                    echo "<td align='left'><a href='".$value->url_team_b."' class='club_name'>".$value->team_b."</a></td>";
+                                                }
+                                            ?>
+                                            <td width="50" align="left"><div class="match_score"><?= $value->score_b;?></div></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3" class="lgsd"><?= $value->match_location; ?></td>
@@ -115,6 +147,9 @@
                     $match_2yest = json_decode($match_2yest);
                     foreach ($match_2yest->data as $value) 
                     {
+                        if($value->score_a > $value->score_b){$class_a="WIN";$class_b="LOSE";}
+                        elseif($value->score_a < $value->score_b){$class_a="LOSE";$class_b="WIN";}
+                        else{$class_a="DRAW";$class_b="DRAW";}
             ?>
                         <tr>
                             <td class="pu">
@@ -124,18 +159,38 @@
                                             <td colspan="3" class="lgsd"><?= $value->event; ?></td>
                                         </tr>
                                         <tr class="tl">
-                                            <td>
+                                            <td class="match_<?=$class_a;?>" width="2"></td>
+                                            <td width="50" align="left">
                                                 <img src="<?= $value->url_logo_a; ?>/small" alt="">
                                             </td>
-                                            <td><?= $value->team_a; ?></td>
-                                            <td><?= $value->score_a; ?></td>
+                                            <?php      
+                                                if(!isset($value->liga_a) OR empty($value->liga_a))
+                                                {
+                                                    echo "<td align='left'><a href='#no_detail_club_".$value->team_a."' class='club_name'>".$value->team_a."</a></td>";
+                                                }
+                                                else
+                                                {   
+                                                    echo "<td align='left'><a href='".$value->url_team_a."' class='club_name'>".$value->team_a."</a></td>";
+                                                }
+                                            ?>
+                                            <td width="50" align="center"><div class="match_score"><?= $value->score_a;?></div></td>
                                         </tr>
                                         <tr class="tl">
-                                            <td>
+                                            <td class="match_<?=$class_b;?>" width="2"></td>
+                                            <td width="50" align="left">
                                                 <img src="<?= $value->url_logo_b; ?>/small" alt="">
                                             </td>
-                                            <td><?= $value->team_b; ?></td>
-                                            <td><?= $value->score_b; ?></td>
+                                            <?php      
+                                                if(!isset($value->liga_b) OR empty($value->liga_b))
+                                                {
+                                                    echo "<td align='left'><a href='#no_detail_club_".$value->team_b."' class='club_name'>".$value->team_b."</a></td>";
+                                                }
+                                                else
+                                                {   
+                                                    echo "<td align='left'><a href='".$value->url_team_b."' class='club_name'>".$value->team_b."</a></td>";
+                                                }
+                                            ?>
+                                            <td width="50" align="center"><div class="match_score"><?= $value->score_b;?></div></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3" class="lgsd"><?= $value->match_location; ?></td>
