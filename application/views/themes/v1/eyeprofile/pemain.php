@@ -115,9 +115,9 @@
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">
-            <h3 class="h3-orange">Jadwal pertandingan <?php echo urldecode($slug);?></h3>
-            <i class="material-icons">keyboard_arrow_left</i>
-            <i class="material-icons">keyboard_arrow_right</i>
+			</br>
+			<hr height="2" width="100%" >
+            <h3 class="h3-orange">Hasil Pertandingan Liga 1 Indonesia</h3>
             <div class="jadwal">
 				<div id="reqmatchlist" class='loadmatchlist' action="eyeprofile" loading="off" clean="clsmatchlist">
 					<div id='clsmatchlist'>

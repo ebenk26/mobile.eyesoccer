@@ -137,9 +137,8 @@
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">
-            <h3 class="h3-orange">Hasil <?php echo /*urldecode($slug)*/ $event;?></h3>
-            <i class="material-icons">keyboard_arrow_left</i>
-            <i class="material-icons">keyboard_arrow_right</i>
+            <h3 class="h3-orange">Hasil Liga Indonesia 1</h3>
+			<hr width="100%">
             <div class="jadwal">
 				<div id="reqmatchlist" class='loadmatchlist' action="eyeprofile" loading="off" clean="clsmatchlist">
 					<div id='clsmatchlist'>
@@ -307,8 +306,18 @@
                 </div> -->
             </div>
             <div class="container over-x" style="margin: 30px 0px">
+			<a href="<?= base_url(); ?>eyemarket">
                 <div id="emSlide" class="carousel slide">
                     <div role="listbox" class="carousel-inner w-max">
+						<a href="<?= base_url(); ?>eyemarket">
+							<div id="emSlide" class="carousel slide">
+							<div role="listbox" class="carousel-inner w-max">
+							<div class="SvLSD yl">
+							<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyemarket@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -8px;padding-right: 5px;">
+								<h2>eyeMarket</h2>
+								<span>see all</span>
+							</div>
+						</a>
 						<div id="reqmarket" class='loadmarket' action="eyemarket" loading="off" clean="clstube">
 							<div id="clsmarket">
 								   <script>

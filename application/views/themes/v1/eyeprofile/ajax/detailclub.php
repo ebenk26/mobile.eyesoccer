@@ -108,7 +108,7 @@ div.user-data:hover{background-color:#ff990026}
 			<script>
 				$(document).ready(function(){
 					$("li#slug_klub_detail").html("<?php echo $dt->name;?>");
-					$("h3#next_match_klub").html("Jadwal pertandingan <?php echo $dt->name;?>");
+					$("h3#next_match_klub").html("Hasil Pertandingan Liga 1 Indonesia");
 				});
 			</script>
 <?php
