@@ -435,9 +435,9 @@
 						var hd = document.getElementsByClassName("head")[0];
 						var sdfkjs = document.getElementsByClassName("sdfkjs")[0];
 						// window.onload = function(){
-						buttonOpen.style.width = "200px";
-						buttonOpen.style.height = "unset";
-						buttonOpen.style.padding = "10px";
+						// buttonOpen.style.width = "200px";
+						// buttonOpen.style.height = "unset";
+						// buttonOpen.style.padding = "10px";
 						// }
 						
 						var str = window.location.href;
@@ -445,6 +445,10 @@
 						if(res[res.length-1] != "Liga%20Usia%20Muda"){
 							$(".sbpbtn").hide();
 							$(".dncla").hide();
+						}
+						if(res[res.length-2] == "Liga%20Usia%20Muda"){
+							$(".sbpbtn").show();
+							$(".dncla").show();
 						}
 						if(res[res.length-1] == "Liga%20Usia%20Muda"){
 							sdfkjs.classList.add("slfdh");
