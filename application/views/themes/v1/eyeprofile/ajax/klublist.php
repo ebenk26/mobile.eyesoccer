@@ -28,6 +28,7 @@
 					<a href='javascript:void(0)' id='reqback' class='form_post' action='eyeprofile'>
 						<input type='hidden' name='fn' value='klublist' class='cinput'>
 						<input type='hidden' name='slug' value='<?php echo $slug; ?>' class='cinput'>
+						<input type='hidden' name='league' value='<?php echo $league; ?>' class='cinput'>
 						<input type='hidden' name='paging' value='back' class='cinput'>
 						<span><button class="pagination-green-btn" style="float:left;">< Sebelumnya</button></span>
 					</a>
@@ -39,6 +40,7 @@
 					<a href='javascript:void(0)' id='reqnext' class='form_post' action='eyeprofile'>
 						<input type='hidden' name='fn' value='klublist' class='cinput'>
 						<input type='hidden' name='slug' value='<?php echo $slug; ?>' class='cinput'>
+						<input type='hidden' name='league' value='<?php echo $league; ?>' class='cinput'>
 						<input type='hidden' name='paging' value='next' class='cinput'>
 						<span><button class="pagination-green-btn" style="float:right;">Selanjutnya ></button></span>
 					</a>

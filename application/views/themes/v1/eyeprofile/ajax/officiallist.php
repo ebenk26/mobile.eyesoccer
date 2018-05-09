@@ -24,9 +24,7 @@
                 <tr>
                     <td> 
                         <a href="<?= base_url(); ?>eyeprofile/official_detail/<?= $value->slug; ?>">
-                            <div class="oficial-pic">
-                                <img src="<?= $value->url_pic; ?>/small" alt=""> 
-                            </div>
+                            <img src="<?= $value->url_pic; ?>/small" alt=""> 
                         </a> 
                     </td>
                     <td> 
@@ -60,6 +58,7 @@
                 <a href='javascript:void(0)' id='reqback' class='form_post' action='eyeprofile'>
                     <input type='hidden' name='fn' value='officiallist' class='cinput'>
                     <input type='hidden' name='slug' value='<?php echo $slug; ?>' class='cinput'>
+                    <input type='hidden' name='league' value='<?php echo $league; ?>' class='cinput'>
                     <input type='hidden' name='paging' value='back' class='cinput'>
                     <span><button class="pagination-green-btn" style="float:left;">< Sebelumnya</button></span>
                 </a>
@@ -72,6 +71,7 @@
                 <a href='javascript:void(0)' id='reqnext' class='form_post' action='eyeprofile'>
                     <input type='hidden' name='fn' value='officiallist' class='cinput'>
                     <input type='hidden' name='slug' value='<?php echo $slug; ?>' class='cinput'>
+                    <input type='hidden' name='league' value='<?php echo $league; ?>' class='cinput'>
                     <input type='hidden' name='paging' value='next' class='cinput'>
                     <span><button class="pagination-green-btn" style="float:right;">Selanjutnya ></button></span>
                 </a>
