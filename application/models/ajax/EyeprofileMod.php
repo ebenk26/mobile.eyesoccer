@@ -101,33 +101,33 @@ class EyeprofileMod extends CI_Model
                 $leaguelist = $res[1]->data;
                 //urutkan list competition
                 //r = competition
-                $r = [];
-                $r[0] = $comlist[4];
+                // $r = [];
+                // $r[0] = $comlist[4];
 
-                for($i = 1;$i < 6;$i++ ){
-                   $r[$i] = $comlist[$i];
-                   if($i == 4){
-                    $r[$i] = $comlist[$i+1];
-                   }
-                   if($i == 5){
-                    $r[$i] = $comlist[0];
-                   }
-                }
-                //end
-                //urutkan list league
-                $s = [];
-                #$s[0] = $leaguelist[];
-                for($i = 0;$i < count($leaguelist)-1;$i++){
-                    if($i == 0 ){ 
-                        $s[$i] = $leaguelist[count($leaguelist)-1];
-                    }
-                    else{
-                    $s[$i] = $leaguelist[$i];
-                    }
-                }
+                // for($i = 1;$i < 6;$i++ ){
+                //    $r[$i] = $comlist[$i];
+                //    if($i == 4){
+                //     $r[$i] = $comlist[$i+1];
+                //    }
+                //    if($i == 5){
+                //     $r[$i] = $comlist[0];
+                //    }
+                // }
+                // //end
+                // //urutkan list league
+                // $s = [];
+                // #$s[0] = $leaguelist[];
+                // for($i = 0;$i < count($leaguelist)-1;$i++){
+                //     if($i == 0 ){ 
+                //         $s[$i] = $leaguelist[count($leaguelist)-1];
+                //     }
+                //     else{
+                //     $s[$i] = $leaguelist[$i];
+                //     }
+                // }
 
-                $competition = $r;
-                $league = $s;
+                $competition = $comlist;
+                $league = $leaguelist;
             }
              // $competition = $r;
              //    $league = $s;
