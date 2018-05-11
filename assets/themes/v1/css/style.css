@@ -4385,3 +4385,6 @@ input[type="file"]{
     left: 0px !important;
     right: 0px !important;
 }
+.hide{
+    display: none;
+}

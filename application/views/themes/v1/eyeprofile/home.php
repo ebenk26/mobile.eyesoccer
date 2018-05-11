@@ -436,6 +436,7 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 						var buttonOpen = document.getElementsByClassName("button-open")[0];
 						var hd = document.getElementsByClassName("head")[0];
 						var sdfkjs = document.getElementsByClassName("sdfkjs")[0];
+						
 						// window.onload = function(){
 						buttonOpen.style.width = "200px";
 						buttonOpen.style.height = "unset";
