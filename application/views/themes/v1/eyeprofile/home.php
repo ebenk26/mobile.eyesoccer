@@ -153,7 +153,7 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 						</script>
 					</div>
 					<input type='hidden' name='fn' value='matchlist' class='cinput'>
-					<input type='hidden' name='slug' value='<?php echo urldecode($slug);?>' class='cinput'>
+					<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
 					<div class="jadwal-content gr">
 						<table>
 								<tr>
