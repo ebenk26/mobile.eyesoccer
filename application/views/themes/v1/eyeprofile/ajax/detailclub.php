@@ -1,8 +1,10 @@
 <?php
 	if($detailclub)
 	{
-		// $detailclub = json_decode($detailclub);
+		$detailclub = json_decode($detailclub);
 		$dt = $detailclub->data;
+		//p($dt);
+
 		// print_r($dt);
 ?>
 <style>
@@ -19,7 +21,7 @@ div.user-data:hover{background-color:#ff990026}
 				</div>
 			</div>
 				<h2 class="tx-c h2-pemain-top-head"><?php echo $dt->name;?></h2>
-				<?php if($dt->id_competition == 4){?>
+				<?php if($dt->competition == 'Liga Usia Muda'){?>
 				<a href="<?php echo ($this->session->member ? base_url().'member/regis_player' : base_url().'member/?from=member/regis_player')?>"><span class="button-open sbpbtn unset-btn-white" style="max-height: unset;box-shadow: 1px 2px 3px 1px #0357b5;border-radius: 30px;max-width: max-content;font-size: .8em;">Daftar Sebagai Pemain <?php echo $dt->name;?></span></a>
 				<?php }?>
 				<div class="container over-x">
