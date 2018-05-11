@@ -4377,3 +4377,14 @@ input[type="file"]{
     width: 100%;
     left: 0px;
 }
+.slwa{
+    position: absolute !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    left: 0px !important;
+    right: 0px !important;
+}
+.hide{
+    display: none;
+}
