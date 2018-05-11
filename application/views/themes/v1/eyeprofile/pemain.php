@@ -12,6 +12,9 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
         </div>
     <div class="eprofile">
 		<div class="head" style="border-radius: 8px 8px 0px 0px;margin-bottom: 25px;height: 80px;min-height:  unset;">
+			<img style="position:  absolute;top:  0px;left:  0px;height:  100%;width:  100%;z-index:  0;box-sizing:  border-box;border-radius: 7px;" class="dncla" src="<?php echo SUBCDN."assets/$folder/img/bannerligausiamudakjbcs.jpg"; ?>" alt="">
+			<img style="height: 50px;position:  absolute;top: 0px;left: -15px;" class="dncla" src="http://www.kemenpora.go.id/view/assets/img/Kemenpora2.png" alt="">
+			<img style="height: 30px;position:  absolute;top: 8px;right: 10px;" class="dncla" src="https://static.eyesoccer.id/v1/cache/images/1520431772278_logo_eyesoccer.png" alt="">
             <div class="img-radius" style="display:none;">
                 <img src="https://www.eyesoccer.id/systems/club_logo/2034LOGO UNTUK APLIKASI.jpg"
                     alt="">
@@ -19,7 +22,7 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
             <h2 class="h2-text-bottom sdfkjs"><?php echo $competition;?></h2>
            
 			<div class="container tab-sub-menu">
-					<a href="<?php echo base_url();?>eyeprofile/klub">info</a>
+					<a href="<?php echo base_url();?>eyeprofile/klub/<?php echo $competition ?>">klub</a>
 					<a href="<?php echo base_url();?>eyeprofile/pemain/<?php echo $competition ?>" style="border-left: 1px solid;border-right:  1px solid;border-color: white;" class="active">pemain</a>
 					<a href="<?php echo base_url();?>eyeprofile/official/<?php echo $competition ?>">ofisial</a>
 				
