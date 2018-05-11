@@ -121,6 +121,7 @@
 	</script>
 </head>
 <body>
+<a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><button id="lsdaol" type="button" class="btn-blue" style="position:  fixed;top:  50%;right: -88px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 190px;background-color: #2196F3;box-shadow: 0 0 10px -3px #03A9F4;">DAFTARKAN SSB KAMU</button></a>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7HQLCC"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -217,17 +218,21 @@
             <!-- Fajar Ulin Nuha -->
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
-    <a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><button type="button" class="btn-blue" style="position:  fixed;top:  50%;right: -88px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 190px;background-color: #2196F3;box-shadow: 0 0 10px -3px #03A9F4;">DAFTARKAN SSB KAMU</button></a>
+	<?php
+		if(!$this->session->popupbanner){
+	?>
     <div class="modal fadeinDown" id="popopo" role="dialog">
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
             <div class="box-popup">
-                <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position:  relative;float:  right;top:  -10px;right:  7px;" type="button" class="close" data-dismiss="modal">&times; </button>
+                <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position:  relative;float:  right;top:  -10px;right:  7px;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
                 <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3>
                 <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/2018_Asian_Games_logo.svg/1200px-2018_Asian_Games_logo.svg.png" alt="">
             </div>
         </div>
     </div>
-  
+	<?php
+		}
+	?>
 </div>
     <script>
     jQuery('#popopo').modal('show').on('hide.bs.modal')
@@ -236,6 +241,15 @@
     //         $("#popopo").modal();
     //     });
     // });
+	function sesPop(){
+		<?php
+			$this->session->popupbanner = true;
+		?>
+	}
+
+
+    // var lsdaol = document.getElementsByClassName("lsdaol")[0];
+	// lsdaol.style.display = "none";
     </script>
 </body>
 </html>

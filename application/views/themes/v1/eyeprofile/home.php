@@ -1,14 +1,13 @@
-	<?php 
-		if(isset($slug)){
-			$slugnya = urldecode($slug);
-	?>
+<?php
+$competition = ($this->uri->segment(3) ? urldecode($this->uri->segment(3)) : 'Liga Usia Muda');
+$league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->uri->segment(3) == 'Liga Usia Muda' ? 'Liga Santri Nusantara' : ''));?>
 	<!-- CONTENT BODY -->
     <div class="crumb">
             <ul>
                 <li><a href="<?php echo base_url();?>" style="display:unset;">Home</a></li>
                 <li><a href="<?php echo base_url();?>eyeprofile/klub" style="display:unset;">Eyeprofile</a></li>
                 <li><a href="<?php echo base_url();?>eyeprofile/klub" style="display:unset;">Klub</a></li>
-                <li><?php echo urldecode($slug);?></li>
+                <li><?php echo $competition;?></li>
             </ul>
         </div>
     <div class="eprofile">
@@ -21,14 +20,14 @@
 			<img style="height: 50px;position:  absolute;top: 0px;left: -15px;" class="dncla" src="http://www.kemenpora.go.id/view/assets/img/Kemenpora2.png" alt="">
 			<img style="height: 30px;position:  absolute;top: 8px;right: 10px;" class="dncla" src="https://static.eyesoccer.id/v1/cache/images/1520431772278_logo_eyesoccer.png" alt="">
 			<a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><span class="button-open sbpbtn">Daftarkan SSB Kamu</span></a>
-            <h2 class="h2-text-bottom sdfkjs"><?php echo urldecode($slug);?></h2>
+            <h2 class="h2-text-bottom sdfkjs"><?php echo $competition;?></h2>
             <!-- <div class="container tab-eprofile">
                 <a class="active" href="#content1">Info</a>
             </div> -->
 			<div class="container tab-sub-menu">
 					<a href="<?php echo base_url();?>eyeprofile/klub" class="active">Klub</a>
-					<a href="<?php echo base_url();?>eyeprofile/pemain/<?= $slug; ?>" style="border-left: 1px solid;border-right:  1px solid;border-color: white;">pemain</a>
-					<a href="<?php echo base_url();?>eyeprofile/official/<?= $slug; ?>">ofisial</a>
+					<a href="<?php echo base_url();?>eyeprofile/pemain/<?= $competition; ?>" style="border-left: 1px solid;border-right:  1px solid;border-color: white;">pemain</a>
+					<a href="<?php echo base_url();?>eyeprofile/official/<?= $competition; ?>">ofisial</a>
 					<!-- <a href="">perangkat pertandingan</a>
 					<a href="">supporter</a> -->
 				</div>
@@ -57,7 +56,8 @@
 				</div>
 				<input type='hidden' name='fn' value='desc_league' class='cinput'>
 				<input type='hidden' name='submenu' value='klub' class='cinput'>
-				<input type='hidden' name='slug' value='<?php echo $slugnya;?>' class='cinput'>
+				<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
+				<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 				<table class="content-tab-eprofile">
 					<tr>
 						<td>Jumlah Klub</td>
@@ -87,7 +87,8 @@
 				</div>
 				<input type='hidden' name='fn' value='competition' class='cinput'>
 				<input type='hidden' name='submenu' value='klub' class='cinput'>
-				<input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
+				<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
+				<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 				<!-- <select id="" name="" selected="true" class="slc-musim">
 					<option value>--Pilih Liga--</option>
 					<option value="">Liga 1 Indonesia</option>
@@ -108,7 +109,8 @@
 						</script>
 					</div>
 					<input type='hidden' name='fn' value='klublist' class='cinput'>
-					<input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
+					<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
+				<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 					<input type='hidden' name='submenu' value='klub' class='cinput'>
 				<div class="klub-content">
 					<div class="img-klub-content gr">
@@ -137,9 +139,8 @@
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">
-            <h3 class="h3-orange">Hasil <?php echo /*urldecode($slug)*/ $event;?></h3>
-            <i class="material-icons">keyboard_arrow_left</i>
-            <i class="material-icons">keyboard_arrow_right</i>
+            <h3 class="h3-orange">Hasil Liga Indonesia 1</h3>
+			<hr width="100%">
             <div class="jadwal">
 				<div id="reqmatchlist" class='loadmatchlist' action="eyeprofile" loading="off" clean="clsmatchlist">
 					<div id='clsmatchlist'>
@@ -307,8 +308,18 @@
                 </div> -->
             </div>
             <div class="container over-x" style="margin: 30px 0px">
+			<a href="<?= base_url(); ?>eyemarket">
                 <div id="emSlide" class="carousel slide">
                     <div role="listbox" class="carousel-inner w-max">
+						<a href="<?= base_url(); ?>eyemarket">
+							<div id="emSlide" class="carousel slide">
+							<div role="listbox" class="carousel-inner w-max">
+							<div class="SvLSD yl">
+							<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyemarket@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -8px;padding-right: 5px;">
+								<h2>eyeMarket</h2>
+								<span>see all</span>
+							</div>
+						</a>
 						<div id="reqmarket" class='loadmarket' action="eyemarket" loading="off" clean="clstube">
 							<div id="clsmarket">
 								   <script>
@@ -425,6 +436,7 @@
 						var buttonOpen = document.getElementsByClassName("button-open")[0];
 						var hd = document.getElementsByClassName("head")[0];
 						var sdfkjs = document.getElementsByClassName("sdfkjs")[0];
+						
 						// window.onload = function(){
 						buttonOpen.style.width = "200px";
 						buttonOpen.style.height = "unset";
@@ -437,13 +449,19 @@
 							$(".sbpbtn").hide();
 							$(".dncla").hide();
 						}
+						if(res[res.length-2] == "Liga%20Usia%20Muda"){
+							$(".sbpbtn").show();
+							$(".dncla").show();
+						}
 						if(res[res.length-1] == "Liga%20Usia%20Muda"){
 							sdfkjs.classList.add("slfdh");
 						}
+						if($( ".sdfkjs" ).html() == "Liga Usia Muda"){
+							$(".sbpbtn").show();
+							$(".dncla").show();
+							sdfkjs.classList.add("slwa");
+						}
+						$("#lsdaol").hide();
 					</script>
     </div>
-    <?php }
-    else{
-    	redirect(EYEPROFILE.'klub');
-    }
-    ?>
+  

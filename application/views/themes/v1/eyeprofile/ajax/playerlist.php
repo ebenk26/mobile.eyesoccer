@@ -33,6 +33,7 @@
 						<input type='hidden' name='fn' value='playerlist' class='cinput'>
 						<input type='hidden' name='slug' value='<?php echo $slug; ?>' class='cinput'>
 						<input type='hidden' name='paging' value='back' class='cinput'>
+						<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 						<span><button class="pagination-green-btn" style="float:left;">< Sebelumnya</button></span>
 					</a>
 				<?php
@@ -44,6 +45,7 @@
 						<input type='hidden' name='fn' value='playerlist' class='cinput'>
 						<input type='hidden' name='slug' value='<?php echo $slug; ?>' class='cinput'>
 						<input type='hidden' name='paging' value='next' class='cinput'>
+						<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 						<span><button class="pagination-green-btn" style="float:right;">Selanjutnya ></button></span>
 					</a>
 				<?php

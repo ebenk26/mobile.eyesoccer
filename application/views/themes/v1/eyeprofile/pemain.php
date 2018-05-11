@@ -1,69 +1,34 @@
+<?php 
+$competition = ($this->uri->segment(3) ? urldecode($this->uri->segment(3)) : 'Liga Usia Muda');
+$league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->uri->segment(3) == 'Liga Usia Muda' ? 'Liga Santri Nusantara' : ''));?>
 	<!-- CONTENT BODY -->
     <div class="crumb">
             <ul>
                 <li><a href="<?php echo base_url();?>" style="display:unset;">Home</a></li>
                 <li><a href="<?php echo base_url();?>eyeprofile/klub" style="display:unset;">Eyeprofile</a></li>
                 <li><a href="<?php echo base_url();?>eyeprofile/pemain" style="display:unset;">Pemain</a></li>
-                <li><?php echo urldecode($slug);?></li>
+                <li><?php echo $competition;?></li>
             </ul>
         </div>
     <div class="eprofile">
 		<div class="head" style="border-radius: 8px 8px 0px 0px;margin-bottom: 25px;height: 80px;min-height:  unset;">
+			<img style="position:  absolute;top:  0px;left:  0px;height:  100%;width:  100%;z-index:  0;box-sizing:  border-box;border-radius: 7px;" class="dncla" src="<?php echo SUBCDN."assets/$folder/img/bannerligausiamudakjbcs.jpg"; ?>" alt="">
+			<img style="height: 50px;position:  absolute;top: 0px;left: -15px;" class="dncla" src="http://www.kemenpora.go.id/view/assets/img/Kemenpora2.png" alt="">
+			<img style="height: 30px;position:  absolute;top: 8px;right: 10px;" class="dncla" src="https://static.eyesoccer.id/v1/cache/images/1520431772278_logo_eyesoccer.png" alt="">
             <div class="img-radius" style="display:none;">
                 <img src="https://www.eyesoccer.id/systems/club_logo/2034LOGO UNTUK APLIKASI.jpg"
                     alt="">
             </div>
-            <h2 class="h2-text-bottom sdfkjs"><?php echo urldecode($slug);?></h2>
-            <!-- <div class="container tab-eprofile">
-                <a class="active" href="#content1">Info</a>
-            </div> -->
-            <!-- <div class="table-scroll" style="height: unset;">
-				<div id="reqclubcount" class='loadclubcount' action="eyeprofile" loading="off" clean="clsclubcount">
-					<div id='clsclubcount'>
-						<script>
-							$(document).ready(function(){
-								$(window).on('load',function(){
-									ajaxOnLoad('loadclubcount');
-								});
-							});
-						</script>
-					</div>
-					<input type='hidden' name='fn' value='clubcount' class='cinput'>
-					<input type='hidden' name='submenu' value='klub' class='cinput'>
-					<input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
-					<table class="content-tab-eprofile">
-						<tr>
-							<td>Jumlah Klub</td>
-							<td>: 0</td>
-						</tr>
-						<tr>
-							<td>Jumlah Pemain</td>
-							<td>: 0</td>
-						</tr>
-						<tr>
-							<td>Pemain Asing</td>
-							<td>: 0</td>
-						</tr>
-					</table>
-				</div>
-            </div> -->
+            <h2 class="h2-text-bottom sdfkjs"><?php echo $competition;?></h2>
+           
 			<div class="container tab-sub-menu">
-					<a href="<?php echo base_url();?>eyeprofile/klub">info</a>
-					<a href="<?php echo base_url();?>eyeprofile/pemain/<?= $slug; ?>" style="border-left: 1px solid;border-right:  1px solid;border-color: white;" class="active">pemain</a>
-					<a href="<?php echo base_url();?>eyeprofile/official/<?= $slug; ?>">ofisial</a>
-					<!-- <a href="">perangkat pertandingan</a>
-					<a href="">supporter</a> -->
+					<a href="<?php echo base_url();?>eyeprofile/klub/<?php echo $competition ?>">klub</a>
+					<a href="<?php echo base_url();?>eyeprofile/pemain/<?php echo $competition ?>" style="border-left: 1px solid;border-right:  1px solid;border-color: white;" class="active">pemain</a>
+					<a href="<?php echo base_url();?>eyeprofile/official/<?php echo $competition ?>">ofisial</a>
+				
 				</div>
         </div>
-        <!-- <div class="container over-x">
-            <div class="container sub-menu w-max">
-                <a href="<?php echo base_url();?>eyeprofile/klub/<?= $slug; ?>">klub</a>
-                <a href="<?php echo base_url();?>eyeprofile/pemain/<?= $slug; ?>" class="active">pemain</a>
-                <a href="<?php echo base_url();?>eyeprofile/official/<?= $slug; ?>">ofisial</a>
-                <a href="">perangkat pertandingan</a>
-                <a href="">supporter</a>
-            </div>
-        </div> -->
+       
         <div class="container" style="font-size: .8em;">
 			<div id="reqcompetition" class='loadcompetition' action="eyeprofile" loading="off" clean="clscompetition">
 				<div id='clscompetition'>
@@ -77,13 +42,9 @@
 				</div>
 				<input type='hidden' name='fn' value='competition' class='cinput'>
 				<input type='hidden' name='submenu' value='pemain' class='cinput'>
-				<input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
-				<!-- <select id="" name="" selected="true" class="slc-musim">
-					<option value>--Pilih Liga--</option>
-					<option value="">Liga 1 Indonesia</option>
-					<option value="">Liga 1 Indonesia</option>
-					<option value="">Liga 1 Indonesia</option>
-				</select> -->
+				<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
+					<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
+				
 			</div>
         </div>
         <div class="eprofile-src" style="display:none;">
@@ -101,8 +62,9 @@
 					</script>
 				</div>
 				<input type='hidden' name='fn' value='playerlist' class='cinput'>
-				<input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
-				<input type='hidden' name='submenu' value='klub' class='cinput'>
+				<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
+				<input type='hidden' name='submenu' value='pemain' class='cinput'>
+				<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 				<div class="user-pemain">
 					<div class="pemain-img fafa gr" style="border-color: white !important;border: 20px solid white;box-sizing: content-box;margin: -20px;">
 						<img src="" alt="" srcset="">
@@ -115,7 +77,7 @@
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">
-            <h3 class="h3-orange">Jadwal pertandingan <?php echo urldecode($slug);?></h3>
+            <h3 class="h3-orange">Jadwal pertandingan <?php echo $competition;?></h3>
             <i class="material-icons">keyboard_arrow_left</i>
             <i class="material-icons">keyboard_arrow_right</i>
             <div class="jadwal">
@@ -130,7 +92,8 @@
 						</script>
 					</div>
 					<input type='hidden' name='fn' value='matchlist' class='cinput'>
-					<input type='hidden' name='slug' value='<?php echo urldecode($slug);?>' class='cinput'>
+					<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
+					<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
 					<div class="jadwal-content fafa gr">
 						<table>
 								<tr>
@@ -181,13 +144,15 @@
                     </div>
                 </div>
                 <div id="musimSelect" class="container" style="display: none;">
-                    <span style="font-size:.8em;">Pilih Musim</span>
+					<span style="font-size:.8em;">Pilih Musim</span>
+					<div class="custom-select" style="width:200px;">
                     <select id="" name="" selected="true" class="slc-musim">
                         <option value="">2017</option>
                         <option value="">2017</option>
                         <option value="">2017</option>
                         <option value="">2017</option>
-                    </select>
+					</select>
+						</div>
                 </div>
                 <div class="container table-blue" style="overflow: scroll;height: 250px;">
                     <div class="w-max">
@@ -353,3 +318,28 @@
                 </div>
             </div>
     </div>
+<script>
+		var buttonOpen = document.getElementsByClassName("button-open")[0];
+		var hd = document.getElementsByClassName("head")[0];
+		var sdfkjs = document.getElementsByClassName("sdfkjs")[0];
+		// window.onload = function(){
+		// buttonOpen.style.width = "200px";
+		// buttonOpen.style.height = "unset";
+		// buttonOpen.style.padding = "10px";
+		// }
+		
+		var str = window.location.href;
+		var res = str.split("/");
+		if(res[res.length-1] != "Liga%20Usia%20Muda"){
+			$(".sbpbtn").hide();
+			$(".dncla").hide();
+		}
+		if(res[res.length-2] == "Liga%20Usia%20Muda"){
+			$(".sbpbtn").show();
+			$(".dncla").show();
+		}
+		if(res[res.length-1] == "Liga%20Usia%20Muda"){
+			sdfkjs.classList.add("slfdh");
+			sdfkjs.classList.add("slwa");
+		}
+	</script>

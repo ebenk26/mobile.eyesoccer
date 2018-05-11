@@ -26,7 +26,7 @@
     </div>
 </div>
 <!-- EYEPROFILE -->
-<a href="<?= base_url(); ?>eyeprofile/klub/Liga%20Indonesia%201/1">
+<a href="<?= base_url(); ?>eyeprofile/klub">
 <div class="SvLSD org">
 <img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyeprofile@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -6px;padding-right: 5px;">
     <h2>eyeProfile</h2>
@@ -498,7 +498,7 @@
 <!-- BANNER -->
 <div class="border-box">
     <div class="banner-150">
-        <img src="httpss://eyesoccer.id/assets/img/BANNER-MOBILE.jpg" alt="">
+        <img src="https://eyesoccer.id/assets/img/BANNER-MOBILE.jpg" alt="">
     </div>
 </div>
 <!-- KLASEMEN -->
