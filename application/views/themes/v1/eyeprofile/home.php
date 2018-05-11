@@ -448,13 +448,16 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 						if(res[res.length-1] != "Liga%20Usia%20Muda"){
 							$(".sbpbtn").hide();
 							$(".dncla").hide();
+							sdfkjs.classList.add("slwa");
 						}
 						if(res[res.length-2] == "Liga%20Usia%20Muda"){
 							$(".sbpbtn").show();
 							$(".dncla").show();
+							sdfkjs.classList.add("slwa");
 						}
 						if(res[res.length-1] == "Liga%20Usia%20Muda"){
 							sdfkjs.classList.add("slfdh");
+							sdfkjs.classList.add("slwa");
 						}
 						if($( ".sdfkjs" ).html() == "Liga Usia Muda"){
 							$(".sbpbtn").show();
