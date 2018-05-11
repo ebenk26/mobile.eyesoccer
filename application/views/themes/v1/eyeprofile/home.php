@@ -461,6 +461,7 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 							$(".dncla").show();
 							sdfkjs.classList.add("slwa");
 						}
+						$("#lsdaol").hide();
 					</script>
     </div>
   
