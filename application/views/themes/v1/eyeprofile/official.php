@@ -178,5 +178,6 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 	if($( ".sdfkjs" ).html() == "Liga Usia Muda"){
 		$(".sbpbtn").show();
 		$(".dncla").show();
+        sdfkjs.classList.add("slwa");
 	}
 </script>
