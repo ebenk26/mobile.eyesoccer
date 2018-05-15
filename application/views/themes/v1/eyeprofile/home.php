@@ -331,56 +331,6 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 									</script>
 							 </div>
 							  <input type='hidden' name='fn' value='market' class='cinput'>
-							<!-- <div class="box item active">
-								<a href="">
-									<div class="em-box-content">
-										<img class="gr" src="" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img class="gr" src="" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img class="gr" src="" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img class="gr" src="" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-							</div> -->
                         </div>
                     </div>
                 </div>

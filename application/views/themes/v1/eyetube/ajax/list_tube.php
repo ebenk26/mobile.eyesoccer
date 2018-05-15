@@ -1,6 +1,7 @@
 <div class="etube-home" style="padding: unset;">
     <div class="container top-menu-ketegori over-x" style="margin-top: 55px;border-bottom: 1px solid gainsboro;margin-bottom: 10px;">
-        <div class="w-max">
+        <div class="w-max fl-l">
+            <a class="active" href="<?php echo base_url();?>eyetube/#">HOME</a>
             <a href="<?php echo base_url();?>eyetube/kategori/Highlight">HIGHLIGHT</a>
             <a href="<?php echo base_url();?>eyetube/kategori/Profile-SSB">PROFILE SSB</a>
             <a href="<?php echo base_url();?>eyetube/kategori/Eye-Soccer-Flash">EYESOCCER FLASH</a>

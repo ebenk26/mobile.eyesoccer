@@ -384,11 +384,11 @@ nav img{
 }
 .border-box{
     float: left;
-    width: 97%;
+    width: 98%;
     /* min-width: 365px; */
     height: 100%;
-    padding-left: 5px;
     margin-top: 10px;
+    margin-left: 1%;
 }
 .bg-g{
     background-color:#f9f9f9;
@@ -4159,7 +4159,7 @@ video::-webkit-media-controls-panel {
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
 }
-.top-menu-ketegori a .active, .top-menu-ketegori a:active, .top-menu-ketegori a:hover{
+.top-menu-ketegori a.active, .top-menu-ketegori a:active, .top-menu-ketegori a:hover{
     color: #F44336;
     font-weight: 600;
     padding-bottom: 5px;
@@ -4387,4 +4387,89 @@ input[type="file"]{
 }
 .hide{
     display: none;
+}
+select{
+    background-color: #fafafa;
+    position: relative;
+    outline: none;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 1em;
+    border: 0;
+    border-bottom: 2px solid #d8d8d8;
+    appearance: menulist;
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
+}
+select::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: #333 transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+.menu-footer{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background:
+     linear-gradient(
+       to left,
+       #61ad00 0, 
+       #61ad00 25%,
+       #f08a00 25%, 
+       #f08a00 50%, 
+       #f6c900 50%, 
+       #f6c900 75%, 
+       #1f93d1 75%, 
+       #1f93d1 ) bottom no-repeat;
+   background-size:100% 3px ;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.menu-footer a{
+    display: block;
+    width: 50%;
+    max-width: 200px;
+    float: left;
+    height: 22px;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: .8em;
+    margin: 5px 0px;
+}
+.menu-footer img{
+    display: block;
+    float: left;
+    position: relative;
+    top: 50%;
+    padding-right: 10px;
+    width: 20px;
+    transform: translateY(-50%);
+}
+.menu-footer span{
+    display: block;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.menu-footer h3{
+    margin: 0pc;
+    text-align: left;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    float: left;
 }
