@@ -114,7 +114,8 @@
 		</table>
 	</div> -->
 	<div class="container top-menu-ketegori over-x" style="margin-top: 55px;border-bottom: 1px solid gainsboro;margin-bottom: 10px;">
-        <div class="w-max">
+        <div class="w-max fl-l">
+            <a class="active" href="<?php echo base_url();?>eyenews/#">HOME</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Di Pinggir Lapangan">Di Pinggir Lapangan</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Liga">LIGA</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Pembinaan">Pembinaan</a>

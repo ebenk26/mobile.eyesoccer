@@ -887,8 +887,8 @@ textarea{
     padding: 0px 1px;
 }
 select{
-    -webkit-appearance: menulist !important;
-    -moz-appearance: menulist !important;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
 }
 .pad-2{
     margin: 2px;
