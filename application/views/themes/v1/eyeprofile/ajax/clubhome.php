@@ -20,7 +20,7 @@ foreach ($club->data as $k => $v) {
                 </div>
             </div>
         </a>
-        testsetse
+       
     <?php
 }
 
