@@ -1,3 +1,22 @@
+<style>.edits.dftr-pemain span{width:100%;}</style>
+<div class="x-form-daftar-pemain row" style="margin:2px 2px 10px !important; background-color:#fafafa;">
+    <a href="" class="container">
+        <!-- <i class="far fa-chevron-circle-down" style="float:right; font-size:.9em;"></i> -->
+        <div class="col-xs-4 edits">
+            <div class="img-round">
+                <img src="<?php echo SUBCDN."assets/img/eyeme/user-discover.png"; ?>" alt="" style="max-width:unset; max-height:unset;">
+            </div>
+        </div>
+        <div class="col-xs-8 pd-t-19 edits dftr-pemain tx-r" style="padding: 8px 0;">
+            <span>Nama</span>
+            <span>Klub</span>
+            <span>Tgl lahir / Umur</span>
+            <span>Posisi</span>
+            <span>Kewarganegaraan</span>
+        </div>
+    </a>
+</div>
+
 <?php 
     if ($offclist)
     {
