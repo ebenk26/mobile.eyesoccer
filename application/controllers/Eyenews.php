@@ -41,8 +41,8 @@ class Eyenews extends CI_Controller {
     
     function kategori($slug = '',$subslug= '')
     {
-	$data['slug'] = urldecode($slug);
-	$data['subslug'] = urldecode($subslug);
+	$data['slug'] = urldecode(str_replace('-',' ',$slug));
+	$data['subslug'] = urldecode(str_replace('-',' ',$subslug));
 	$data['kanal'] = 'eyenews';
 	$data['content'] = 'eyenews/category';
 	
