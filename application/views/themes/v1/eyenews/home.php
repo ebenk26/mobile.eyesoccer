@@ -116,16 +116,16 @@
 	<div class="container top-menu-ketegori over-x" style="margin-top: 55px;border-bottom: 1px solid gainsboro;margin-bottom: 10px;">
         <div class="w-max fl-l">
             <a class="active" href="<?php echo base_url();?>eyenews/#">HOME</a>
-			<a href="<?php echo base_url();?>eyenews/kategori/Di Pinggir Lapangan">Di Pinggir Lapangan</a>
+			<a href="<?php echo base_url();?>eyenews/kategori/Di-Pinggir-Lapangan">Di Pinggir Lapangan</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Liga">LIGA</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Pembinaan">Pembinaan</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Peristiwa">Peristiwa</a>
 			<a href="<?php echo base_url();?>eyenews/kategori/Prediksi">Prediksi</a>
-			<a href="<?php echo base_url();?>eyenews/kategori/Soccer Sains">Soccer Sains</a>
-			<a href="<?php echo base_url();?>eyenews/kategori/Soccer Seri">Soccer Seri</a>
-			<a href="<?php echo base_url();?>eyenews/kategori/Tulisan Kamu">Tulisan Kamu</a>
-			<a href="<?php echo base_url();?>eyenews/kategori/Ulas Tuntas">Ulas Tuntas</a>
-			<a href="<?php echo base_url();?>eyenews/kategori/Umpan Lambung">Umpan Lambung</a>
+			<a href="<?php echo base_url();?>eyenews/kategori/Soccer-Sains">Soccer Sains</a>
+			<a href="<?php echo base_url();?>eyenews/kategori/Soccer-Seri">Soccer Seri</a>
+			<a href="<?php echo base_url();?>eyenews/kategori/Tulisan-Kamu">Tulisan Kamu</a>
+			<a href="<?php echo base_url();?>eyenews/kategori/Ulas-Tuntas">Ulas Tuntas</a>
+			<a href="<?php echo base_url();?>eyenews/kategori/Umpan-Lambung">Umpan Lambung</a>
         </div>
     </div>
     <!-- EYENEWS -->
