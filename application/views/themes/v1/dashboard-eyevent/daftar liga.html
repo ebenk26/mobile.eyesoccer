@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="http://localhost/mobile.eyesoccer/assets/themes/v1/css/style.css">
     <link rel="stylesheet" href="http://localhost/mobile.eyesoccer/assets/themes/v1/css/dashboard.css">
-    <link rel="stylesheet" href="http://localhost/mobile.eyesoccer/assets/css/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="http://localhost/desktop.eyesoccer/assets/assets/css/font-awesome/css/fontawesome-all.css">
 </head>
 
 <body class="m-pd-t-100 body-responsive">
@@ -20,7 +20,7 @@
         </div>
         <i class="fas fa-sign-in-alt login-ic"></i>
         <div class="fl-r img-pic">
-            <img src="http://localhost/mobile.eyesoccer/assets/img/eyeme/user-discover.png" alt="">
+            <img src="http://localhost/desktop.eyesoccer/assets/assets/img/eyeme/user-discover.png" alt="">
         </div>
     </div>
     <div class="responsif-add-100px">
@@ -31,17 +31,17 @@
                 </div>
             </div>
             <div class="container menu-dash">
-                <a class="active" href="http://localhost/mobile.eyesoccer/eyeprofile/klub">
+                <a class="active" href="http://localhost/desktop.eyesoccer/assets/eyeprofile/klub">
                     <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/ic_eyeprofile.png" alt="">Eye Profile</a>
-                <a href="http://localhost/mobile.eyesoccer/eyetube">
+                <a href="http://localhost/desktop.eyesoccer/assets/eyetube">
                     <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/ic_eyetube.png" alt="">Eye Tube</a>
-                <a href="http://localhost/mobile.eyesoccer/eyenews">
+                <a href="http://localhost/desktop.eyesoccer/assets/eyenews">
                     <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/ic_eyenews.png" alt="">Eye News</a>
-                <a href="http://localhost/mobile.eyesoccer/eyeme">
+                <a href="http://localhost/desktop.eyesoccer/assets/eyeme">
                     <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/ic-eyeme.png" alt="">Eye Me</a>
-                <a href="http://localhost/mobile.eyesoccer/eyemarket">
+                <a href="http://localhost/desktop.eyesoccer/assets/eyemarket">
                     <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/ic_eyemarket.png" alt="">Eye Market</a>
-                <a href="http://localhost/mobile.eyesoccer/eyevent">
+                <a href="http://localhost/desktop.eyesoccer/assets/eyevent">
                     <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/ic_eyevent.png" alt="">EyeVent</a>
             </div>
         </div>
@@ -51,11 +51,8 @@
                 <div class="nav-dash">
                     <ul>
                         <li>ALL</li>
-                        <LI>Klub</li>
-                        <li>Eyeme</li>
-                        <li>Eyetube</li>
-                        <li>Tulisan Kamu</li>
-                        <li>Analytics</li>
+                        <li>Klub</li>
+                        <li class="active">Event</li>
                     </ul>
                 </div>
         </div>
@@ -63,148 +60,73 @@
             <div class="container submenu">
                 <div class="submenus">
                     <ul>
-                        <li>info klub</li>
-                        <li>pemain</li>
-                        <li>ofisial</li>
-                        <li>galeri</li>
-                        <li>verifikasi</li>
-                        <li>daftar liga</li>
+                        <li>Klasemen</li>
+                        <li>Top Score</li>
+                        <li>Pemain Terbaik</li>
+                        <li>Pencetak Gol</li>
+                        <li>Tim Fairplay</li>
+                        <li>Pelanggaran</li>
+                        <li>Pergantian Pemain</li>
+                        <li class="active">Daftar Liga</li>
                     </ul>
                 </div>
             </div>
-            <div class="container mt20">
-                <div class="pp-profil">
-                    <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/d.jpg" alt="Logo Klub">
-                </div>
+            <div class="container mt20 tx-r" style="padding:0 15px; box-sizing:border-box;">
+                <button class="klik-dsn gray" style="font-size:.9em;">Daftarkan</button>
             </div>
-            <div class="container data-profil mt20">
+            <div class="container data-profil liga mt20">
                 <table>
                     <tr>
-                        <td>Nama Lengkap</td>
+                        <td>Pilih Liga</td>
                         <td>
-                            <input type="text">
+                            <select name="" id="" style="width:80%;">
+                                <option value="">Liga Eyesoccer</option>
+                                <option value="">Liga Indonesia 1</option>
+                                <option value="">Liga Desa</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
-                        <td>Tempat Lahir</td>
+                        <td>Nama Yang Didaftarkan di Liga</td>
                         <td>
-                            <input type="text">
+                            <input type="text" disabled placeholder="Eyesoccer A">
                         </td>
                     </tr>
                     <tr>
-                        <td>Tanggal Lahir</td>
+                        <td>Pilih Pemain yang Akan Bertanding</td>
                         <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jenis kelamin</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>No.Identitas / KTP / Passport</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Warga Negara</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Klub / SSB Saat Ini</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jabatan</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lisensi Pelatih</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>No. Telepon</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Kisaran Kontrak</td>
-                        <td>
-                            <input type="text">
+                            <select name="" id="" style="width:80%;">
+                                <option value="">Bambang Pamungkas</option>
+                                <option value="">Evan Dimas</option>
+                                <option value="">Irfan Bachdim</option>
+                            </select>
+                            <div id="pemain1">
+                                <input type="text" disabled placeholder="Bambang pamungkas">
+                                <div class="close-check1">
+                                    <i class="far fa-check-circle"></i>
+                                    <i class="far fa-times-circle" onclick="functCloseEdit()"></i>
+                                </div>
+                            </div>
+                            <div id="pemain2">
+                                <input type="text" disabled placeholder="Evan Dimas">
+                                <div class="close-check1">
+                                    <i class="far fa-check-circle"></i>
+                                    <i class="far fa-times-circle" onclick="functCloseEdit()"></i>
+                                </div>
+                            </div>
+                            <div id="pemain3">
+                                <input type="text" disabled placeholder="Irfan Bachdim">
+                                <div class="close-check1">
+                                    <i class="far fa-check-circle"></i>
+                                    <i class="far fa-times-circle" onclick="functCloseEdit()"></i>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                 </table>
-                <div class="container data-oficial">
-                    <h3>KARIR DAN PRESTASI OFFICIAL</h3>
-                    <div class="scroll-x-outer">
-                        <table class="scroll-x-inner">
-                            <tr>
-                                <td>Bulan</td>
-                                <td>Tahun</td>
-                                <td>Klub</td>
-                                <td>Turnamen / Kompetisi</td>
-                                <td>Peringkat Lisensi Penghargaan</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select name="" id="">
-                                        <!-- <option value="">Pilih Bulan</option> -->
-                                        <option value="">Jan</option>
-                                        <option value="">Feb</option>
-                                        <option value="">Mar</option>
-                                        <option value="">Apr</option>
-                                        <option value="">Mei</option>
-                                        <option value="">Jun</option>
-                                        <option value="">Jul</option>
-                                        <option value="">Agus</option>
-                                        <option value="">Sept</option>
-                                        <option value="">Okt</option>
-                                        <option value="">Nov</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" id="">
-                                        <!-- <option value="">Pilih Tahun</option> -->
-                                        <option value="">2018</option>
-                                        <option value="">2017</option>
-                                        <option value="">2016</option>
-                                        <option value="">2015</option>
-                                        <option value="">2014</option>
-                                        <option value="">2013</option>
-                                    </select>
-                                </td>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="tx-c">
-                <button class="klik-dsn" style="font-size:.85em;">Simpan</button>
             </div>
         </div>
     </div>
-
 
     <!-- INBOX NOTIFICATION -->
     <div class="container dash-notif" id="notifInbox" style="display: none;">
@@ -215,7 +137,7 @@
         <div class="notific">
             <a href="" class="container inbox-dashboard">
                 <div class="container img-inbox-dashboard">
-                    <img src="http://localhost/mobile.eyesoccer/assets/img/eyeme/user-discover.png" alt="">
+                    <img src="http://localhost/desktop.eyesoccer/assets/assets/img/eyeme/user-discover.png" alt="">
                 </div>
                 <div class="text-inbox">
                     <span class="time">12:15</span>
@@ -227,7 +149,7 @@
             </a>
             <!-- <a href="" class="container inbox-dashboard">
                 <div class="container img-inbox-dashboard">
-                    <img src="http://localhost/mobile.eyesoccer/assets/img/eyeme/user-discover.png" alt="">
+                    <img src="http://localhost/desktop.eyesoccer/assets/assets/img/eyeme/user-discover.png" alt="">
                 </div>
                 <div class="text-inbox">
                     <span class="time">12:15</span>
@@ -249,7 +171,7 @@
         <div class="notific">
             <a href="" class="container inbox-dashboard">
                 <div class="container img-inbox-dashboard">
-                    <img src="http://localhost/mobile.eyesoccer/assets/img/eyeme/user-discover.png" alt="">
+                    <img src="http://localhost/desktop.eyesoccer/assets/assets/img/eyeme/user-discover.png" alt="">
                 </div>
                 <div class="text-inbox2">
                     <span>Rika Aulia</span>
@@ -259,7 +181,7 @@
             </a>
             <!-- <a href="" class="container inbox-dashboard">
                 <div class="container img-inbox-dashboard">
-                    <img src="http://localhost/mobile.eyesoccer/assets/img/eyeme/user-discover.png" alt="">
+                    <img src="http://localhost/desktop.eyesoccer/assets/assets/img/eyeme/user-discover.png" alt="">
                 </div>
                 <div class="text-inbox2">
                     <span>Rika Aulia</span>
