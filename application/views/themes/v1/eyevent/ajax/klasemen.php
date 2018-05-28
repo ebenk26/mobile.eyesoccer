@@ -76,7 +76,12 @@
 		padding: 5px 15px 0px 15px;
 		margin: 10px 10px 10px 10px;
 		border-radius:8px;
-	}
+    }
+    .detailklasemen{
+        float: left;
+        height: 80px;
+        margin-top: -30px;
+    }
 		</style>
 <div class="border-box">
     <span class="jp-k">KLASEMEN</span>

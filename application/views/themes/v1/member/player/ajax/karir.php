@@ -19,7 +19,7 @@
     <i class="fas fa-plus mg-r5"></i>Tambah
 </a>
 
-<div class="container mg-t15">
+<div class="container mg-t15 max-640">
 <?php
     if ($career) {
         foreach ($career->data as $c) {

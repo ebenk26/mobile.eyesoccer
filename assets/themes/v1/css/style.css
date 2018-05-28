@@ -4333,6 +4333,19 @@ video::-webkit-media-controls-panel {
 input[type="file"]{
     border: 2px solid #d8d8d8 !important;
 }
+@media screen and (min-width: 426px) {
+    .x-form-daftar-pemain.row{
+        width: 280px;
+        float: left;
+    }
+}
+@media screen and (min-width: 640px) {
+    .max-640{
+        width: 640px;
+        margin: 0 auto;
+        float: unset;
+    }
+}
 .x-form-daftar-pemain td{
     padding: 3px;
 }
@@ -4374,6 +4387,7 @@ input[type="file"]{
     font-weight: 600;
     -webkit-font-smoothing: unset;
     border-radius: 10px;
+    left: 60px;
 }
 #showclub{
     height: 120px;
