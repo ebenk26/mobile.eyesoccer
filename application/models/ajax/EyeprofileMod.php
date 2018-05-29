@@ -323,4 +323,15 @@ class EyeprofileMod extends CI_Model
         $data = array('xClass' => 'reqplayerlist', 'xHtml' => $html);
         $this->tools->__flashMessage($data);
     }
+	
+	function __playermostsee()
+    {
+        $query =['page' => $this->input->post('page'),'limit' => 5,'competition'=> 'Liga Usia Muda'];
+        $data['profile'] = $this->excurl->remoteCall($this->__xurl() . 'profile', $this->__xkey(), $query);
+
+        $html = $this->load->view($this->__theme() . 'eyeprofile/ajax/playerhome', $data, true);
+
+        $data = array('xClass' => 'reqprofilemostsee', 'xHtml' => $html);
+        $this->tools->__flashMessage($data);
+    }
 }

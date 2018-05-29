@@ -165,6 +165,75 @@
         </div>
     </div>
 </div>
+<a href="<?= base_url(); ?>eyeprofile/pemain">
+	<div class="SvLSD org">
+		<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyeprofile@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -6px;padding-right: 5px;">
+		<h2>Pemain Paling Banyak Dilihat</h2>
+		<span>see all</span>
+	</div>
+</a>
+<div class="container over-x">
+    <div class="carousel slide t-30">
+        <div role="listbox" class="carousel-inner w-max">
+            <div class="box item active">
+                <div id="reqprofilemostsee" class="loadprofilemostsee" action="eyeprofile" loading="off" clean="clsprof">
+                    <div id="clsprof">
+                        <script>
+                            $(document).ready(function () {
+                                $(window).on('load', function () {
+                                    ajaxOnLoad('loadprofilemostsee');
+                                });
+                            });
+                        </script>
+                    </div>
+                    <input type="hidden" name="fn" value="playermostsee" class="cinput">
+                    <input type="hidden" name="page" value="<?php echo abs(date('j') - date('n')) ?>" class="cinput">
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- EYETUBE -->
 <a href="<?= base_url(); ?>eyetube">
 <div class="SvLSD rd">
