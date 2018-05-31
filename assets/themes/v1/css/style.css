@@ -3141,17 +3141,18 @@ ul, li {
     top: -44px;
 }
 .news-headline ul{
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
 }
 .news-headline ul li{
     display: block;
 }
 .news-headline ul li a p{
-    margin: 0px;
+    margin: 5px 0px;
     max-height: 2.35em;
     overflow: hidden;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 .news-headline ul li a p::before{
     content: '.';
