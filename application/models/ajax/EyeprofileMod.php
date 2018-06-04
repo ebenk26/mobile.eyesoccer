@@ -12,7 +12,7 @@ class EyeprofileMod extends CI_Model
         parent::__construct();
     }
     function __clubhome(){
-        $query = ['page'=> $this->input->post('page'),'limit'=> 5, 'competition'=> 'Liga Usia Muda','league'=>'Liga Santri Nusantara'];
+        $query = ['page'=> $this->input->post('page'),'limit'=> 5, 'competition'=> 'Liga Usia Muda','league'=>'SSB / Akademi Sepakbola'];
         $data['club'] = $this->excurl->remoteCall($this->__xurl().'profile-club',$this->__xkey(),$query);
         $html = $this->load->view($this->__theme().'eyeprofile/ajax/clubhome',$data,true);
         $data = ['xClass'=> 'reqclub','xHtml'=> $html];
@@ -20,7 +20,7 @@ class EyeprofileMod extends CI_Model
     }
     function __playerhome()
     {
-        $query =['page' => $this->input->post('page'),'limit' => 5,'competition'=> 'Liga Usia Muda','league'=>'Liga Santri Nusantara'];
+        $query =['page' => $this->input->post('page'),'limit' => 5,'competition'=> 'Liga Usia Muda','league'=>'SSB / Akademi Sepakbola'];
         $data['profile'] = $this->excurl->remoteCall($this->__xurl() . 'profile', $this->__xkey(), $query);
 
         $html = $this->load->view($this->__theme() . 'eyeprofile/ajax/playerhome', $data, true);
@@ -326,7 +326,7 @@ class EyeprofileMod extends CI_Model
 	
 	function __playermostsee()
     {
-        $query =['page' => $this->input->post('page'),'limit' => 5,'competition'=> 'Liga Usia Muda'];
+        $query =['page' => $this->input->post('page'),'limit' => 10,'competition'=> 'Liga Usia Muda','league'=> 'SSB / Akademi Sepakbola'];
         $data['profile'] = $this->excurl->remoteCall($this->__xurl() . 'profile', $this->__xkey(), $query);
 
         $html = $this->load->view($this->__theme() . 'eyeprofile/ajax/playerhome', $data, true);
