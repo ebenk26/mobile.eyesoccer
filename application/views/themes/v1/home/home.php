@@ -30,9 +30,10 @@
 <div class="SvLSD org">
 <img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyeprofile@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -6px;padding-right: 5px;">
     <h2>eyeProfile</h2>
-    <span>see all</span>
+    <!-- <span>see all</span> -->
 </div>
 </a>
+<a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Klub</h2></a>
 <div class="container over-x">
     <div class="carousel slide t-30">
         <div role="listbox" class="carousel-inner w-max">
@@ -96,13 +97,7 @@
     </div>
 </div>
 <!-- EYEPROFILE -->
-<a href="<?= base_url(); ?>eyeprofile/pemain">
-<div class="SvLSD org">
-<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyeprofile@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -6px;padding-right: 5px;">
-    <h2>Pemain</h2>
-    <span>see all</span>
-</div>
-</a>
+<a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain</h2></a>
 <div class="container over-x">
     <div class="carousel slide t-30">
         <div role="listbox" class="carousel-inner w-max">
@@ -165,13 +160,7 @@
         </div>
     </div>
 </div>
-<a href="<?= base_url(); ?>eyeprofile/pemain">
-	<div class="SvLSD org">
-		<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyeprofile@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -6px;padding-right: 5px;">
-		<h2>Pemain Paling Banyak Dilihat</h2>
-		<span>see all</span>
-	</div>
-</a>
+<a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain Paling Banyak Dilihat</h2></a>
 <div class="container over-x">
     <div class="carousel slide t-30">
         <div role="listbox" class="carousel-inner w-max">
