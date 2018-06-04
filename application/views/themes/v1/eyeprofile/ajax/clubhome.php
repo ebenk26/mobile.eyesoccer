@@ -1,6 +1,6 @@
 <?php
 
-$default = 'http://static.eyesoccer.id/v1/cache/images/logo_player_2.png';
+$default = 'https://static.eyesoccer.id/v1/cache/images/LOGO%20UNTUK%20APLIKASI.jpg/small';
 $club = json_decode($club);
 
 foreach ($club->data as $k => $v) {
@@ -8,7 +8,7 @@ foreach ($club->data as $k => $v) {
         <a href='<?php echo $v->share_url; ?>'>
             <div class='ep-box-content'>
                 <div class='img'>
-                    <img src='<?php echo $v->url_logo; ?>' alt='<?php echo $v->name; ?>'>
+                    <img src='<?php echo $this->library->lastext($v->url_logo,'.') ? $v->url_logo : $default;// echo $v->url_logo; ?>' alt='<?php echo $v->name; ?>'>
                 </div>
                 <div class='ep-detail'>
                     <h1><?php echo $v->name; ?></h1>
