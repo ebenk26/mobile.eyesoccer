@@ -865,7 +865,7 @@ a.m-reg span{
 .ep-detail>h1{
     font-size: .8em;
     color: #616161;
-    padding: 0px 5px;
+    padding: 0px 8px;
     line-height: 1.2em;
     font-weight: 600;
     float: left;
@@ -874,12 +874,13 @@ a.m-reg span{
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.24);
     height: 29px;
     overflow: hidden;
+    width: 112px;
 }
 .ep-detail>p{
     font-size: .65em;
     font-weight: 400;
     color: #616161;
-    padding: 0px 5px;
+    padding: 0px 8px;
     float: left;
     overflow: hidden;
     height: 51px;
