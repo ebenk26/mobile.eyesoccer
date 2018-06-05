@@ -17,7 +17,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Nama Alias <span class="cl-red">*</span></td>
+                    <td>Julukan <span class="cl-red">*</span></td>
                     <td>
                         <input type="text" name="namealias">
                         <span class="err msgnamealias"></span>

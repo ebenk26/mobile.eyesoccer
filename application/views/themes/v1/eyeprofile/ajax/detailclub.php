@@ -47,7 +47,7 @@ div.user-data:hover{background-color:#ff990026}
 					</tr>
 					<tr>
 						<td>Tanggal Berdiri</td>
-						<td>: <?php echo $dt->establish_date;?></td>
+						<td>: <?php echo (date("d-m-Y", strtotime($dt->establish_date)) == '01-01-1970' ? '-' : date("d-m-Y", strtotime($dt->establish_date)));?></td>
 					</tr>
 					<tr>
 						<td>Pemilik</td>
@@ -137,11 +137,11 @@ div.user-data:hover{background-color:#ff990026}
 				<table>
 					<tr>
 						<td>Tanggal Lahir</td>
-						<td><?php echo $officials->birth_date;?></td>
+						<td><?php echo (date("d-m-Y", strtotime($officials->birth_date)) == '01-01-1970' ? '-' : date("d-m-Y", strtotime($officials->birth_date)));?></td>
 					</tr>
 					<tr>
 						<td>Lisensi</td>
-						<td><?php echo $officials->license;?></td>
+						<td><?php echo (!empty($officials->license) ? $officials->license : '-');?></td>
 					</tr>
 				</table>
 				<a href="<?php echo base_url();?>eyeprofile/official_detail/<?php echo $officials->slug;?>">lihat detail ofisial</a>
