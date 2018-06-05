@@ -7,7 +7,7 @@
         <?php echo ($club) ? $club->name : ''; ?>
     </div>
 </div>
-<div class="container">
+<div class="container max-640">
     <?php
     if ($player) {
         foreach ($player->data as $p) {

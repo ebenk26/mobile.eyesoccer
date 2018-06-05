@@ -60,7 +60,7 @@
 							<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
 						</div>
 						<b>#1</b>
-						<h3>Umuh Muchtar</h3>
+						<h3></h3>
 						<span>manager</span>
 					</div>
 					<table>

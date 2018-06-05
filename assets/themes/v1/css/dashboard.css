@@ -676,6 +676,9 @@
 .submenu li{
     padding: 0 10px;
 }
+.submenu li.active{
+    font-weight: 500;
+}
 /* fajar */
 .x-form-daftar-pemain{
     padding: 10px;

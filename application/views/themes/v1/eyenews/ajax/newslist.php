@@ -5,7 +5,7 @@ if ($newslist){
 	{
 ?>
 	<a href="<?php echo $this->library->urltomob($dt->url);?>">
-		<div class="etube-content etube-content-detail pd-t-10">
+		<div class="etube-content etube-content-detail">
 			<div class="v-etube v-etube-detail">
 				<img src="<?php echo $dt->url_pic.'/small';?>" alt="">
 			</div>

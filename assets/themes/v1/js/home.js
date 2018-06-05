@@ -171,3 +171,11 @@ window.onload = function(){
         }
     }
 }
+$(document).ready(function(){
+    $(window).resize(function(){
+    if ($(window).width() < 600){
+    $(".addcolspan").attr('colspan',3);}
+    else if ($(window).width() > 600){
+    $(".addcolspan").removeAttr('colspan',3);}
+    });
+});

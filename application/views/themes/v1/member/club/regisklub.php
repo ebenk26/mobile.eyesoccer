@@ -38,7 +38,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Legalitas PT / Identitas Pemilik <span class="cl-red">*</span></td>
+                    <td>Legalitas PT / Identitas Pemilik (KTP) <span class="cl-red">*</span></td>
                     <td>
                         <input type="file" name="legal_pt">
                         <span class="err msglegal_pt"></span>

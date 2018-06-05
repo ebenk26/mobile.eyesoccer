@@ -121,7 +121,7 @@
 	</script>
 </head>
 <body>
-<a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><button id="lsdaol" type="button" class="btn-blue" style="position:  fixed;top:  50%;right: -88px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 190px;background-color: #2196F3;box-shadow: 0 0 10px -3px #03A9F4;">DAFTARKAN SSB KAMU</button></a>
+<a href="<?php echo ($this->session->member ? base_url().'member/regis_klub' : base_url().'member/?from=member/regis_klub')?>"><button id="lsdaol" type="button" class="btn-blue" style="position:  fixed;top:  50%;right: -88px;z-index:  5;transform: rotate(-90deg);border-radius: 10px 10px 0px 0px;width: 190px;background-color: #2196F3;box-shadow: 0 0 10px -3px #03A9F4;">PENDAFTARAN SSB</button></a>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7HQLCC"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
