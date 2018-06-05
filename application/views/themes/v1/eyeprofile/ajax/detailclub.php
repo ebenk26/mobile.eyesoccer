@@ -4,8 +4,10 @@
 		$detailclub = json_decode($detailclub);
 		$dt = $detailclub->data;
 		//p($dt);
-
+		// echo "<pre>";
 		// print_r($dt);
+		// echo "</pre>";
+		$default = 'https://static.eyesoccer.id/v1/cache/images/LOGO%20UNTUK%20APLIKASI.jpg/medium';
 ?>
 <style>
 /* div.user-data{background-color:#00000005} */
@@ -17,7 +19,7 @@ div.user-data:hover{background-color:#ff990026}
 		<div class="head" style="border-radius: 8px 8px 0px 0px;height: 210px;min-height:  unset;">
 			<div class="container tx-c">
 				<div class="img-radius">
-					<img src="<?php echo $dt->url_logo;?>" alt="">
+					<img src="<?php echo $this->library->lastext($dt->url_logo,'.') ? $dt->url_logo : $default;?>" alt="">
 				</div>
 			</div>
 				<h2 class="tx-c h2-pemain-top-head"><?php echo $dt->name;?></h2>
@@ -41,11 +43,15 @@ div.user-data:hover{background-color:#ff990026}
 				<table class="content-tab-eprofile">
 					<tr>
 						<td>Julukan</td>
-						<td>: <?php echo $dt->nickname;?></td>
+						<td style="font-weight:bold">: <?php echo $dt->nickname;?></td>
 					</tr>
 					<tr>
 						<td>Tanggal Berdiri</td>
 						<td>: <?php echo $dt->establish_date;?></td>
+					</tr>
+					<tr>
+						<td>Pemilik</td>
+						<td>: <?php echo $dt->owner;?></td>
 					</tr>
 					<tr>
 						<td>Alamat</td>
