@@ -54,12 +54,16 @@ div.user-data:hover{background-color:#ff990026}
 						<td>: <?php echo $dt->owner;?></td>
 					</tr>
 					<tr>
-						<td>Alamat</td>
+						<td>Alamat Sekretariat</td>
 						<td>: <?php echo strip_tags($dt->address);?></td>
 					</tr>
 					<tr>
 						<td>Email</td>
 						<td>: <?php echo $dt->email;?></td>
+					</tr>
+					<tr>
+						<td>Jumlah Pemain</td>
+						<td>: <?php echo $dt->number_of_player;echo ($dt->competition == 'Liga Usia Muda' ? ' Siswa' : ' Pemain')?></td>
 					</tr>
 					<!-- <tr>
 						<td>Website</td>
