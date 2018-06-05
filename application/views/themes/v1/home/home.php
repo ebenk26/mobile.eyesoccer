@@ -34,7 +34,7 @@
 </div>
 </a>
 <a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Klub</h2></a>
-<div class="container over-x">
+<div class="container over-x over-x-bg-g">
     <div class="carousel slide t-30">
         <div role="listbox" class="carousel-inner w-max">
             <div class="box item active">
@@ -98,7 +98,7 @@
 </div>
 <!-- EYEPROFILE -->
 <a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain</h2></a>
-<div class="container over-x">
+<div class="container over-x over-x-bg-g">
     <div class="carousel slide t-30">
         <div role="listbox" class="carousel-inner w-max">
             <div class="box item active">
@@ -161,7 +161,7 @@
     </div>
 </div>
 <a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain Paling Banyak Dilihat</h2></a>
-<div class="container over-x">
+<div class="container over-x over-x-bg-g">
     <div class="carousel slide t-30">
         <div role="listbox" class="carousel-inner w-max">
             <div class="box item active">
@@ -328,7 +328,7 @@
     <span>see all</span>
 </div>
 </a>
-<div class="p-container tab2" style="padding-top: 0px;">
+<div class="p-container tab2" style="padding-top: 0px;background-color: #fafafa;">
 	<div class="container eyetube">
 		<div id="reqhomenewslist" class='loadhomenewslist' action="eyenews" loading="off" clean="clshomenewslist">
 			<div id='clshomenewslist'>

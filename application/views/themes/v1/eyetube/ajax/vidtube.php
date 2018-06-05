@@ -23,7 +23,7 @@
                 <?php
             } else {
                 ?>
-                    <div class="etube-content pd-t-10">
+                    <div class="etube-content">
                         <a href="<?php echo $this->library->urltomob($dt->share_url); ?>" title="<?php echo $dt->title; ?>">
                             <div class="v-etube">
                                 <img src="<?php echo $dt->url_thumb.'/small'; ?>" alt="<?php echo $dt->title; ?>">
