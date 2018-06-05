@@ -220,10 +220,10 @@
     </a>
 </div>
     </div>
-    <div class="container-94 m-b-20 unset">
-        <span class="up-next-etube" style="margin-top: 23px;">Berita Terkait</span>
+    <div class="m-b-20">
+        <span class="up-next-etube" style="margin-top: 23px;margin-left: 10px;">Berita Terkait</span>
         <div id="reqterkait" class="reqterkait">
-            <div class="etube-content etube-content-detail pd-t-10">
+            <div class="etube-content etube-content-detail">
                 <div class="v-etube v-etube-detail">
                     <img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
                 </div>

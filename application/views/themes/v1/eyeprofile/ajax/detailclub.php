@@ -195,7 +195,7 @@ div.user-data:hover{background-color:#ff990026}
 					foreach($dt->gallery as $gallery){
 				?>
 					<div class="user-data">
-						<img style="width: 100%;box-shadow: 0 1px 11px -5px #727277;border-radius: 5px;" src="<?php echo $gallery->url_pic;?>" alt="foto club">
+						<img style="width: 100%;box-shadow: 0 1px 11px -5px #727277;border-radius: 5px;" src="<?php echo $gallery->url_pic;?>" alt="">
 					</div>
 				<?php
 					}

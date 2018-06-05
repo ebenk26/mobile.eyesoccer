@@ -184,13 +184,13 @@ if ($tube) {
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-    <div class="container-94 m-b-20 unset">
-        <span class="up-next-etube">Video <?= $tube->data->category_name; ?> Lainnya</span>
+    <div class="m-b-20">
+        <span class="up-next-etube" style="margin-left: 10px;">Video <?= $tube->data->category_name; ?> Lainnya</span>
         <?php
         foreach ($tube->data->related_tube as $value) {
             ?>
             <a href="<?php echo base_url(); ?>eyetube/detail/<?= $value->slug; ?>">
-                <div class="etube-content etube-content-detail pd-t-10">
+                <div class="etube-content etube-content-detail">
                     <div class="v-etube v-etube-detail">
                         <img src="<?= $value->url_thumb; ?>/small" alt="">
                     </div>
