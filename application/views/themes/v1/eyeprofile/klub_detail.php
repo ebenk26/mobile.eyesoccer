@@ -82,7 +82,7 @@
 			</div>
         </div>
 	</div>
-        <div class="container box-jadwal" style="position: relative;">
+        <div class="container box-jadwal" style="position: relative;display:none;">
             <h3 id="next_match_klub" class="h3-orange">Hasil Pertandingan Liga1</h3>
             <div class="jadwal">
 				<div id="reqmatchlist" class='loadmatchlist' action="eyeprofile" loading="off" clean="clsmatchlist">
