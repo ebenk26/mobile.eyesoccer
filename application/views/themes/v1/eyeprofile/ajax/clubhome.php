@@ -1,6 +1,6 @@
 <?php
 
-$default = 'https://static.eyesoccer.id/v1/cache/images/LOGO%20UNTUK%20APLIKASI.jpg/small';
+$default = 'https://static.eyesoccer.id/v1/cache/images/LOGO%20UNTUK%20APLIKASI.jpg/medium';
 $club = json_decode($club);
 
 foreach ($club->data as $k => $v) {
