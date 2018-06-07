@@ -151,8 +151,10 @@ function loginBtn($hasLogin){
         return '<a class="m-reg" href="'.LOGINURL.'"><i class="material-icons">input</i>Login</a>';
     }
 }
-function imgCache($imgName,$size="medium"){
-    return 'http://static.eyesoccer.id/v1/cache/images/'.$imgName.'/'.$size;
+
+function imgCache($url, $size = "")
+{
+    return 'http://static.eyesoccer.id/v1/cache/images/' . $url . '/' . $size;
 }
 
 function cryptPass($str){
