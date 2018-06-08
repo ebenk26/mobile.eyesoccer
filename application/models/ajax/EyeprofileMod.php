@@ -11,13 +11,16 @@ class EyeprofileMod extends CI_Model
     {
         parent::__construct();
     }
-    function __clubhome(){
+
+    function __clubhome()
+    {
         $query = ['page'=> $this->input->post('page'),'limit'=> 10, 'competition'=> 'Liga Usia Muda','league'=>'SSB / Akademi Sepakbola'];
         $data['club'] = $this->excurl->remoteCall($this->__xurl().'profile-club',$this->__xkey(),$query);
         $html = $this->load->view($this->__theme().'eyeprofile/ajax/clubhome',$data,true);
         $data = ['xClass'=> 'reqclub','xHtml'=> $html];
         $this->tools->__flashMessage($data);
     }
+
     function __playerhome()
     {
         $query =['page' => $this->input->post('page'),'limit' => 10,'competition'=> 'Liga Usia Muda','league'=>'SSB / Akademi Sepakbola'];
@@ -259,7 +262,7 @@ class EyeprofileMod extends CI_Model
         $slug = $this->input->post('slug');
         $query = array();
         $data['detailclub'] = $this->excurl->remoteCall($this->__xurl().'profile-club/'.$slug, $this->__xkey(), $query);
-        
+
         $html = $this->load->view($this->__theme().'eyeprofile/ajax/detailclub', $data, true);
     
         $data =array('xClass'=>'reqdetailclub','xHtml'=> $html);
