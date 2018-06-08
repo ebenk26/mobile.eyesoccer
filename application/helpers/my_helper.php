@@ -735,3 +735,53 @@ function loginAvaTop($hasLogin){
 				</a>';
     }
 }
+
+function formatDate($date,$str = ' '){
+    if($date != ''){
+        $month =  array('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Okt','Nov','Des');
+        $date = str_replace('-', '/', $date);//replace string - to /
+        $date = str_replace('/', ' ', $date);//replace string / to ' '
+        $exp = explode(' ', $date);//explode date to array
+        $abs = (abs($exp[1]) === 0 ? 0 : abs($exp[1]) -1 );//get month 
+        $exp[1] = ($abs === 0 ? $month[0] : $month[$abs]); //convert number to month 
+		if($exp[0] == 0000){
+			$exp[1] = 00;
+		}else{
+			$exp[1] = $exp[1];
+		}
+        if(strlen($exp[0]) == 4){
+            $new[0] = $exp[2];
+            $new[1] = $exp[1];
+            $new[2] = $exp[0];
+            $imp = implode($str,$new);
+            return $imp;
+        }
+        $imp = implode($str,$exp);
+        
+        return $imp;
+    }
+
+}
+
+function checkDate00($date = '')
+{
+    if ($date) {
+        $arrDate1 = explode('-',$date);
+        $arrDate2 = explode(' ',$date);
+		if(isset($arrDate1[1])){
+			if(($date == '0000-00-00') || ($date == '00-00-0000')){
+				$return = '-';
+			}else{
+				$return = $date;
+			}
+		}else if (isset($arrDate2[1])){
+			if(($date == '0000 00 00') || ($date == '00 00 0000') || ($date == '00 0 0000')){
+				$return = '-';
+			}else{
+				$return = $date;
+			}
+		}
+
+        return $return;
+    }
+}
