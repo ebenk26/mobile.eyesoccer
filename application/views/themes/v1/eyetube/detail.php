@@ -34,7 +34,7 @@
     
         <div class="container-94 m-b-20 unset">
             <span class="up-next-etube"></span>
-            <div class="etube-content etube-content-detail pd-t-10gaga" style="background-color: #f2f2f2;">
+            <div class="etube-content etube-content-detail pd-t-10 gaga" style="background-color: #f2f2f2;">
                 <div class="v-etube v-etube-detail">
                     <img src="" alt="">
                 </div>

@@ -225,8 +225,8 @@
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
             <div class="box-popup">
                 <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position:  relative;float:  right;top:  -10px;right:  7px;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
-                <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3>
-                <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/2018_Asian_Games_logo.svg/1200px-2018_Asian_Games_logo.svg.png" alt="">
+                <!-- <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3> -->
+                <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://static.eyesoccer.id/v1/cache/images/rev-pop-up-mobile.jpg" alt="">
             </div>
         </div>
     </div>
