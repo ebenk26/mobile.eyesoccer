@@ -219,7 +219,8 @@
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
 	<?php
-		if(!$this->session->popupbanner){
+		$last_uri = array("klub", "eyetube", "eyenews", "eyevent", "eyeme", "eyemarket");
+		if(!$this->session->popupbanner || in_array(end($this->uri->segments), $last_uri) || in_array("klub", $this->uri->segments)){
 	?>
     <div class="modal fadeinDown" id="popopo" role="dialog">
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
