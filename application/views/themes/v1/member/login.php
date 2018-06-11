@@ -72,12 +72,40 @@
                         <input type="password" name="passconfirm" placeholder="konfirmasi password" id="cpass" class="cinput">
                         <span class='err msgpassconfirm'></span>
                         <div class="container input-checkbox">
-                            <input type="checkbox" name="agree" id="agree" required="required"><span> saya telah membaca dan menyetujui
-                            <a href="">ketentuan dan kebijakan</a> eyesoccer.id</span>
+                            <input type="checkbox" name="agree" id="agree" required="required">
+                            <span data-toggle="modal" data-target="#myModal"> saya telah membaca dan menyetujui<a href="#"> ketentuan dan kebijakan</a> eyesoccer.id</span>
                         </div>
                         <button type="submit">daftar</button>
                      </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<div id="myModal" class="modal fade" role="dialog" style="display:  none;position: fixed;width: 100%;max-width: 768px;background-color: #00000099;top: 0px;z-index: 16;height: 100%;padding-top: 10%;padding-right: 5% !important;padding-bottom: 10%;padding-left: 5% !important;box-sizing: border-box;">
+  <div class="modal-dialog">
+    <div class="modal-content panduan">
+      <div class="modal-body" style="background-color: white;padding:  5%;margin:  2%;position: relative;">
+      <button type="button" class="close" data-dismiss="modal" style="border:  none;font-size: 1.2em;position:  absolute;right: 5px;top: 5px;color: gray;">&times;</button>
+      <h2 style="margin:  unset;font-size:  1.2em;text-align:  center;font-weight: 100;color: #6d6d6d;">Syarat dan Ketentuan Aktifitas</h2>
+      <p class="border" style="max-height: 70vh;width: 100%;box-sizing:  border-box;">Berikut adalah hal-hal yang mempengaruhi aktivitas Anda selama mengakses Eyesoccer. Hal-hal dibawah ini dapat menyebabkan komentar, nama akun, nama user, foto profil, dan bio yang Anda buat kami hapus bahkan hingga menyebabkan akun Anda kami nonaktifkan. Kami memiliki hak untuk menghapus atau melakukan suspen terhadap pelanggaran seperti yang telah ditulis pada Ketentuan dan Kebijakan Privasi<br><br>
+					Spam : Kami akan melakukan peninjauan terlebih dahulu terhadap komentar yang bersifat Spam. Hal ini termasuk dalam cakupan mempromosikan diri sendiri, produk, judi, konten kekerasan. Penyerangan pribadi : Pengguna diharapkan tidak menyerang atau melakukan penghinaan terhadap pengguna lainnya. Hal ini akan membantu Eyesoccer untuk menjadi tempat yang lebih nyaman bagi komunitas. Aktivitas ilegal : Membagikan tautan ke arah pengunduhan tidak resmi, cara untuk melakukan pencurian terhadap layanan tertentu atau aktivitas negatif lainnya tidak diperkenankan untuk dilakukan di Eyesoccer.<br><br>
+					Materi NSFW : Anda tidak diperkenankan untuk melakukan publikasi materi NSFW (Not Safe For Work). Yang termasuk diantaranya adalah materi pornografi, perjudian, kekerasan, dan konten yang atas barang dan jasa melanggar peraturan perundang-undangan. Pembahasan SARA : Pembahasan SARA tidak diperkenankan di Eyesoccer. Pelanggaran akan mendapatkan peringatan dari kami. Trolling : Trolling merupakan istilah yang digunakan untuk memancing emosi orang lain dengan menggunakan konteks yang tidak saling berkaitan. Jika trolling dilakukan pada aktivitas yang ada di Eyesoccer, maka kami akan menarik story atau komentar pengguna.<br><br>
+					Pengguna Email Berbeda Untuk Tujuan Negatif : Eyesoccer tidak menyetujui penggunaan akun banyak bagi satu orang pengguna. Dengan penggunaan email yang tidak benar, mengindikasi bahwa Anda berniat untuk melakukan sesuatu dengan alasan yang tidak benar di Eyesoccer. Anda juga tidak diperbolehkan membuat akun untuk melakukan pemalsuan story atau komentar berulang kali di lokasi yang berbeda didalam Eyesoccer. Keluhan Terhadap Jangkauan Pemberitaan : Eyesoccer bersama para pengguna melakukan pembuatan story dan melakukan pemberitaan dengan topik yang begitu luas dan seragam. Tidak seluruhnya pembuatan story serta pemberitaan tersebut merefleksikan atau dapat mewakili pandangan pribadi Anda. Kami tidak mendiskusikan mengenai jangkauan pemberitaan yang kami lakukan.<br><br>
+					Terlepas dari semua itu, tim komunitas kami berusaha untuk menjaga percakapan tetap kondusif, bersahabat, interaktif, informatif, dan produktif. Jika kami merasa bahwa ada hal-hal yang dapat mengganggu kenyamanan berinteraksi di Eyesoccer, kami akan melakukan tindakan yang sesuai. Jika Anda melihat apa yang telah kami sebutkan diatas, Anda juga dapat membantu Eyesoccer untuk menciptakan situasi komunitas yang nyaman dengan memanfaatkan tombol Report yang selalu ada pada setiap berita atau video.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <div class="modal fadeinDown in" id="snk" role="dialog" style="display: none;">
+        <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
+            <div class="box-popup">
+                <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position:  relative;float:  right;top:  -10px;right:  7px;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">× </button>
+                <!-- <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3> -->
+                <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://static.eyesoccer.id/v1/cache/images/rev-pop-up-mobile.jpg" alt="">
             </div>
         </div>
     </div>
