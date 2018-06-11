@@ -67,7 +67,7 @@
             <tr>
                 <td>Deskripsi <span class="cl-red">*</span></td>
                 <td>
-                    <textarea name="description" rows="5"><?php echo ($player) ? $player->description : ''; ?></textarea>
+                    <textarea name="description" rows="5"><?php echo ($player) ? strip_tags($player->description) : ''; ?></textarea>
                     <span class="err msgdescription"></span>
                 </td>
             </tr>
@@ -127,16 +127,16 @@
             }
             ?>
             <tr>
-                <td>Height <span class="cl-red">*</span></td>
+                <td>Tinggi <span class="cl-red">*</span></td>
                 <td>
-                    <input type="number" min="1" name="height" value="<?php echo ($player) ? $player->height : ''; ?>">
+                    <input type="number" min="1" name="height" value="<?php echo ($player) ? $player->height : ''; ?>" placeholder="cm">
                     <span class="err msgheight"></span>
                 </td>
             </tr>
             <tr>
-                <td>Weight <span class="cl-red">*</span></td>
+                <td>Berat <span class="cl-red">*</span></td>
                 <td>
-                    <input type="number" min="1" name="weight" value="<?php echo ($player) ? $player->weight : ''; ?>">
+                    <input type="number" min="1" name="weight" value="<?php echo ($player) ? $player->weight : ''; ?>" placeholder="kg">
                     <span class="err msgweight"></span>
                 </td>
             </tr>

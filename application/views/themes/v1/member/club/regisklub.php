@@ -10,7 +10,7 @@
             <div class="ff-12 mg-b15" style="font-weight:bold"><span class="cl-red">*</span> harus diisi</div>
             <table>
                 <tr>
-                    <td>Nama Klub <span class="cl-red">*</span></td>
+                    <td>Nama Klub / SSB / Akademi <span class="cl-red">*</span></td>
                     <td>
                         <input type="text" name="name">
                         <span class="err msgname"></span>
@@ -33,12 +33,40 @@
                 <tr>
                     <td>Telepon <span class="cl-red">*</span></td>
                     <td>
-                        <input type="text" name="phone">
+                        <input type="number" name="phone">
                         <span class="err msgphone"></span>
                     </td>
                 </tr>
+				<tr>
+                    <td>Nama Penanggung Jawab <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="text" name="namecharge">
+                        <span class="err msgnamecharge"></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Identitas Penanggung Jawab (KTP / SIM / Passport) <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="file" name="legal_charge">
+                        <span class="err msglegal_charge"></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Alamat Latihan <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="text" name="training_address">
+                        <span class="err msgtraining_address"></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Jadwal Latihan <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="text" name="training_schedule">
+                        <span class="err msgtraining_schedule"></span>
+                    </td>
+                </tr>
                 <tr>
-                    <td>Legalitas PT / Identitas Pemilik (KTP) <span class="cl-red">*</span></td>
+                    <td>Legalitas PT / Yayasan / Koperasi<span class="cl-red">*</span></td>
                     <td>
                         <input type="file" name="legal_pt">
                         <span class="err msglegal_pt"></span>

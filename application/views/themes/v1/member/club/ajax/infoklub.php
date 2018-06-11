@@ -1,6 +1,7 @@
 <?php
 if ($klubdetail) {
     $v = $klubdetail->data;
+	// echo '<pre>';print_r($v);
     ?>
     <form class='form_multi' action="<?= base_url('member'); ?>" enctype="multipart/form-data">
         <input type="hidden" name="fn" class="cinput" value="editclub">
@@ -44,8 +45,15 @@ if ($klubdetail) {
                 <tr>
                     <td>Tanggal didirikan</td>
                     <td>
-                        <input type="text" name="establish_date" value="<?php echo date('d-m-Y', strtotime($v[0]->establish_date)); ?>" id="birthdate">
+                        <input type="text" name="establish_date" value="<?php echo ($v[0]->establish_date == '0000-00-00' ? "00-00-0000" : date('d-m-Y', strtotime($v[0]->establish_date))); ?>" id="birthdate">
                         <span class='err msgestablish_date'></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Nama Penanggung Jawab <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="text" name="namecharge" value="<?php echo $v[0]->name_pncharge; ?>">
+                        <span class='err msgnamecharge'></span>
                     </td>
                 </tr>
                 <tr>
@@ -104,7 +112,7 @@ if ($klubdetail) {
                             <option value="">--Pilih Kabupaten--</option>
                             <?php
                             foreach ($kabupaten as $dt) {
-                                if ($v[0]->Id_kabupaten == $dt->IDKabupaten) {
+                                if ($v[0]->id_kabupaten == $dt->IDKabupaten) {
                                     ?>
                                     <option value="<?php echo $dt->IDKabupaten ?>" selected>
                                         <?php echo $dt->nama; ?>
@@ -151,14 +159,49 @@ if ($klubdetail) {
                     </td>
                 </tr>
                 <tr>
+                    <td>Alamat Latihan</td>
+                    <td>
+                        <textarea name="training_address" rows="5"><?php echo $v[0]->training_address; ?></textarea>
+                        <span class='err msgtraining_address'></span>
+                    </td>
+                </tr>
+				<tr>
                     <td>Jadwal Latihan</td>
                     <td>
                         <textarea name="training_schedule" rows="5"><?php echo $v[0]->training_schedule; ?></textarea>
                         <span class='err msgtraining_schedule'></span>
                     </td>
                 </tr>
+				<tr>
+                    <td>Informasi Pendaftaran</td>
+                    <td>
+						<textarea name="register_desc" rows="5"><?php echo $v[0]->register_desc; ?></textarea>
+						<span class='err msgregister_desc'></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Biaya Pendaftaran</td>
+                    <td>
+						<input type="number" name="register_price" value="<?php echo $v[0]->register_price; ?>">
+                        <span class='err msgregister_price'></span>
+                    </td>
+                </tr>
+				<tr>
+					<td>Identitas Penanggung Jawab (KTP / SIM / Passport)</td>
+					<td>
+						<img src="<?php echo(!empty($v[0]->url_pncharge) ? $v[0]->url_pncharge : base_url() . "assets/themes/v1/img/No_Image_Available.png") ?>" alt="" class="pp-profil viewimgpt" style="border-radius: unset;background:whitesmoke;">
+						<?php
+							if ($v[0]->url_pncharge == '') {
+						?>
+								<input id="url_pncharge" type="file" name="url_pncharge">
+						<?php
+							}
+						?>
+						<span class='err msglegal_pt'></span>
+					</td>
+				</tr>
                     <tr>
-                        <td>Legalitas PT</td>
+                        <td>Legalitas PT / Yayasan / Koperasi</td>
                         <td>
 							<img src="<?php echo(!empty($v[0]->legalitas_pt) ? $v[0]->url_pt : base_url() . "assets/themes/v1/img/No_Image_Available.png") ?>" alt="" class="pp-profil viewimgpt" style="border-radius: unset;background:whitesmoke;">
 							<?php
