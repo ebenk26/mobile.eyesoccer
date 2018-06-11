@@ -272,13 +272,16 @@ class MemberMod extends CI_Model
         $provinsi = $this->input->post('provinsi');
         $kabupaten = $this->input->post('kabupaten');
         $slug = $this->input->post('slug');
+        $alumnus_name = $this->input->post('alumnus_name');
         $supporter_name = $this->input->post('supporter_name');
+        $namecharge = $this->input->post('namecharge');
+        $stadium = $this->input->post('stadium');
+        $stadium_address = $this->input->post('stadium_address');
+        $stadium_capacity = $this->input->post('stadium_capacity');
         $training_schedule = $this->input->post('training_schedule');
         $training_address = $this->input->post('training_address');
-        $name_pncharge = $this->input->post('name_pncharge');
         $register_desc = $this->input->post('register_desc');
         $register_price = $this->input->post('register_price');
-        $namecharge = $this->input->post('namecharge');
 		
 		$query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
         $member = $this->excurl->reqCurlapp('me', $query);
@@ -289,10 +292,13 @@ class MemberMod extends CI_Model
             $query = array('id_club' => $id_club, 'name' => $name, 'nickname' => $nickname, 'address' => $address, 'description' => $description,
                            'establish_date' => date('Y-m-d', strtotime($establish_date)), 'phone' => $phone, 'email' => $email, 'owner' => $owner,
                            'coach' => $coach, 'provinsi' => $provinsi, 'kabupaten' => $kabupaten, 'manager' => $manager, 'slug' => $slug,
-                           'supporter_name' => $supporter_name, 'training_schedule' => $training_schedule, 'training_address' => $training_address, 'name_pncharge' => $name_pncharge, 'register_desc' => $register_desc, 'register_price' => $register_price, 'namecharge' => $namecharge);
+                           'supporter_name' => $supporter_name, 'alumnus_name' => $alumnus_name, 'namecharge' => $namecharge,
+                           'stadium' => $stadium, 'stadium_address' => $stadium_address, 'stadium_capacity' => $stadium_capacity,
+                           'training_schedule' => $training_schedule, 'training_address' => $training_address,
+                           'register_desc' => $register_desc, 'register_price' => $register_price);
         }
 
-        $res = $this->excurl->reqCurlapp('edit-club', $query, array('logo', 'legal_pt', 'legal_kemenham', 'legal_npwp', 'legal_dirut'));
+        $res = $this->excurl->reqCurlapp('edit-club', $query, array('logo', 'legal_pt', 'legal_kemenham', 'legal_npwp', 'legal_dirut', 'legal_charge'));
         $arr = $this->library->errorMessage($res);
 
         if ($res->status == 'Success') {
