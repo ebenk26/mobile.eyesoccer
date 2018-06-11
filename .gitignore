@@ -1,2 +1,12 @@
 .htaccess
 application/config/database.php
+.DS_Store
+application/.DS_Store
+application/config/config.php
+application/views/themes/v1/.DS_Store
+application/views/themes/v1/dashboard/.DS_Store
+application/views/themes/v1/eyevent-template/.DS_Store
+assets/img/.DS_Store
+index.php
+application/config/config.php
+index.php
