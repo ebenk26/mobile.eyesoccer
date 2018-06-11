@@ -236,7 +236,7 @@
 	?>
 </div>
     <script>
-    jQuery('#popopo').modal('show').on('hide.bs.modal')
+    // jQuery('#popopo').modal('show').on('hide.bs.modal')
     // $(document).ready(function(){
     //     $("#popobtn").click(function(){
     //         $("#popopo").modal();
