@@ -147,7 +147,7 @@ if ($klubdetail) {
                 <tr>
                     <td>Nama Alumni</td>
                     <td>
-                        <input type="text" name="alumnus_name" value="<?php echo $v[0]->alumnus_name; ?>">
+                        <input type="text" name="alumnus_name" value="<?php echo ($v[0]->alumnus_name == 'undefined' ? '' : $v[0]->alumnus_name); ?>">
                     </td>
                 </tr>
                 <tr>
@@ -181,21 +181,19 @@ if ($klubdetail) {
                 <tr>
                     <td>Nama Stadion</td>
                     <td>
-                        <input type="text" name="stadium" value="<?php echo $v[0]->stadium; ?>">
+                        <input type="text" name="stadium" value="<?php echo ($v[0]->stadium == 'undefined' ? '' : $v[0]->stadium); ?>">
                     </td>
                 </tr>
                 <tr>
                     <td>Alamat Stadion</td>
                     <td>
                         <textarea name="stadium_address" rows="5"><?php echo $v[0]->stadium_address; ?></textarea>
-                        <span class='err msgstadium_address'></span>
                     </td>
                 </tr>
                 <tr>
                     <td>Kapasitas Stadion</td>
                     <td>
-                        <textarea name="stadium_capacity" rows="5"><?php echo $v[0]->stadium_capacity; ?></textarea>
-                        <span class='err msgstadium_capacity'></span>
+                        <input name="stadium_capacity" value="<?php echo ($v[0]->stadium_capacity == 'undefined' ? '' : $v[0]->stadium_capacity); ?>">
                     </td>
                 </tr>
                 <tr>
