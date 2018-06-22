@@ -65,22 +65,13 @@
 							<h2>Reporter dan Jurnalis</h2>
 							<br>Bayu Mahendra
 							<br>Aditya Gilang
-							<br>Ridhoni
-							<br>Busthomi
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h2>Info Grafis</h2>
-							<br>Charles Lubis
 						</td>
 					</tr>
 					<tr>
 						<td><h2>EyeTube Division</h2></td>
 					</tr>
 					<tr>
-						<td>Fadia Sekar
-							<br>Ade Firmansyah
+						<td>Ade Firmansyah
 							<br>I Gede Agus Sukra Tanaya
 						</td>
 					</tr>
@@ -91,7 +82,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td><h2>Head of EyeProfile Division</h2></td>
+						<td><h2>Head of EyeProfile & Eyevent Division</h2></td>
 					</tr>
 					<tr>
 						<td>Andi Saputra</td>
@@ -102,18 +93,6 @@
 							<br>Apelli Hadishtis
 							<br>Aris Diyantoro
 							<br>Budi Harjo
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h2>Eyemarket Division</h2>
-							<br>Soraya Noor
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h2>EyeEvent Division</h2>
-							<br>Maylani Sofyand
 						</td>
 					</tr>
 					<tr>
@@ -134,7 +113,14 @@
 					</tr>
 					<tr>
 						<td>
+							<h2>Eyemarket Division</h2>
+							<br>Soraya Noor
+						</td>
+					</tr>
+					<tr>
+						<td>
 							<h2>Internal Relation</h2>
+							<br>Soraya Noor
 							<br>Siska Oktavia Lestari
 							<br>Abdul Aziz
 							<br>Andi <br>Deni
@@ -143,7 +129,7 @@
 					<tr>
 						<td>
 							<h2>Graphic Design</h2>
-							<br>Emil Siregar
+							<br>Fauzan S Salim
 						</td>
 					</tr>
 					<tr>
@@ -152,9 +138,7 @@
 					<tr>
 						<td>
 							<h2>Sales and Marketing</h2>
-							<br>Philips Gregory
 							<br>Owin Rodwin
-							<br>Fria Puspitasari
 						</td>
 					</tr>
 					<tr>
@@ -177,13 +161,6 @@
 					</tr>
 					<tr>
 						<td>
-							<h2>Social Media Specialist</h2>
-							<br>Nugraha Putra
-							<br>DB Krishna
-						</td>
-					</tr>
-					<tr>
-						<td>
 							<h3>IT Department</h3>
 						</td>
 					</tr>
@@ -196,17 +173,14 @@
 					<tr>
 						<td>
 							<h2>Back End Developer</h2>
-							<br>Muhammad Robi
 							<br>Kharizuno Hizbullah
 							<br>Sofyan Waldy
-							<br>Muhammad Arif
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<h2>Front End Developer</h2>
 							<br>Fajar Ulin Nuha
-							<br>Faradila Nurzahra Danopa
 						</td>
 					</tr>
 					<tr>
@@ -224,7 +198,7 @@
 					</tr>
 					<tr>
 						<td>
-							<h2>SEO Specialist</h2>
+							<h2>SEO & Social Media Specialist</h2>
 							<br>Ardiatma
 						</td>
 					</tr>
