@@ -224,10 +224,10 @@
 	?>
     <div class="modal fadeinDown" id="popopo" role="dialog">
         <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
-            <div class="box-popup">
-                <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position:  relative;float:  right;top:  -10px;right:  7px;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
+            <div class="box-popup" style="padding:  unset;">
+                <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position: absolute;float:  right;top:  -10px;right:  7px;color:  white;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
                 <!-- <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3> -->
-                <img style="width:  100%;box-sizing:  border-box;padding: 20px;" src="https://static.eyesoccer.id/v1/cache/images/rev-pop-up-mobile.jpg" alt="">
+                <img style="width:  100%;box-sizing:  border-box;border-radius: 5px;" src="http://hifajar.com/47C19146-805A-4A46-B895-6076C84F017D.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -236,12 +236,12 @@
 	?>
 </div>
     <script>
-    // jQuery('#popopo').modal('show').on('hide.bs.modal')
-    // $(document).ready(function(){
-    //     $("#popobtn").click(function(){
-    //         $("#popopo").modal();
-    //     });
-    // });
+    jQuery('#popopo').modal('show').on('hide.bs.modal')
+    $(document).ready(function(){
+        $("#popobtn").click(function(){
+            $("#popopo").modal();
+        });
+    });
 	function sesPop(){
 		<?php
 			$this->session->popupbanner = true;
