@@ -227,7 +227,7 @@
             <div class="box-popup" style="padding:  unset;">
                 <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position: absolute;float:  right;top:  -10px;right:  7px;color:  white;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
                 <!-- <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3> -->
-                <img style="width:  100%;box-sizing:  border-box;border-radius: 5px;" src="http://hifajar.com/47C19146-805A-4A46-B895-6076C84F017D.jpeg" alt="">
+                <img style="width:  100%;box-sizing:  border-box;border-radius: 5px;" src="http://static.eyesoccer.id/v1/cache/images/23_nobar.jpg" alt="">
             </div>
         </div>
     </div>
