@@ -219,19 +219,22 @@
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
 	<?php
-		$last_uri = array("klub", "eyetube", "eyenews", "eyevent", "eyeme", "eyemarket");
-		if(!$this->session->popupbanner || in_array(end($this->uri->segments), $last_uri) || in_array("klub", $this->uri->segments)){
+		$arr_date = array("2018-06-24", "2018-06-25");
+		if(in_array(date('Y-m-d'), $arr_date)){
+			$last_uri = array("klub", "eyetube", "eyenews", "eyevent", "eyeme", "eyemarket");
+			if(!$this->session->popupbanner || in_array(end($this->uri->segments), $last_uri) || in_array("klub", $this->uri->segments)){
 	?>
-    <div class="modal fadeinDown" id="popopo" role="dialog">
-        <div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
-            <div class="box-popup" style="padding:  unset;">
-                <button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position: absolute;float:  right;top:  -10px;right:  7px;color:  white;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
-                <!-- <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3> -->
-                <img style="width:  100%;box-sizing:  border-box;border-radius: 5px;" src="http://static.eyesoccer.id/v1/cache/images/23_nobar.jpg" alt="">
-            </div>
-        </div>
-    </div>
+				<div class="modal fadeinDown" id="popopo" role="dialog">
+					<div class="modal-dialog" style="left: 50%;top: 50%;transform: translate(-50%, -50%);margin: unset;max-width: 300px;">
+						<div class="box-popup" style="padding:  unset;">
+							<button style="padding: 0px;border:  none;font-size:  2em;opacity:  .3;position: absolute;float:  right;top:  -10px;right:  7px;color:  white;" type="button" class="close" data-dismiss="modal" onclick="sesPop()">&times; </button>
+							<!-- <h3 style="font-size: 1.5em;margin:  0px;padding:  0px;text-align:  center;font-weight: 300;color:  #333;font-family: sans-serif;">Ayo Sukseskan!</h3> -->
+							<img style="width:  100%;box-sizing:  border-box;border-radius: 5px;" src="http://static.eyesoccer.id/v1/cache/images/<?php echo date('d');?>_nobar.jpg" alt="">
+						</div>
+					</div>
+				</div>
 	<?php
+			}
 		}
 	?>
 </div>
