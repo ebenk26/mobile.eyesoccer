@@ -129,7 +129,7 @@
 					<tr>
 						<td>
 							<h2>Graphic Design</h2>
-							<br>Fauzan S Salim
+							<br>Fauzan Affan
 						</td>
 					</tr>
 					<tr>
