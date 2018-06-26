@@ -3,12 +3,12 @@
 	{
 		$eyenews = json_decode($eyenews);
 ?>
-		<div class="etube-content pd-t-10">Eyenews</div>
+		<div class="pd-t-10">Eyenews</div>
 <?php
 		foreach($eyenews->data as $dt)
 		{
 			?>
-			<div class="etube-content pd-t-10">
+			<div class="etube-content">
 				<a href="<?php echo base_url()?>eyenews/detail/<?php echo $dt->slug?>" title="<?php echo $dt->title;?>">
 					<div class="v-etube">
 						<img src="<?php echo $dt->url_pic;?>" alt="<?php echo $dt->title;?>">
@@ -28,12 +28,12 @@
 	{
 		$eyetube = json_decode($eyetube);
 ?>
-		<div class="etube-content pd-t-10">Eyetube</div>
+		<div class="pd-t-10">Eyetube</div>
 <?php
 		foreach($eyetube->data as $dt)
 		{
 			?>
-			<div class="etube-content pd-t-10">
+			<div class="etube-content">
 				<a href="<?php echo base_url()?>eyetube/detail/<?php echo $dt->slug?>" title="<?php echo $dt->title;?>">
 					<div class="v-etube">
 						<img src="<?php echo $dt->url_thumb;?>" alt="<?php echo $dt->title;?>">
@@ -53,12 +53,12 @@
 	{
 		$player = json_decode($player);
 ?>
-		<div class="etube-content pd-t-10">Pemain</div>
+		<div class="pd-t-10">Pemain</div>
 <?php
 		foreach($player->data as $dt)
 		{
 			?>
-			<div class="etube-content pd-t-10">
+			<div class="etube-content">
 				<a href="<?php echo base_url()?>eyeprofile/pemain_detail/<?php echo $dt->slug?>" title="<?php echo $dt->name;?>">
 					<div class="v-etube">
 						<img src="<?php echo $dt->url_pic;?>" alt="<?php echo $dt->name;?>">
@@ -78,12 +78,12 @@
 	{
 		$club = json_decode($club);
 ?>
-		<div class="etube-content pd-t-10">Klub</div>
+		<div class="pd-t-10">Klub</div>
 <?php
 		foreach($club->data as $dt)
 		{
 			?>
-			<div class="etube-content pd-t-10">
+			<div class="etube-content">
 				<a href="<?php echo base_url()?>eyeprofile/klub_detail/<?php echo $dt->slug?>" title="<?php echo $dt->name;?>">
 					<div class="v-etube">
 						<img src="<?php echo $dt->url_logo;?>" alt="<?php echo $dt->name;?>">

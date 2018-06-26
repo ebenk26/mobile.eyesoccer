@@ -249,7 +249,19 @@ nav img{
         width: 115px !important;
         min-width: unset;
     }
+    .loadsearch .v-etube{
+        width: 102px !important;
+    }
 }
+.loadsearch .etube-content h1 {
+    height: 40px !important;
+    overflow: hidden;
+}
+.loadsearch .etube-content span{
+    height: 12px;
+    overflow: hidden;
+}
+
 .v-etube img{
     /* width: 100%; */
     flex-shrink: 0;
