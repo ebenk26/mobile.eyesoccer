@@ -219,7 +219,7 @@
             <!-- Faradila Nurzahra Danopa -->
     <!-- ===================================================================================================== -->
 	<?php
-		$arr_date = array("2018-06-24", "2018-06-25", "2018-06-26", "2018-06-27", "2018-06-28");
+		$arr_date = array("2018-06-24", "2018-06-25", "2018-06-26", "2018-06-28");
 		if(in_array(date('Y-m-d'), $arr_date)){
 			$last_uri = array("klub", "eyetube", "eyenews", "eyevent", "eyeme", "eyemarket");
 			if(!$this->session->popupbanner || in_array(end($this->uri->segments), $last_uri) || in_array("klub", $this->uri->segments)){
