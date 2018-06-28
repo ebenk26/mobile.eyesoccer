@@ -5,6 +5,7 @@
         <i class="far fa-bell" onclick="functionNotification()"></i><span id="signNotification" class="l83">1</span>-->
     </div>
     <i class="fas fa-sign-in-alt login-ic"></i>
+    <span class="downleft" tooltip="Foto Profile Member" flow="left" style="float:  right;height:  10px;top: -6px;"><i class="material-icons" style="color:  white;font-size:  10px;">info</i></span>
     <div class="fl-r img-pic">
         <a href="<?php echo base_url('member/profile'); ?>">
             <?php $pic = explode('.', $this->session->member['url_pic']); ?>

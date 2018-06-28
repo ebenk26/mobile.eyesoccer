@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="<?php echo SUBCDN."assets/$folder/css/style.css"; ?>">
     <link rel="stylesheet" href="<?php echo SUBCDN."assets/$folder/css/dashboard.css"; ?>">
     <link rel="stylesheet" href="<?php echo SUBCDN."assets/css/font-awesome/css/fontawesome-all.css"; ?>">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
