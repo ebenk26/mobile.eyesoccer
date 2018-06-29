@@ -359,7 +359,7 @@ class MemberMod extends CI_Model
         $dt = [];
         if ($this->input->post('act') < 2) {
             $dt = array('name' => $this->input->post('name'), 'nickname' => $this->input->post('nickname'), 'description' => $this->input->post('description'),
-                        'birth_place' => $this->input->post('birth_place'), 'birth_date' => $birthdate,
+                        'birth_place' => $this->input->post('birth_place'), 'birth_date' => $birthdate, 'address' => $this->input->post('address'),
                         'phone' => $this->input->post('phone'), 'mobile' => $this->input->post('mobile'), 'email' => $this->input->post('email'),
                         'height' => $this->input->post('height'), 'weight' => $this->input->post('weight'), 'gender' => $this->input->post('gender'),
                         'nationality' => $this->input->post('nationality'), 'position_a' => $this->input->post('position_a'), 'position_b' => $this->input->post('position_b'),
@@ -883,6 +883,97 @@ class MemberMod extends CI_Model
 
                 if ($res->status == 'Success') {
                     $arr = array('xDirect' => base_url('member/karir'), 'xCss' => 'boxsuccess', 'xMsg' => 'Data berhasil disimpan', 'xAlert' => true);
+                }
+            } else {
+                $arr = array('xDirect' => base_url('member'));
+            }
+        }
+
+        $this->tools->__flashMessage($arr);
+    }
+
+    function __clubalbum()
+    {
+        $this->library->backnext('pageclubalbum', 'pagetotalclubalbum');
+
+        $query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
+        $member = $this->excurl->reqCurlapp('me', $query);
+        $member = ($member) ? $member->data[0] : '';
+
+        $club = $this->excurl->reqCurlback('profile-club', ['id_club' => $member->id_club]);
+        $data['club'] = ($club) ? $club->data[0] : '';
+
+        $query = array('page' => $this->session->userdata('pagealbum'), 'limit' => 20, 'id_club' => $member->id_club,
+            'sortby' => 'a.id_folder', 'sortdir' => 'desc');
+
+        $data['album'] = $this->excurl->reqCurlback('list-album', $query);
+        $data['albumcount'] = $this->excurl->reqCurlapp('list-album', array_merge($query, ['count' => true]));
+
+        $data['folder'] = $this->config->item('themes');
+        $html = $this->load->view($this->__theme() . 'member/club/ajax/album', $data, true);
+
+        $data = array('xClass' => 'reqclubalbum', 'xHtml' => $html, 'xUrlhash' => base_url() . 'member/galeri/' . $this->session->userdata('pageclubalbum'));
+        $this->tools->__flashMessage($data);
+    }
+
+    function __clubalbumform()
+    {
+        $query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
+        $member = $this->excurl->reqCurlapp('me', $query);
+        $member = ($member) ? $member->data[0] : '';
+
+        $query = array('id_folder' => $this->input->post('act'), 'detail' => true);
+        $data['album'] = ($this->input->post('act') != 'add') ? $this->excurl->reqCurlback('list-album', $query) : '';
+
+        $data['folder'] = $this->config->item('themes');
+        $html = $this->load->view($this->__theme() . 'member/club/ajax/albumform', $data, true);
+
+        $data = array('xClass' => 'reqclubalbumform', 'xHtml' => $html);
+        $this->tools->__flashMessage($data);
+    }
+
+    function __clubalbumact()
+    {
+        $query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
+        $member = $this->excurl->reqCurlapp('me', $query);
+        $member = ($member) ? $member->data[0] : '';
+
+        $query = array('id_club' => $member->id_club);
+        $club = $this->excurl->reqCurlback('profile-club',  $query);
+        $club = ($club) ? $club->data[0] : '';
+
+        $dt = [];
+        if ($this->input->post('act') < 2) {
+            $dt = array('club' => $club->slug, 'name' => $this->input->post('name'), 'description' => $this->input->post('description'));
+        }
+
+        if ($this->input->post('act') > 0) {
+            if ($member AND $member->id_club > 0) {
+                $dt = array_merge($dt, ['slug' => $this->input->post('id')]);
+
+                if ($this->input->post('act') < 2) {
+                    $res = $this->excurl->reqCurlapp('edit-album', $dt, array('photo'));
+                    $msg = 'Data berhasil disimpan';
+                } else {
+                    $dt = array_merge($dt, ['slug' => $club->slug]);
+                    $res = $this->excurl->reqCurlapp('del-album', $dt);
+                    $msg = 'Data berhasil dihapus';
+                }
+                $arr = $this->library->errorMessage($res);
+
+                if ($res->status == 'Success') {
+                    $arr = array('xDirect' => base_url('member/galeri'), 'xCss' => 'boxsuccess', 'xMsg' => $msg, 'xAlert' => true);
+                }
+            } else {
+                $arr = array('xDirect' => base_url('member'));
+            }
+        } else {
+            if ($member AND $member->id_club > 0) {
+                $res = $this->excurl->reqCurlapp('add-album', $dt, array('photo'));
+                $arr = $this->library->errorMessage($res);
+
+                if ($res->status == 'Success') {
+                    $arr = array('xDirect' => base_url('member/galeri'), 'xCss' => 'boxsuccess', 'xMsg' => 'Data berhasil disimpan', 'xAlert' => true);
                 }
             } else {
                 $arr = array('xDirect' => base_url('member'));

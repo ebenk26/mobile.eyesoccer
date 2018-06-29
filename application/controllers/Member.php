@@ -378,19 +378,46 @@ class Member extends CI_Controller
         $this->load->view($this->__theme().'member/template', $data);
     }
 
-	function galeri()
+	function galeri($page = 1)
     {
         if ($this->session->member == '') redirect('member');
 
         $query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
         $member = $this->excurl->reqCurlapp('me', $query);
         $data['member'] = ($member) ? $member->data[0] : '';
-        
-        if ($data['member']->id_club == 0) {
-            redirect('member');
+
+        if (isset($_GET['tab'])) {
+            if ($data['member']->id_club == 0) {
+                redirect('member');
+            }
+
+            switch ($_GET['tab']) {
+                case 'album':
+                    $content = 'member/club/albumform';
+                    break;
+                case 'galeri':
+                    $content = 'member/club/galeri';
+
+                    if (isset($_GET['act'])) {
+                        $content = 'member/club/galeriform';
+                    } else {
+                        $this->library->backnext('pageclubgallery');
+                        if ($page > 1) $this->session->set_userdata(array('pageclubgallery' => $page));
+                    }
+
+                    break;
+            }
+        } else {
+            if ($data['member']->id_club == 0) {
+                redirect('member');
+            }
+
+            $this->library->backnext('pageclubalbum');
+            if ($page > 1) $this->session->set_userdata(array('pageclubalbum' => $page));
+
+            $content = 'member/club/album';
         }
 
-        $content = 'member/club/galeri';
         $data['content'] = $content;
         $data['title']   = $this->config->item('meta_title');
         $data['kanal']   = 'member';
