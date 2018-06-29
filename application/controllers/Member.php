@@ -395,6 +395,10 @@ class Member extends CI_Controller
                 case 'album':
                     $content = 'member/club/albumform';
                     break;
+                case 'photo':
+                case 'video':
+                    $content = 'member/club/galeriform';
+                    break;
                 case 'galeri':
                     $content = 'member/club/galeri';
 
@@ -412,10 +416,18 @@ class Member extends CI_Controller
                 redirect('member');
             }
 
-            $this->library->backnext('pageclubalbum');
-            if ($page > 1) $this->session->set_userdata(array('pageclubalbum' => $page));
+            if (isset($_GET['view'])) {
+                $this->library->backnext('pageclubalbumview');
+                if ($page > 1) $this->session->set_userdata(array('pageclubalbumview' => $page));
 
-            $content = 'member/club/album';
+                $content = 'member/club/albumview';
+
+            } else {
+                $this->library->backnext('pageclubalbum');
+                if ($page > 1) $this->session->set_userdata(array('pageclubalbum' => $page));
+
+                $content = 'member/club/album';
+            }
         }
 
         $data['content'] = $content;

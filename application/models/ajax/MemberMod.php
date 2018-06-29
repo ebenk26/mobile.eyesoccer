@@ -909,7 +909,7 @@ class MemberMod extends CI_Model
         $club = $this->excurl->reqCurlback('profile-club', ['id_club' => $member->id_club]);
         $data['club'] = ($club) ? $club->data[0] : '';
 
-        $query = array('page' => $this->session->userdata('pagealbum'), 'limit' => 20, 'id_club' => $member->id_club,
+        $query = array('page' => $this->session->userdata('pageclubalbum'), 'limit' => 20, 'id_club' => $member->id_club,
             'sortby' => 'a.id_folder', 'sortdir' => 'desc');
 
         $data['album'] = $this->excurl->reqCurlback('list-album', $query);
@@ -930,6 +930,7 @@ class MemberMod extends CI_Model
 
         $query = array('id_folder' => $this->input->post('act'), 'detail' => true);
         $data['album'] = ($this->input->post('act') != 'add') ? $this->excurl->reqCurlback('list-album', $query) : '';
+        $data['view'] = $this->input->post('view');
 
         $data['folder'] = $this->config->item('themes');
         $html = $this->load->view($this->__theme() . 'member/club/ajax/albumform', $data, true);
@@ -961,14 +962,15 @@ class MemberMod extends CI_Model
                     $res = $this->excurl->reqCurlapp('edit-album', $dt, array('photo'));
                     $msg = 'Data berhasil disimpan';
                 } else {
-                    $dt = array_merge($dt, ['slug' => $club->slug]);
+                    $dt = array_merge($dt, ['club' => $club->slug]);
                     $res = $this->excurl->reqCurlapp('del-album', $dt);
                     $msg = 'Data berhasil dihapus';
                 }
                 $arr = $this->library->errorMessage($res);
 
                 if ($res->status == 'Success') {
-                    $arr = array('xDirect' => base_url('member/galeri'), 'xCss' => 'boxsuccess', 'xMsg' => $msg, 'xAlert' => true);
+                    $view = ($this->input->post('view') != '') ? '/?view='.$this->input->post('view') : '';
+                    $arr = array('xDirect' => base_url('member/galeri'.$view), 'xCss' => 'boxsuccess', 'xMsg' => $msg, 'xAlert' => true);
                 }
             } else {
                 $arr = array('xDirect' => base_url('member'));
@@ -979,7 +981,8 @@ class MemberMod extends CI_Model
                 $arr = $this->library->errorMessage($res);
 
                 if ($res->status == 'Success') {
-                    $arr = array('xDirect' => base_url('member/galeri'), 'xCss' => 'boxsuccess', 'xMsg' => 'Data berhasil disimpan', 'xAlert' => true);
+                    $view = ($this->input->post('view') != '') ? '/?view='.$this->input->post('view') : '';
+                    $arr = array('xDirect' => base_url('member/galeri'.$view), 'xCss' => 'boxsuccess', 'xMsg' => 'Data berhasil disimpan', 'xAlert' => true);
                 }
             } else {
                 $arr = array('xDirect' => base_url('member'));
@@ -987,6 +990,52 @@ class MemberMod extends CI_Model
         }
 
         $this->tools->__flashMessage($arr);
+    }
+
+    function __clubuploadform()
+    {
+        $query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
+        $member = $this->excurl->reqCurlapp('me', $query);
+        $member = ($member) ? $member->data[0] : '';
+
+        $query = array('club' => $member->id_club, 'sortby' => 'a.name', 'sortdir' => 'asc');
+        $data['album'] = $this->excurl->reqCurlback('list-album', $query);
+
+        $query = array('id_gallery' => $this->input->post('act'), 'detail' => true);
+        $data['galeri'] = ($this->input->post('act') != 'add') ? $this->excurl->reqCurlback('list-pic', $query) : '';
+        $data['view'] = $this->input->post('view');
+        $data['tab'] = $this->input->post('tab');
+
+        $data['folder'] = $this->config->item('themes');
+        $html = $this->load->view($this->__theme() . 'member/club/ajax/galeriform', $data, true);
+
+        $data = array('xClass' => 'reqclubuploadform', 'xHtml' => $html);
+        $this->tools->__flashMessage($data);
+    }
+
+    function __clubalbumview()
+    {
+        $data['view'] = $this->input->post('view');
+        $this->library->backnext('pageclubalbumview', 'pagetotalclubalbumview');
+
+        $query = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);
+        $member = $this->excurl->reqCurlapp('me', $query);
+        $member = ($member) ? $member->data[0] : '';
+
+        $club = $this->excurl->reqCurlback('profile-club', ['id_club' => $member->id_club]);
+        $data['club'] = ($club) ? $club->data[0] : '';
+
+        $query = array('page' => $this->session->userdata('pageclubalbumview'), 'limit' => 20, 'id_club' => $member->id_club,
+            'url' => $data['view'], 'sortby' => 'a.id_gallery', 'sortdir' => 'desc');
+
+        $data['gallery'] = $this->excurl->reqCurlapp('list-pic', $query);
+        $data['gallerycount'] = $this->excurl->reqCurlapp('list-pic', array_merge($query, ['count' => true]));
+
+        $data['folder'] = $this->config->item('themes');
+        $html = $this->load->view($this->__theme() . 'member/club/ajax/albumview', $data, true);
+
+        $data = array('xClass' => 'reqclubalbumview', 'xHtml' => $html, 'xUrlhash' => base_url() . 'member/galeri/' . $this->session->userdata('pageclubalbumview') . '/?view='.$data['view']);
+        $this->tools->__flashMessage($data);
     }
 
 	function __galeri()
@@ -1014,12 +1063,19 @@ class MemberMod extends CI_Model
 		$club = $this->excurl->reqCurlback('profile-club', $query);
         $club = ($club) ? $club->data[0] : '';
 
-		$query = array('club' => $club->slug);
-        $res = $this->excurl->reqCurlapp('upload-pic', $query, ['fupload']);
+		$query = array('club' => $club->slug, 'slug' => $this->input->post('album'));
+		$upload = array('photo');
+		if (isset($_FILES['video']['tmp_name'])) {
+            $upload = array_merge($upload, array('video'));
+            $res = $this->excurl->reqCurlapp('upload-vid', $query, $upload);
+        } else {
+            $res = $this->excurl->reqCurlapp('upload-pic', $query, $upload);
+        }
 
         $arr = $this->library->errorMessage($res);
 		if ($res->status == 'Success') {
-            $arr = array('xDirect' => base_url() . 'member/galeri', 'xCss' => 'boxsuccess', 'xMsg' => 'Upload Galeri Berhasil.', 'xAlert' => true);
+		    $view = ($this->input->post('view') != '') ? '/?view='.$this->input->post('view') : '';
+            $arr = array('xDirect' => base_url('member/galeri'.$view), 'xCss' => 'boxsuccess', 'xMsg' => 'Upload Galeri Berhasil.', 'xAlert' => true);
         }
 
         $this->tools->__flashMessage($arr);
@@ -1040,7 +1096,8 @@ class MemberMod extends CI_Model
 
         $arr = $this->library->errorMessage($res);
         if ($res->status == 'Success') {
-            $arr = array('xDirect' => base_url() . 'member/galeri', 'xCss' => 'boxsuccess', 'xMsg' => 'Gambar berhasil dihapus.', 'xAlert' => true);
+            $view = ($this->input->post('view') != '') ? '/?view='.$this->input->post('view') : '';
+            $arr = array('xDirect' => base_url('member/galeri'.$view), 'xCss' => 'boxsuccess', 'xMsg' => 'Gambar berhasil dihapus.', 'xAlert' => true);
         }
 
         $this->tools->__flashMessage($arr);

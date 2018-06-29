@@ -1,8 +1,10 @@
 <?php $album = ($album) ? $album->data[0] : ''; ?>
+<a href="<?php echo base_url('member/galeri/?view='.$view); ?>" class="btn-white-orange fl-r mg-t15"><i class="fas fa-chevron-left mg-r5"></i>Kembali</a>
 
 <form class='form_multi' action="<?php echo base_url('member'); ?>" enctype="multipart/form-data">
     <div class="container data-profil">
         <input type="hidden" name="fn" class="cinput" value="clubalbumact">
+        <input type="hidden" name="view" class="cinput" value="<?php echo $view; ?>">
         <input type="hidden" name="act" class="cinput" value="<?php echo ($album) ? 1 : 0; ?>">
         <input type="hidden" name="id" class="cinput" value="<?php echo ($album) ? $album->slug : ''; ?>">
         <div class="container mt20">

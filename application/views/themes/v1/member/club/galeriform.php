@@ -10,18 +10,19 @@
         $this->load->view($folder.'member/club/header', $data);
     }
     ?>
-    <div id="reqclubalbumform" class='loadclubalbumform' action="member" loading="off" clean="clsclubalbumform">
-        <div id='clsclubalbumform'>
+    <div id="reqclubuploadform" class='loadclubuploadform' action="member" loading="off" clean="clsclubuploadform">
+        <div id='clsclubuploadform'>
             <script>
                 $(document).ready(function(){
                     $(window).on('load',function(){
-                        ajaxOnLoad('loadclubalbumform');
+                        ajaxOnLoad('loadclubuploadform');
                     });
                 });
             </script>
         </div>
-        <input type='hidden' name='fn' value='clubalbumform' class='cinput'>
+        <input type='hidden' name='fn' value='clubuploadform' class='cinput'>
         <input type='hidden' name='view' value='<?php echo isset($_GET['view']) ? $_GET['view'] : ''; ?>' class='cinput'>
+        <input type='hidden' name='tab' value='<?php echo isset($_GET['tab']) ? $_GET['tab'] : ''; ?>' class='cinput'>
         <input type='hidden' name='act' value='<?php echo isset($_GET['act']) ? $_GET['act'] : ''; ?>' class='cinput'>
         <div class="container mt20">
             <div class="pp-profil">
