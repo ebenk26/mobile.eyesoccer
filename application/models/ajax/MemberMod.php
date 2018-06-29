@@ -233,6 +233,9 @@ class MemberMod extends CI_Model
         $name = $this->input->post('name');
         $no_kk = $this->input->post('no_kk');
         $no_ktp = $this->input->post('no_ktp');
+        $address = $this->input->post('address');
+        $birth_place = $this->input->post('birth_place');
+        $birth_date = $this->input->post('birth_date');
 
         $sesi = $this->session->userdata('member');
 
@@ -242,6 +245,9 @@ class MemberMod extends CI_Model
             'name' => $name,
             'no_kk' => $no_kk,
             'no_ktp' => $no_ktp,
+            'address' => $address,
+            'birth_place' => $birth_place,
+            'birth_date' => $birth_date,
         );
 
         $files = array('file_photo', 'file_kk', 'file_ktp', 'file_akte', 'file_ijazah', 'file_passport', 'file_bukurek', 'file_ibukandung', 'file_srtrekssb');
@@ -365,7 +371,7 @@ class MemberMod extends CI_Model
                         'nationality' => $this->input->post('nationality'), 'position_a' => $this->input->post('position_a'), 'position_b' => $this->input->post('position_b'),
                         'back_number' => $this->input->post('back_number'), 'foot' => $this->input->post('foot'), 'fav_club' => $this->input->post('fav_club'),
                         'fav_player' => $this->input->post('back_number'), 'fav_coach' => $this->input->post('foot'),
-                        'father' => $this->input->post('father'), 'mother' => $this->input->post('mother'), 'active' => 1);
+                        'father' => $this->input->post('father'), 'mother' => $this->input->post('mother'), 'address' => $this->input->post('address'), 'active' => 1);
         }
 
         if ($this->input->post('act') > 0) {

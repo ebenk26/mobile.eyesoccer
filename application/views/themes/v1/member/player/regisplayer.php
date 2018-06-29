@@ -29,6 +29,27 @@
                         <span class="err msgname"></span>
                     </td>
                 </tr>
+				<tr>
+                    <td>Alamat <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="text" name="address">
+                        <span class="err msgaddress"></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Tempat Lahir <span class="cl-red">*</span></td>
+                    <td>
+						<input type="text" name="birth_place">
+                        <span class="err msgbirth_place"></span>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Tanggal Lahir <span class="cl-red">*</span></td>
+                    <td>
+                        <input type="text" name="birth_date" value="00-00-0000" id="birthdate">
+                        <span class="err msgbirth_date"></span>
+                    </td>
+                </tr>
                 <tr>
                     <td>Photo <span class="cl-red">*</span></td>
                     <td>
@@ -124,3 +145,10 @@
         </div>
     </form>
 </div>
+<script>
+	$('#birthdate').datepicker({
+		dateFormat: 'dd-mm-yy',
+		changeMonth: true,
+		changeYear: true
+	});
+</script>
