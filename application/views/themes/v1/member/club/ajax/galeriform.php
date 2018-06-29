@@ -43,7 +43,7 @@
                             <?php
                                 if ($album) {
                                     foreach ($album->data as $a) {
-                                        if ($galeri->id_folder == $a->id_folder) {
+                                        if ($galeri->id_folder == $a->id_folder OR $a->slug == $view) {
                                             echo "<option value='$a->slug' selected>$a->title</option>";
                                         } else {
                                             echo "<option value='$a->slug'>$a->title</option>";

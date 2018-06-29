@@ -21,17 +21,19 @@
                 </script>
             </div>
             <input type='hidden' name='fn' value='clubalbum' class='cinput'>
-            <div class="x-form-daftar-pemain row">
-                <i class="far fa-edit" style="float:right; font-size:.9em;"></i>
-                <div class="col-xs-4 edits">
-                    <div class="img-round">
-                        <img src="<?php echo SUBCDN."assets/img/eyeme/user-discover.png"; ?>" alt="">
-                    </div>
+            <div class="container mt20">
+                <div class="pp-profil">
+                    <img src="<?php echo SUBCDN; ?>assets/themes/v1/img/fav.png" alt="">
                 </div>
-                <div class="col-xs-8 pd-t-19 edits dftr-pemain">
-                    <span>Nama Album</span>
-                    <span>Jumlah File</span>
-                </div>
+            </div>
+            <div class="container data-profil mt20">
+                <table>
+                    <tr>
+                        <td colspan="2" class="tx-c">
+                            <button class="klik-dsn">Loading...</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

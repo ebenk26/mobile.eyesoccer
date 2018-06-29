@@ -21,30 +21,19 @@ $this->load->view($folder . 'member/header', $data);
                     </script>
                 </div>
                 <input type='hidden' name='fn' value='galeri' class='cinput'>
-                <div class="player-galeri">
-                    <div class="pad">
-                        <span style="background-image: url('<?php echo SUBCDN . "assets/themes/v1/img/a.jpg"; ?>')" class="img"></span>
+                <div class="container mt20">
+                    <div class="pp-profil">
+                        <img src="<?php echo SUBCDN; ?>assets/themes/v1/img/fav.png" alt="">
                     </div>
                 </div>
-                <div class="player-galeri">
-                    <div class="pad">
-                        <span style="background-image: url('<?php echo SUBCDN . "assets/themes/v1/img/a.jpg"; ?>')" class="img"></span>
-                    </div>
-                </div>
-                <div class="player-galeri">
-                    <div class="pad">
-                        <span style="background-image: url('<?php echo SUBCDN . "assets/themes/v1/img/a.jpg"; ?>')" class="img"></span>
-                    </div>
-                </div>
-                <div class="player-galeri">
-                    <div class="pad">
-                        <span style="background-image: url('<?php echo SUBCDN . "assets/themes/v1/img/a.jpg"; ?>')" class="img"></span>
-                    </div>
-                </div>
-                <div class="player-galeri">
-                    <div class="pad">
-                        <span style="background-image: url('<?php echo SUBCDN . "assets/themes/v1/img/a.jpg"; ?>')" class="img"></span>
-                    </div>
+                <div class="container data-profil mt20">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="tx-c">
+                                <button class="klik-dsn">Loading...</button>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
