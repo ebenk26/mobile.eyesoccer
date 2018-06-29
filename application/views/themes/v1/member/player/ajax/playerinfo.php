@@ -64,6 +64,13 @@
                     <span class="err msgnickname"></span>
                 </td>
             </tr>
+			<tr>
+                <td>Alamat <span class="cl-red">*</span></td>
+                <td>
+                    <input type="text" name="address" value="<?php echo ($player) ? $player->address : ''; ?>">
+                    <span class="err msgaddress"></span>
+                </td>
+            </tr>
             <tr>
                 <td>Deskripsi <span class="cl-red">*</span></td>
                 <td>

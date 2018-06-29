@@ -197,14 +197,14 @@ if ($klubdetail) {
                     </td>
                 </tr>
                 <tr>
-                    <td>Alamat Latihan</td>
+                    <td>Alamat Latihan <span class="cl-red">*</span></td>
                     <td>
                         <textarea name="training_address" rows="5"><?php echo $v[0]->training_address; ?></textarea>
                         <span class='err msgtraining_address'></span>
                     </td>
                 </tr>
 				<tr>
-                    <td>Jadwal Latihan</td>
+                    <td>Jadwal Latihan <span class="cl-red">*</span></td>
                     <td>
                         <textarea name="training_schedule" rows="5"><?php echo $v[0]->training_schedule; ?></textarea>
                         <span class='err msgtraining_schedule'></span>
@@ -239,7 +239,7 @@ if ($klubdetail) {
                     </td>
                 </tr>
                 <tr>
-                    <td>Legalitas Kemenham</td>
+                    <td>Legalitas Kemenkumham</td>
                     <td>
                         <img src="<?php echo(!empty($v[0]->legalitas_kemenham) ? $v[0]->url_kemenham : base_url() . "assets/themes/v1/img/No_Image_Available.png") ?>" alt="" class="pp-profil viewimgkemenham" style="border-radius: unset;background:whitesmoke;">
                         <?php
