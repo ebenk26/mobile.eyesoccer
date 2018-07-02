@@ -1,6 +1,6 @@
 <?php
-$competition = ($this->uri->segment(3) ? urldecode($this->uri->segment(3)) : 'Liga Usia Muda');
-$league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->uri->segment(3) == 'Liga Usia Muda' ? 'Liga Santri Nusantara' : ''));?>
+$competition = ($this->uri->segment(3) ? urldecode(str_replace('-',' ',$this->uri->segment(3))) : 'Liga Usia Muda');
+$league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->segment(4))) : ($this->uri->segment(3) == 'Liga Usia Muda' ? 'Liga Santri Nusantara' : ''));?>
 	<!-- CONTENT BODY -->
     <div class="crumb">
             <ul>
