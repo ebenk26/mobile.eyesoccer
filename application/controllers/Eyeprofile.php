@@ -40,6 +40,9 @@ class Eyeprofile extends CI_Controller {
 	
 	function klub()
     {
+		if(end($this->uri->segments) == 'SSB'){
+			redirect('/eyeprofile/klub/Liga%20Usia%20Muda/SSB%20/%20Akademi%20Sepakbola', 'refresh');
+		} // redirect from desktop URL
 		//$data['slug'] = $slug;
 		$page = 1;
 	    $data['kanal'] = 'eyeprofile';

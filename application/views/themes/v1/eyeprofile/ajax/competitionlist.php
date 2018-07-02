@@ -1,6 +1,6 @@
 <select name="competition" class="comp">
 <?php foreach($competition as $c):?>
-	<option <?php echo ($slug == $c->competition ? 'selected' : '' )?> value="<?php echo  $c->competition?>"><?php echo $c->competition?></option>
+	<option <?php echo ($slug == $c->competition ? 'selected' : '' )?> value="<?php echo  str_replace(' ','-',$c->competition)?>"><?php echo $c->competition?></option>
 	
 <?php endforeach;?>
 </select>
@@ -8,7 +8,7 @@
 	<option>--Pilih Category Liga--</option>
 <?php foreach($league as $l): echo $slug_league;?>
 	
-		<option <?php echo ($slug_league == $l->league ? 'selected' : '')?> value="<?php echo  $l->league?>"><?php echo $l->league?></option>
+		<option <?php echo ($slug_league == $l->league ? 'selected' : '')?> value="<?php echo  str_replace(' ','-',$l->league)?>"><?php echo $l->league?></option>
 		
 <?php endforeach;?>
 </select>
@@ -23,7 +23,7 @@
 	})
 	
 	$('.league').on('change',function(){
-		location.href = baseUrl + 'Liga Usia Muda/' + $(this).val();
+		location.href = baseUrl + 'Liga-Usia-Muda/' + $(this).val();
 	})
 </script>
 

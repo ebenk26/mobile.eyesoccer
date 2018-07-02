@@ -29,4 +29,25 @@ class Ajax extends CI_Controller {
 	}
     }
 
+	function bilangan()
+	{
+		$arr = array(1,2,3,4,5,6,7,8,9,10,11,12);
+
+		$row= ceil(count($arr)/3);
+		for($i = 1; $i <= $row; $i++) {
+			echo $i."&nbsp;";
+			$k = 0;
+			$pre = 0;
+		  for($j = 1; $j <= 2; $j++) {
+			if($pre == 0)
+			  $pre = $k = $i + $row;
+			else
+			  $pre = $pre + $row;
+
+			if($pre <= max($arr))
+			  echo $arr[$pre-1]."&nbsp;";
+		  }
+		  echo "<br>";
+		}
+	}
 }
