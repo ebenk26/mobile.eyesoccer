@@ -28,59 +28,28 @@
 		.zona_afc_wl:hover{background-color: #333e964f;}
 		.zona_aman:hover{background-color: #dcd9d947;}
 
-	.detailzona_kontinental1{
-	    z-index:-1;
-		font-size:12px;
-		padding: 20px 20px 20px 20px;
-		margin: 20px 20px 20px 20px;
-		position:relative;
-		top:17px;
-		left:-40px;
-	}
-	.detailzona_kontinental2{
-		font-size:12px;
-		padding: 20px 20px 20px 20px;
-		margin: 20px 20px 20px 20px;
-		position:relative;
-		top:-58px;
-		left:115px;
-	}
-	.detailzona_degradasi{
-		font-size:12px;
-		padding: 20px 20px 20px 20px;
-		margin: 20px 20px 20px 20px;
-		position:relative;
-        top: -100px;
-        left: -40px;
+	.detailzona_kontinental1, .detailzona_kontinental2, .detailzona_degradasi, .detaildegradasi, .detailkontinental2, .detailkontinental1{
+		font-size: .8em;
+        padding: 10px;
+        margin: 0px 10px;
+        position: relative;
+        width: max-content;
+        display: inline-block;
+        float: left;
+        border-radius: 10px;
 	}
 	.detailkontinental1{
 		background-color:#c4d8c7;
-		width: 20px;
-		height:10px;
-		padding: 5px 15px 0px 15px;
-		margin: 10px 10px 10px 10px;
-		border-radius:8px;
 	}
 	.detailkontinental2{
 		background-color:#ced1e6;
-		width: 20px;
-		height:10px;
-		padding: 5px 15px 0px 15px;
-		margin: 10px 10px 10px 10px;
-		border-radius:8px;
 	}
 	.detaildegradasi{
 		background-color:#ffb8b8;
-		width: 20px;
-		height:10px;
-		padding: 5px 15px 0px 15px;
-		margin: 10px 10px 10px 10px;
-		border-radius:8px;
     }
     .detailklasemen{
         float: left;
         height: 80px;
-        margin-top: -30px;
     }
 		</style>
 <div class="border-box">
@@ -93,7 +62,7 @@
     </select>
     <div class="border-box pd-l-0">
         <div id="liga_indonesia">
-            <table class="border-box radius"  cellspacing="0" cellpadding="0">
+            <table class="radius"  cellspacing="0" cellpadding="0">
                 <thead>
                     <tr>
                         <th title="Posisi">#</th>
@@ -182,7 +151,7 @@
         </div>
 
         <div id="liga_inggris">
-            <table class="border-box radius"  cellspacing="0" cellpadding="0">
+            <table class="radius"  cellspacing="0" cellpadding="0">
                 <thead>
                     <tr>
                         <th title="Posisi">#</th>
@@ -275,7 +244,7 @@
         </div>
 
         <div id="liga_italia">
-            <table class="border-box radius"  cellspacing="0" cellpadding="0">
+            <table class="radius"  cellspacing="0" cellpadding="0">
                 <thead>
                     <tr>
                         <th title="Posisi">#</th>
@@ -370,7 +339,7 @@
         </div>
 
         <div id="liga_spanyol">
-            <table class="border-box radius"  cellspacing="0" cellpadding="0">
+            <table class="radius"  cellspacing="0" cellpadding="0">
                 <thead>
                     <tr>
                         <th title="Posisi">#</th>
