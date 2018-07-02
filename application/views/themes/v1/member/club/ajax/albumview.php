@@ -11,6 +11,7 @@
 </div>
 
 <div class="container mg-t15">
+    <div class="full-width mg-b15"><i class="fas fa-chevron-right"></i> <?php echo $album->title; ?></div>
     <?php
     if ($gallery) {
         foreach ($gallery->data as $g) {

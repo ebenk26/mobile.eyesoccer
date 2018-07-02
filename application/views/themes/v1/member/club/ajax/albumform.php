@@ -1,5 +1,8 @@
 <?php $album = ($album) ? $album->data[0] : ''; ?>
-<a href="<?php echo base_url('member/galeri/?view='.$view); ?>" class="btn-white-orange fl-r mg-t15"><i class="fas fa-chevron-left mg-r5"></i>Kembali</a>
+<?php $view = ($view) ? '?view='.$view : ''; ?>
+<div class="mg-t15 tx-r">
+    <a href="<?php echo base_url('member/galeri/'.$view); ?>" class="btn-white-orange fl-r mg-t15"><i class="fas fa-chevron-left mg-r5"></i>Kembali</a>
+</div>
 
 <form class='form_multi' action="<?php echo base_url('member'); ?>" enctype="multipart/form-data">
     <div class="container data-profil">

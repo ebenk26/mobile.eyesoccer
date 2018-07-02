@@ -1,5 +1,5 @@
-<div class="container">
-    <form class='form_multi' action="<?php echo base_url('member'); ?>" enctype="multipart/form-data">
+<!--<div class="container">
+    <form class='form_multi' action="<?php /*echo base_url('member'); */?>" enctype="multipart/form-data">
         <label class="btn-white-orange fl-r" style="margin:  unset;">
             <i class="fas fa-plus mg-r5"></i>Upload Photo
             <input type="file" name="fupload" id="filepic" style="display: none;">
@@ -8,14 +8,14 @@
         <input type="hidden" name="act" class="cinput" value="1">
         <div class="full-width col-xs-7 container tx-c" style="padding:0px;">
             <div class="pp-profil">
-                <img src="<?php echo(!empty($v[0]->url_logo) ? $v[0]->url_logo : base_url() . "assets/themes/v1/img/fav.png") ?>" alt="" class="viewimg">
+                <img src="<?php /*echo(!empty($v[0]->url_logo) ? $v[0]->url_logo : base_url() . "assets/themes/v1/img/fav.png") */?>" alt="" class="viewimg">
             </div>
         </div>
         <div class="full-width col-xs-5 container tx-c" style="box-sizing:border-box;">
             <button class="btn-blue">Simpan</button>
         </div>
     </form>
-</div>
+</div>-->
 
 <?php
 if ($galerilist) {
@@ -36,7 +36,7 @@ if ($galerilist) {
 }
 ?>
 
-<script>
+<!--<script>
     $(document).ready(function () {
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -53,4 +53,4 @@ if ($galerilist) {
             readURL(this);
         });
     });
-</script>
+</script>-->
