@@ -36,5 +36,17 @@
                 </table>
             </div>
         </div>
+        <div id="reqgaleri" class='loadgaleri' action="member" loading="off" clean="clsgaleri">
+            <div id='clsgaleri'>
+                <script>
+                    $(document).ready(function () {
+                        $(window).on('load', function () {
+                            ajaxOnLoad('loadgaleri');
+                        });
+                    });
+                </script>
+            </div>
+            <input type='hidden' name='fn' value='galeri' class='cinput'>
+        </div>
     </div>
 </div>

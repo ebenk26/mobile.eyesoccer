@@ -1025,6 +1025,9 @@ class MemberMod extends CI_Model
         $club = $this->excurl->reqCurlback('profile-club', ['id_club' => $member->id_club]);
         $data['club'] = ($club) ? $club->data[0] : '';
 
+        $album = $this->excurl->reqCurlback('list-album', ['url' => $data['view'], 'detail' => true]);
+        $data['album'] = ($album) ? $album->data[0] : '';
+
         $query = array('page' => $this->session->userdata('pageclubalbumview'), 'limit' => 20, 'id_club' => $member->id_club,
             'url' => $data['view'], 'sortby' => 'a.id_gallery', 'sortdir' => 'desc');
 
@@ -1044,7 +1047,7 @@ class MemberMod extends CI_Model
         $res = $this->excurl->reqCurlback('me', $param);
         $v = $res->data;
 
-        $query = array('club' => $v[0]->id_club, 'sortby' => 'a.id_gallery', 'sortdir' => 'desc');
+        $query = array('id_folder' => '0', 'club' => $v[0]->id_club, 'sortby' => 'a.id_gallery', 'sortdir' => 'desc');
         $data['galerilist'] = $this->excurl->reqCurlapp('list-pic', $query);
 
         $html = $this->load->view($this->__theme() . 'member/club/ajax/galeri', $data, true);
