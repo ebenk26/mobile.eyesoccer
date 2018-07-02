@@ -36,7 +36,7 @@
                 </table>
             </div>
         </div>
-        <div id="reqgaleri" class='loadgaleri' action="member" loading="off" clean="clsgaleri">
+        <div id="reqgaleri" class='loadgaleri' action="member" loading="off" clean="clsgaleri" style="width: 98%;float:  left;margin:  0 1%;">
             <div id='clsgaleri'>
                 <script>
                     $(document).ready(function () {
