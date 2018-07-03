@@ -31,7 +31,7 @@
 		?>
 				</ul> 
 			</div>
-			<span id='tab-populer' class="orange-active tab-popular-custom-home" active="true" style="bottom: 0px;display: block !important;width:  100%;float:  left;margin: 10px 20px !important;font-size: 1em !important;color: #eb554c !important;padding:  unset;box-sizing:  border-box;">Terkini</span>
+			<span id='tab-populer' class="orange-active tab-popular-custom-home no-border" active="true" style="bottom: 0px;display: block !important;width:  100%;float:  left;margin: 10px 20px !important;font-size: 1em !important;color: #eb554c !important;padding:  unset;box-sizing:  border-box;">Terkini</span>
 		</div>
 		<?php
 			}

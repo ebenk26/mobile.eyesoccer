@@ -19,7 +19,7 @@
                         <h1 style="bottom: 50px;height: 2.2em;"><?php echo $dt->title; ?></h1>
                     </a>
                     
-                    <div class="container" style="margin-top: -40px;background-color: #fafafa;">
+                    <div class="container" style="margin-top: -51px;padding: 10px 0px;background-color: #f5f5f5;">
                 <?php
             } else {
                 ?>

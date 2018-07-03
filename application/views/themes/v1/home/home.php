@@ -1,5 +1,6 @@
 <!-- TRENDING -->
 <div class="trending">
+<span class="trending-s">Trending</span>
     <div id="reqtrend" class='loadtrend' action="home" loading="off" clean="clstrend">
         <div id='clstrend'>
             <script>
@@ -12,13 +13,17 @@
         </div>
         <input type='hidden' name='fn' value='trending' class='cinput'>
         <span class="x-c fafa">
-            <span>Trending</span>
-            <!-- <x class="m-l-100"></x> -->
             <a href="" class="gr">Choirul Huda</a>
             <a href="" class="gr">IndonesiaU-19</a>
             <a href="" class="gr">Egy Maulana Vikri</a>
             <a href="" class="gr">Persib</a>
             <a href="" class="gr">Liga2</a>
+            <a href="" class="gr">Liga Santri Nusantara</a>
+            <a href="" class="gr">Liga Champion</a>
+            <a href="" class="gr">Liga1</a>
+            <a href="" class="gr">Liga Santri Nusantara</a>
+            <a href="" class="gr">Liga Champion</a>
+            <a href="" class="gr">Liga1</a>
             <a href="" class="gr">Liga Santri Nusantara</a>
             <a href="" class="gr">Liga Champion</a>
             <a href="" class="gr">Liga1</a>
@@ -50,6 +55,32 @@
                     </div>
                     <input type="hidden" name="fn" value="clubhome" class="cinput">
                     <input type="hidden" name="page" value="<?php echo rand(1, 10) ?>" class="cinput">
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
                     <a href="">
                         <div class="ep-box-content">
                             <div class="img gr">
@@ -153,6 +184,32 @@
                             </div>
                         </div>
                     </a>
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
 
 
                 </div>
@@ -177,6 +234,32 @@
                     </div>
                     <input type="hidden" name="fn" value="playermostsee" class="cinput">
                     <input type="hidden" name="page" value="<?php echo abs(date('j') - date('n')) ?>" class="cinput">
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="ep-box-content">
+                            <div class="img gr">
+                                <img src="" alt="">
+                            </div>
+                            <div class="ep-detail fafa gr">
+                                <h1>Egy Maulana Vikry</h1>
+                                <p>Posisi: Sayap Kanan<br>
+                                    Klub: -<br>
+                                    Tanggal Lahir: 7 Juli 2000</p>
+                            </div>
+                        </div>
+                    </a>
                     <a href="">
                         <div class="ep-box-content">
                             <div class="img gr">
@@ -248,8 +331,8 @@
         </div>
         <span style="display: none;">30 menit lalu</span>
         <h1 style="display: none;">Lorrem Ipsum solor sit amet</h1>
-        <div class="container" style="margin-top: -40px;background-color: #fafafa;">
-            <div class="etube-content pd-t-10">
+        <div class="container" style="margin-top: -51px;padding-top: 15px;background-color: #f5f5f5;">
+            <div class="etube-content pd-t-10 m2420">
                 <div class="v-etube">
                     <img src="" alt="">
                     <div class="btn-play">
@@ -260,7 +343,7 @@
                 <span class="gr">30 menit lalu</span>
                 <span class="gr">2000 view - 100 suka</span>
             </div>
-            <div class="etube-content">
+            <div class="etube-content m2420">
                 <div class="v-etube">
                     <img src="" alt="">
                     <div class="btn-play">
@@ -272,7 +355,7 @@
                 <span class="gr">2000 view - 100 suka</span>
             </div>
 
-            <div class="etube-content">
+            <div class="etube-content m2420">
                 <div class="v-etube">
                     <img src="" alt="">
                     <div class="btn-play">
@@ -294,7 +377,7 @@
     <span>see all</span>
 </div>
 </a>
-<div class="border-box over-no pd-l-4 m-b-20 eme-home-box">
+<div class="border-box over-no m-b-20 eme-home-box">
     <div id="reqme" class='loadme' action="eyeme" loading="off" clean="clsme">
         <div id='clsme'>
             <script>
@@ -318,6 +401,12 @@
         <div class="eme-box gr">
             <img src="" alt="">
         </div>
+        <div class="eme-box gr">
+            <img src="" alt="">
+        </div>
+        <div class="eme-box gr">
+            <img src="" alt="">
+        </div>
     </div>
 </div>
 <!-- EYENEWS -->
@@ -328,7 +417,7 @@
     <span>see all</span>
 </div>
 </a>
-<div class="p-container tab2" style="padding-top: 0px;background-color: #fafafa;">
+<div class="tab2" style="padding-top: 0px;background-color: #f5f5f5;">
 	<div class="container eyetube">
 		<div id="reqhomenewslist" class='loadhomenewslist' action="eyenews" loading="off" clean="clshomenewslist">
 			<div id='clshomenewslist'>

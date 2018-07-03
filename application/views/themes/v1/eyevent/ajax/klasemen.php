@@ -30,7 +30,7 @@
 
 	.detailzona_kontinental1, .detailzona_kontinental2, .detailzona_degradasi, .detaildegradasi, .detailkontinental2, .detailkontinental1{
 		font-size: .8em;
-        padding: 10px;
+        padding: 8px;
         margin: 0px 10px;
         position: relative;
         width: max-content;
@@ -49,7 +49,7 @@
     }
     .detailklasemen{
         float: left;
-        height: 80px;
+        height: 30px;
     }
 		</style>
 <div class="border-box">
@@ -60,7 +60,7 @@
         <option value="spanyol">Liga Spanyol</option>
         <option value="italia">Liga Italia</option>
     </select>
-    <div class="border-box pd-l-0">
+    <div class="mg-t40">
         <div id="liga_indonesia">
             <table class="radius"  cellspacing="0" cellpadding="0">
                 <thead>

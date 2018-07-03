@@ -5,14 +5,14 @@ html, body{
     width: 100%;
     /* min-width: 375px; */
     overflow-x: hidden;
-    background-color: gainsboro;
+    background-color: #f5f5f5;
 }
 body{
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     max-width: 768px;
     background-color: white;
-    box-shadow: 0 0 5px -3px #0000008a;
+    /* box-shadow: 0 0 5px -3px #0000008a; */
 }
 *{
     -webkit-font-smoothing: antialiased;
@@ -82,6 +82,16 @@ nav{
     margin: -1px;
     padding: 1px;
 }
+@media screen and (min-width: 767px) {
+    nav{
+        max-width: unset !important;
+        left: 0px;
+    }
+    .trending {
+        margin: 44px 0px -14px 0px !important;
+        border-top: 15px solid #f5f5f5 !important;
+    }
+}
 .ep-detail>table, .ep-box-content, .em-box-content, .ev-box-content, .eyetube h1{
     position: relative;
 }
@@ -113,11 +123,24 @@ nav img{
 }
 .trending{
     margin: 48px 3px -14px 3px;
-    padding: 7px 0px;
+    /* padding: 7px 0px; */
     float: left;
     width: 100%;
-    height: 35px;
-    overflow-x: auto;
+    /* height: 35px; */
+    /* overflow-x: auto; */
+    position: relative;
+}
+.trending-s{
+    background-color: #8BC34A;
+    padding: 5px 15px;
+    margin-right: 10px;
+    color: #fdfffb;
+    font-size: .9em;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    border-right: 7px solid white;
 }
 .trending .x-c a{
     padding: 5px 10px;
@@ -403,7 +426,7 @@ nav img{
 .ev-box-content{
     width: 330px;
     min-height: 185px;
-    border-radius: 9px;
+    border-radius: 5px;
     margin: 0px 2px;
     background-color: #d8d8d8;
 }
@@ -431,7 +454,7 @@ nav img{
     /* margin-left: 100px; */
     float: left;
     display: block;
-    width: 100px;
+    width: 105px;
     min-height: 1px;
 }
 .pd-t-10{
@@ -613,11 +636,10 @@ table, .tx-l{
 footer{
     width: 100%;
     float: left;
-    background-color: #eee;
-    color: #999;
+    background-color: #f5f5f5;
+    color: #607D8B;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    /* margin-top: 50px; */
     padding-bottom: 50px;
 }
 footer::before{
@@ -947,10 +969,11 @@ a.m-reg span{
     float: left;
     padding-left: 10px;
     box-sizing: border-box;
-    font-size: 1.2em;
+    font-size: .9em;
     font-weight: 400;
     color: #4a4a4a;
     margin: 0px 0px 10px;
+    font-family: Roboto, 'sans-serif';
 }
 .eme-box{
     width: 32.06vw;
@@ -3438,6 +3461,10 @@ tbody table{
     color: #F5F5F5 !important;
     border-color: #F5F5F5 !important;
     box-sizing: border-box;
+    font-size: .3em !important;
+}
+.m2420 h1, .m2420 span{
+    margin: 2px 4px 2px 0px !important;
 }
 .emesearch{
     position: relative;
@@ -3932,7 +3959,7 @@ video::-webkit-media-controls-panel {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     z-index: 1;
     padding: 5px 0px;
     max-width: 768px;
@@ -4547,6 +4574,7 @@ select::after{
    background-size:100% 3px ;
     padding-bottom: 25px;
     margin-bottom: 25px;
+    background-color: white;
 }
 .menu-footer a{
     display: block;
@@ -4951,9 +4979,49 @@ select::after{
     margin: 0 1%;
 }
 @media screen and (min-width: 768px){
-    .eme-home-box .eme-box {
-        width: 240px;
-        height: 240px;
-        margin: 4.5px;
+    .over-x-bg-g{
+        width: 97%;
+        margin: 0 1.5% 10px;
     }
+    .over-x-bg-g .ep-box-content{
+        margin: 3px 0px 3px 7.5px;
+        box-shadow: 0 0 9px -3px #0000005e;
+    }
+    .etube-content{
+        margin: 5px 1.5%;
+        width: 97%;
+    }
+    .etube-content h1{
+        width: 100%;
+    }
+    .SvLSD {
+        width: 97%;
+        margin: 10px 1.5%;
+    }
+    #reqtabnews #boxtab, .ep-h2 {
+        width: 97% !important;
+        padding-left: 1.5% !important;
+    }
+    .rek-ber-c, .border-box{
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .tab2 span{
+        margin: 0 20px 0 0;
+    }
+    .eme-home-box .eme-box {
+        width: 242px;
+        height: 242px;
+        margin: 4.5px 9px 4.5px 0px;;
+    }
+    .border-box.over-no.m-b-20.eme-home-box{
+        width: 99% !important;
+    }
+    .em-box-content{
+        margin: 3px 6px 3px 0;
+    }
+}
+.tab2 span:hover.no-border, .no-border, .no-border:hover, .no-border:active, .no-border:focus, .no-border:visited{
+    border: unset !important;
+    border-color: unset !important;
 }

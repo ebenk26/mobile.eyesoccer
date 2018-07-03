@@ -16,8 +16,8 @@
                     <span><?php echo relative_time($this->library->datenormal($dt->createon)); ?> lalu</span>
                     <h1><?php echo $dt->title; ?></h1>
                     
-                    <div class="container" style="margin-top: -40px;background-color: #fafafa;">
-                        coba bcccascaca
+                    <div class="container" style="margin-top: -51px;padding-top: 15px;background-color: #f5f5f5;">
+                        <!-- coba bcccascaca -->
                 <?php
             } else {
                 ?>
