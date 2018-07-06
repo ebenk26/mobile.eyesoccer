@@ -1,4 +1,4 @@
-<div id='boxtab' style="width:  100%;float:  left;margin-top: 20px;">
+<div id='boxtab'>
     <span id='tab-rekomendasi' onclick="tabmenu(this.id, 'span', 'div', 'orange-active')" class="orange-active" active="true">rekomendasi</span>
     <span id='tab-usiamuda' onclick="tabmenu(this.id, 'span', 'div', 'orange-active')">usia muda</span>
     <span id='tab-populer' onclick="tabmenu(this.id, 'span', 'div', 'orange-active')">terpopuler</span>
@@ -17,7 +17,7 @@
                                 <div class="img-res-height">
                                     <img src="<?php echo $dt->url_pic . '/small'; ?>" alt="<?php echo $dt->title; ?>">
                                 </div>
-                                <span><?php echo date('d M Y H:i:s', strtotime($dt->publish_on)); ?></span>
+                                <span class="no-border"><?php echo date('d M Y H:i:s', strtotime($dt->publish_on)); ?></span>
                                 <h1><?php echo $dt->title; ?></h1>
                                 <?php echo word_limiter($dt->description, 10); ?>
                             </div>
@@ -40,7 +40,7 @@
                                 <div class="img-res-height">
                                     <img src="<?php echo $dt->url_pic . '/small'; ?>" alt="<?php echo $dt->title; ?>">
                                 </div>
-                                <span><?php echo date('d M Y H:i:s', strtotime($dt->publish_on)); ?></span>
+                                <span class="no-border"><?php echo date('d M Y H:i:s', strtotime($dt->publish_on)); ?></span>
                                 <h1><?php echo $dt->title; ?></h1>
                                 <?php echo word_limiter($dt->description, 10); ?>
                             </div>
@@ -63,7 +63,7 @@
                                 <div class="img-res-height">
                                     <img src="<?php echo $dt->url_pic . '/small'; ?>" alt="<?php echo $dt->title; ?>">
                                 </div>
-                                <span><?php echo date('d M Y H:i:s', strtotime($dt->publish_on)); ?></span>
+                                <span class="no-border"><?php echo date('d M Y H:i:s', strtotime($dt->publish_on)); ?></span>
                                 <h1><?php echo $dt->title; ?></h1>
                                 <?php echo word_limiter($dt->description, 10); ?>
                             </div>

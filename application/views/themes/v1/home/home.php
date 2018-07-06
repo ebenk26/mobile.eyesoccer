@@ -31,6 +31,7 @@
     </div>
 </div>
 <!-- EYEPROFILE -->
+<div class="container hr-bottom">
 <a href="<?= base_url(); ?>eyeprofile/klub">
 <div class="SvLSD org">
 <img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyeprofile@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -6px;padding-right: 5px;">
@@ -306,6 +307,7 @@
         </div>
     </div>
 </div>
+</div>
 <!-- EYETUBE -->
 <a href="<?= base_url(); ?>eyetube">
 <div class="SvLSD rd">
@@ -370,6 +372,7 @@
     </div>
 </div>
 <!-- EYEME -->
+<div class="container hr-bottom">
 <a href="<?= base_url(); ?>eyeme">
 <div class="SvLSD bl">
 <img src="<?= base_url(); ?>assets/themes/v1/img/ic-eyeme@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -5px;padding-right: 5px;padding-top: 3px;">
@@ -409,7 +412,9 @@
         </div>
     </div>
 </div>
+</div>
 <!-- EYENEWS -->
+<div class="container hr-bottom">
 <a href="<?= base_url(); ?>eyenews">
 <div class="SvLSD rd2">
 <img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyenews@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -5px;padding-right: 5px;padding-top: 3px;">
@@ -417,7 +422,7 @@
     <span>see all</span>
 </div>
 </a>
-<div class="tab2" style="padding-top: 0px;background-color: #f5f5f5;">
+<div class="tab2">
 	<div class="container eyetube">
 		<div id="reqhomenewslist" class='loadhomenewslist' action="eyenews" loading="off" clean="clshomenewslist">
 			<div id='clshomenewslist'>
@@ -433,23 +438,23 @@
 			<input type='hidden' name='limit' value='7' class='cinput'>
 			<input type='hidden' name='page' value='1' class='cinput'>
 			<input type='hidden' name='desc' value='true' class='cinput'>
-			<!-- <div class="v-eyetube">
+			<div class="v-eyetube">
 				<img src="" alt="">
 			</div>
-			<span style="padding-bottom: 0;margin-bottom: 0;">30 menit lalu</span>
-			<h1 style="padding-top: 0;margin-top: -5px;">Lorrem Ipsum solor sit amet</h1>
-			<span id='tab-populer' class="orange-active" active="true" style="bottom: 0;color: #FF5722;">Terkini</span>
+            <span id='tab-populer' class="orange-active no-border" active="true" style="padding: 10px;bottom: 0;color: #FF5722;">Terkini</span>
 			<a href="https://localhost/mob.eyesoccer.id/eyenews/detail/di-website-fifa-bali-united-yang-jadi-juara-liga-1-2017" title="Di Website FIFA Bali United yang Jadi Juara Liga 1 2017">
-				<div class="rek-ber-c">
-					<div class="img-res-height" style="margin-top: 0;">
-						<img src="https://static.eyesoccer.id/v1/cache/images/2359-FIFAlagi.jpg/small" alt="Di Website FIFA Bali United yang Jadi Juara Liga 1 2017">
-					</div>
-					<span style="position: unset;">12 Nov 2017 22:19:06</span>
-					<h1 style="bottom: 0;padding: unset;">Di Website FIFA Bali United yang Jadi Juara Liga 1 2017</h1>
-					<p>JAKARTA - Kompetisi Liga 1 2017 memang sudah selesai. Dan,�
-					</p>
-				</div>
-			</a> -->
+            <div class="etube-content pd-t-10 m2420">
+                <div class="v-etube">
+                    <img src="" alt="">
+                    <div class="btn-play">
+                        <img src="http://localhost/mobile.eyesoccer/assets/themes/v1/img/btn-play.png" alt="">
+                    </div>
+                </div>
+                <h1 class="gr">Lorem Ipsum Dolor Sit amet</h1>
+                <span class="gr" style="height: 8px;color: transparent !important;">30 menit lalu</span>
+                <span class="gr" style="height: 8px;color: transparent !important;">2000 view - 100 suka</span>
+            </div>
+			</a>
 		</div>
 	</div>
     <div id="reqtabnews" class='loadtabnews' action="eyenews" loading="off" clean="clstabnews">
@@ -463,83 +468,11 @@
             </script>
         </div>
         <input type='hidden' name='fn' value='tabnews' class='cinput'>
-        <!-- <div id='boxtab'>
-            <span id='tab-populer' onclick="tabmenu(this.id, 'orange-active')" class="orange-active" active="true">terpopuler</span>
-            <span id='tab-rekomendasi' onclick="tabmenu(this.id, 'orange-active')">rekomendasi</span>
-            <span id='tab-usiamuda' onclick="tabmenu(this.id, 'orange-active')">usia muda</span>
-        </div>
-        <hr>
-        <div role="listbox" class="carousel-inner">
-            <div id='tab-populer' class="box item active">
-                <div class="container rek-ber">
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.451</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.45</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.45</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                </div>
-            </div>
-            <div id='tab-rekomendasi' class="box item">
-                <div class="container rek-ber">
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.452</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.45</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.45</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                </div>
-            </div>
-            <div id='tab-usiamuda' class="box item">
-                <div class="container rek-ber">
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.453</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.45</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                    <div class="rek-ber-c">
-                        <img src="" alt="">
-                        <span>17 Okt 2017 - 12.45</span>
-                        <h1>lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h1>
-                        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
+</div>
 <!-- EYEMARKET -->
+<div class="container hr-bottom">
 <a href="<?= base_url(); ?>eyemarket">
 <div class="SvLSD yl">
 <img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyemarket@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -8px;padding-right: 5px;">
@@ -561,29 +494,68 @@
                     </script>
                 </div>
                 <input type='hidden' name='fn' value='market' class='cinput'>
-                <!-- <div class="box item active">
+                <div class="box item active">
 
 
                     <a href="">
-                        <div class="em-box-content">
-                            <img src="" alt="">
-                            <h1>lorem ipsum dolor sit</h1>
-                            <p class="prices">Rp. 500.000</p>
-                            <button type="text" class="beli">Beli</button>
+                    <div class="em-box-content">
+                        <div class="container img-gr-emarket">
                         </div>
+                        <h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+                        <p class="gr prices w90m5">Rp. 500.000</p>
+                        <button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+                    </div>
                     </a>
                     <a href="">
-                        <div class="em-box-content">
-                            <img src="" alt="">
-                            <h1>lorem ipsum dolor sit</h1>
-                            <p class="prices">Rp. 500.000</p>
-                            <button type="text" class="beli">Beli</button>
+                    <div class="em-box-content">
+                        <div class="container img-gr-emarket">
                         </div>
+                        <h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+                        <p class="gr prices w90m5">Rp. 500.000</p>
+                        <button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+                    </div>
                     </a>
-                </div> -->
+                    <a href="">
+                    <div class="em-box-content">
+                        <div class="container img-gr-emarket">
+                        </div>
+                        <h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+                        <p class="gr prices w90m5">Rp. 500.000</p>
+                        <button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+                    </div>
+                    </a>
+                    <a href="">
+                    <div class="em-box-content">
+                        <div class="container img-gr-emarket">
+                        </div>
+                        <h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+                        <p class="gr prices w90m5">Rp. 500.000</p>
+                        <button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+                    </div>
+                    </a>
+                    <a href="">
+                    <div class="em-box-content">
+                        <div class="container img-gr-emarket">
+                        </div>
+                        <h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+                        <p class="gr prices w90m5">Rp. 500.000</p>
+                        <button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+                    </div>
+                    </a>
+                    <a href="">
+                    <div class="em-box-content">
+                        <div class="container img-gr-emarket">
+                        </div>
+                        <h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+                        <p class="gr prices w90m5">Rp. 500.000</p>
+                        <button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- EYEVENT -->
 <a href="<?= base_url(); ?>eyevent">

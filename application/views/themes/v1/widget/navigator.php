@@ -1,4 +1,4 @@
-<nav>
+<nav class="nav-mobile-width">
     <i id="menu" class="material-icons f-l">menu</i>
     <a href="<?= base_url(); ?>">
 	<img src="<?= base_url(); ?>assets/img/logo.png" alt="">
@@ -23,9 +23,40 @@
     ?>
     
 </nav>
-<!-- Link download berikut dibuat kondisi, jika device yg open iphone maka link nya ke apple store jika yg open device android
-maka link ke playstore, selain dua device tersebut maka button display none. dan dibuat cache jika button di close maka tetap
-tidak tampil walaupun di refresh agar tidak terlalu mengganggu -->
+<nav class="nav-full-width">
+	<img src="<?= base_url(); ?>assets/img/logo.png" alt="" style="float:  left;margin:  -4px 20px; 0px">
+	<div class="fwmenu">
+		<a href="<?= base_url(); ?>eyeprofile/klub">Eye Profile</a>
+		<a href="<?= base_url(); ?>eyetube">Eye Tube</a>
+		<a href="<?= base_url(); ?>eyenews">Eye News</a>
+		<a href="<?= base_url(); ?>eyeme">Eye Me</a>
+		<a href="<?= base_url(); ?>eyemarket">Eye Market</a>
+		<a href="<?= base_url(); ?>eyevent">Eye Vent</a>
+	</div>
+    <?php
+	if($this->session->member){
+	?>
+		<a href="<?= base_url(); ?>member/logout">Keluar</a>
+    <?php
+	}
+	?>
+	<?php 
+
+	if($this->uri->segment(1) == 'eyeme' ){
+
+		if(!$this->session->member){
+			echo '<i class="material-icons f-r" onclick="xdir()">input</i>';
+		}
+
+
+	}
+	else{
+		echo loginAvaTop($this->session->member);
+	}
+
+	?>
+</nav>
+
 <div class="dbcls">
 	<div class="dbcls-box">
 		<a class="linkdbcls" href="">

@@ -14,7 +14,7 @@
 						<span class="hl">headline</span>
 						<img style="z-index:  unset;" src="<?php echo $dt->url_pic; ?>" alt="<?php echo $dt->title; ?>">
 					</div>
-					<span style="padding-bottom: 0;margin-bottom: 0;margin-top: 0px;bottom: 82px;font-size: .6em;"><?php echo relative_time($this->library->datenormal($dt->publish_on)); ?> lalu</span>
+					<span class="no-border" style="padding-bottom: 0;margin-bottom: 0;margin-top: 0px;bottom: 82px;font-size: .6em;"><?php echo relative_time($this->library->datenormal($dt->publish_on)); ?> lalu</span>
 					<h1 style="padding-top: 0;margin-top: -40px;bottom: 40px; height: unset; overflow: unset;"><?php echo $dt->title; ?></h1>
 				</div>
 			</a>

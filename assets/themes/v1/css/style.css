@@ -3542,7 +3542,7 @@ tbody table{
 .SvLSD{
     width: 95%;
     float: left;
-    margin: 10px 2.5%;
+    margin: 15px 2.5%;
     border-bottom: 1px solid;
     height: 19px;
     margin-bottom: 20px;
@@ -3960,7 +3960,7 @@ video::-webkit-media-controls-panel {
     top: 0px;
     width: 100%;
     background-color: #f5f5f5;
-    z-index: 1;
+    z-index: 2;
     padding: 5px 0px;
     max-width: 768px;
 }
@@ -4978,6 +4978,11 @@ select::after{
     width: 98%;
     margin: 0 1%;
 }
+#reqtabnews #boxtab{
+    width: max-content;
+    display: block;
+    margin: 0 auto;       
+}
 @media screen and (min-width: 768px){
     .over-x-bg-g{
         width: 97%;
@@ -4996,9 +5001,9 @@ select::after{
     }
     .SvLSD {
         width: 97%;
-        margin: 10px 1.5%;
+        margin: 15px 1.5% 20px;
     }
-    #reqtabnews #boxtab, .ep-h2 {
+    .ep-h2 {
         width: 97% !important;
         padding-left: 1.5% !important;
     }
@@ -5020,8 +5025,51 @@ select::after{
     .em-box-content{
         margin: 3px 6px 3px 0;
     }
+    nav.nav-mobile-width{
+        display: none !important;
+    }
+    nav.nav-full-width{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 768px){
+    nav.nav-mobile-width{
+        display: block !important;
+    }
+    nav.nav-full-width{
+        display: none !important;
+    }
 }
 .tab2 span:hover.no-border, .no-border, .no-border:hover, .no-border:active, .no-border:focus, .no-border:visited{
     border: unset !important;
     border-color: unset !important;
+}
+.hr-bottom{
+    border-bottom: 10px solid #f5f5f5;
+    padding-bottom: 10px;
+}
+.img-gr-emarket{
+    height:  100px;
+    background-color: whitesmoke;
+    box-sizing:  border-box;
+    width:  90%;
+    margin:  5%;
+}
+.w90m5{
+    width: 90% !important;
+    margin: 5px 5% !important;
+}
+.nav-full-width .fwmenu{
+    width: max-content;
+    text-align: left;
+    float: left;
+}
+.nav-full-width .fwmenu a{
+    font-size: .9em;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 400;
+    color: #616161;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 13px 5px;
 }
