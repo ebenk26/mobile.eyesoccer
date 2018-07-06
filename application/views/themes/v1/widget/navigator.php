@@ -24,7 +24,7 @@
     
 </nav>
 <nav class="nav-full-width">
-	<img src="<?= base_url(); ?>assets/img/logo.png" alt="" style="float:  left;margin:  -4px 20px; 0px">
+	<a href="<?= base_url(); ?>"><img src="<?= base_url(); ?>assets/img/logo.png" alt="" style="float:  left;margin:  -4px 20px; 0px"></a>
 	<div class="fwmenu">
 		<a href="<?= base_url(); ?>eyeprofile/klub">Eye Profile</a>
 		<a href="<?= base_url(); ?>eyetube">Eye Tube</a>
