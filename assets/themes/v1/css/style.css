@@ -106,7 +106,7 @@ nav{
 .m-log, .slct-lg, .f-r{
     float: right;
 }
-nav>.f-l, nav>.f-r{
+nav .f-l, nav .f-r{
     padding: 10px;
     color: #8ec429;
 }
@@ -5106,14 +5106,24 @@ select::after{
 .nav-full-width .fwmenu{
     width: max-content;
     text-align: left;
-    float: left;
+    float: right;
+    margin: 0px 30px;
 }
 .nav-full-width .fwmenu a{
-    font-size: .9em;
+    font-size: .8em;
     font-family: Roboto, 'sans-serif';
-    font-weight: 400;
+    font-weight: 500;
     color: #616161;
     text-transform: uppercase;
     display: inline-block;
-    margin: 13px 5px;
+    margin: 14px 5px 0px;
+    letter-spacing: 2px;
+}
+.nav-full-width .fwmenu a:hover{
+    color: orange;
+}
+.max-900{
+    max-width: 900px;
+    margin: 0 auto;
+    float: unset;
 }

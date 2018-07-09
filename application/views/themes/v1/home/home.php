@@ -12,22 +12,25 @@
             </script>
         </div>
         <input type='hidden' name='fn' value='trending' class='cinput'>
-        <span class="x-c fafa">
-            <a href="" class="gr">Choirul Huda</a>
-            <a href="" class="gr">IndonesiaU-19</a>
-            <a href="" class="gr">Egy Maulana Vikri</a>
-            <a href="" class="gr">Persib</a>
-            <a href="" class="gr">Liga2</a>
-            <a href="" class="gr">Liga Santri Nusantara</a>
-            <a href="" class="gr">Liga Champion</a>
-            <a href="" class="gr">Liga1</a>
-            <a href="" class="gr">Liga Santri Nusantara</a>
-            <a href="" class="gr">Liga Champion</a>
-            <a href="" class="gr">Liga1</a>
-            <a href="" class="gr">Liga Santri Nusantara</a>
-            <a href="" class="gr">Liga Champion</a>
-            <a href="" class="gr">Liga1</a>
-        </span>
+        <div class="container over-x">
+            <span class="x-c fafa">
+                <x class="m-l-100"></x>
+                <a href="" class="gr">Choirul Huda</a>
+                <a href="" class="gr">IndonesiaU-19</a>
+                <a href="" class="gr">Egy Maulana Vikri</a>
+                <a href="" class="gr">Persib</a>
+                <a href="" class="gr">Liga2</a>
+                <a href="" class="gr">Liga Santri Nusantara</a>
+                <a href="" class="gr">Liga Champion</a>
+                <a href="" class="gr">Liga1</a>
+                <a href="" class="gr">Liga Santri Nusantara</a>
+                <a href="" class="gr">Liga Champion</a>
+                <a href="" class="gr">Liga1</a>
+                <a href="" class="gr">Liga Santri Nusantara</a>
+                <a href="" class="gr">Liga Champion</a>
+                <a href="" class="gr">Liga1</a>
+            </span>
+        </div>
     </div>
 </div>
 <!-- EYEPROFILE -->
