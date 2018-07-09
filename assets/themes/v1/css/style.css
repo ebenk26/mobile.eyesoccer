@@ -5076,7 +5076,7 @@ select::after{
         background: transparent;
     }
     body::-webkit-scrollbar {
-        width: 1em;
+        width: .5em;
     }
      
     body::-webkit-scrollbar-track {
