@@ -43,11 +43,11 @@
 </div>
 </a>
 <div class="container">
-    <div class="over-x">
+    <div id='boxtab' class="over-x">
         <ul class="nav nav-tabs custom-nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#Klub">Klub</a></li>
-            <li><a data-toggle="tab" href="#Pemain">Pemain</a></li>
-            <li><a data-toggle="tab" href="#Pemain2">Pemain Paling Banyak Dilihat</a></li>
+            <li class="active"><a data-toggle="tab" id="Klub" onclick="tabmenu(this.id, 'a', 'div', 'active')" active="true">Klub</a></li>
+            <li><a data-toggle="tab" id="Pemain" onclick="tabmenu(this.id, 'a', 'div', 'active')">Pemain</a></li>
+            <li><a data-toggle="tab" id="Pemain2" onclick="tabmenu(this.id, 'a', 'div', 'active')">Pemain Paling Banyak Dilihat</a></li>
         </ul>
     </div>
 
