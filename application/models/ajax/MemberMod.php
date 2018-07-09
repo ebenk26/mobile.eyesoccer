@@ -164,6 +164,19 @@ class MemberMod extends CI_Model
         $this->tools->__flashMessage($arr);
     }
 
+    function __passact()
+    {
+        $randurl = substr(md5(microtime()),rand(0,26),5);
+        $password = $this->input->post("password");
+        $unicode = $this->input->post("ver");
+        $this->db->query("UPDATE tbl_member SET password='".md5($password)."',unique_code='".$randurl."' WHERE unique_code='".$unicode."'");
+
+        $msg = 'Data berhasil disimpan';
+        $arr = array('xDirect' => base_url('member'), 'xCss' => 'boxsuccess', 'xMsg' => $msg, 'xAlert' => true);
+
+        $this->tools->__flashMessage($arr);
+    }
+
     function __infoklub()
     {
         $param = array('id_member' => $this->session->member['id'], 'detail' => true, 'md5' => true);

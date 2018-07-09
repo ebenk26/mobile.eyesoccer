@@ -5,10 +5,10 @@ $club = json_decode($club);
 
 foreach ($club->data as $k => $v) {
     ?>
-        <a href='<?php echo str_replace('pemain','klub',$v->share_url); ?>'>
+        <a href='<?php echo $this->library->urltomob($v->share_url); ?>'>
             <div class='ep-box-content'>
                 <div class='img'>
-                    <img src='<?php echo $this->library->lastext($v->url_logo,'.') ? $v->url_logo : $default;// echo $v->url_logo; ?>' alt='<?php echo $v->name; ?>'>
+                    <img class="lazy" src='<?php echo $this->library->lastext($v->url_logo,'.') ? $v->url_logo : $default;// echo $v->url_logo; ?>' alt='<?php echo $v->name; ?>'>
                 </div>
                 <div class='ep-detail'>
                     <h1><?php echo $v->name; ?></h1>
