@@ -44,7 +44,7 @@
 
 	}
 	else{
-		echo loginAvaTop($this->session->member);
+		echo loginAvaTop2($this->session->member);
 	}
 
 	?>

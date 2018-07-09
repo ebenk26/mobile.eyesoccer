@@ -29,6 +29,7 @@ $(document).ready(function(){
 // window.onload = function(){
 var srcbox = document.getElementById('srcbox');
 var src = document.getElementById("src");
+var csrc = document.getElementById("csrc");
 var srcS = document.getElementById("srcSub");
 var close = document.getElementsByClassName("close")[0];
 var menu = document.getElementById('menu');
@@ -70,7 +71,10 @@ window.onload = function(){
     // buttonOpen.style.width = "200px";
     // buttonOpen.style.height = "unset";
     // buttonOpen.style.padding = "10px";
-    if(src !== undefined && src !== null){
+    if(csrc || src !== undefined && csrc || src !== null){
+        csrc.onclick = function() {
+            srcbox.style.display = "block";
+        }
         src.onclick = function() {
             srcbox.style.display = "block";
         }

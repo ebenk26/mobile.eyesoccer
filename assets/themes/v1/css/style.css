@@ -5142,26 +5142,27 @@ select::after{
 }
 .custom-nav-tabs{
     display: block;
-    width: max-content;
-    margin: 0 auto;
-    border: none;
+    width: 97%;
+    margin-left: 1.5%;
+    min-width: max-content;
+    /* margin: 0 auto; */
+    /* border: none; */
 }
 .custom-nav-tabs > li {
     float: left;
-    margin: unset;
+    /* margin: unset; */
 }
 .custom-nav-tabs > li.active > a, .custom-nav-tabs > li.active > a:hover, .custom-nav-tabs > li.active > a:focus{
     color: #555;
     cursor: default;
-    background-color: #fff;
-    border: 0px;
-    border-bottom: 4px solid #4a4a4a;
+    padding: 7px 13px 3px;
+    /* background-color: #fff; */
+    /* border: 0px; */
+    /* border-bottom: 4px solid #4a4a4a; */
 }
 .custom-nav-tabs > li > a {
-    margin-right: 2px;
-    border-radius: 4px 4px 0 0;
     font-size: .75em;
-    margin: 10px;
+    /* margin: 10px; */
     font-family: Roboto, 'sans-serif';
     padding: 5px;
     letter-spacing: 2px;

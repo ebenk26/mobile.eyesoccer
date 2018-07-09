@@ -738,6 +738,24 @@ function loginAvaTop($hasLogin){
     }
 }
 
+function loginAvaTop2($hasLogin){
+    
+    if(is_array($hasLogin)){
+        return '<i id="csrc" class="material-icons f-r">search</i>
+				<a href="'.LOGINURL.'" style="color: #8ec429;">
+					<div class="pprofile">
+						<img src="'.$hasLogin['url_pic'].'/small" alt="avatar">
+					</div>
+				</a>';
+    } else {
+        return '<i id="csrc" class="material-icons f-r">search</i>
+				<a href="'.base_url('member').'" style="color: #8ec429;">
+					<div class="pprofile">
+						<img src="'.SUBCDN.'assets/img/eyeme/user-discover.png" alt="">
+					</div>
+				</a>';
+    }
+}
 function formatDate($date,$str = ' '){
     if($date != ''){
         $month =  array('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Okt','Nov','Des');
