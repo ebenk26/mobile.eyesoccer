@@ -42,274 +42,296 @@
     <!-- <span>see all</span> -->
 </div>
 </a>
-<a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Klub</h2></a>
-<div class="container over-x over-x-bg-g">
-    <div class="carousel slide t-30">
-        <div role="listbox" class="carousel-inner w-max">
-            <div class="box item active">
-                <div id="reqclub" class="loadclub" action="eyeprofile" loading="off" clean="clsprof">
-                    <div id="clsprof">
-                        <script>
-                            $(document).ready(function () {
-                                $(window).on('load', function () {
-                                    ajaxOnLoad('loadclub');
-                                });
-                            });
-                        </script>
+<div class="container">
+    <div class="over-x">
+        <ul class="nav nav-tabs custom-nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#Klub">Klub</a></li>
+            <li><a data-toggle="tab" href="#Pemain">Pemain</a></li>
+            <li><a data-toggle="tab" href="#Pemain2">Pemain Paling Banyak Dilihat</a></li>
+        </ul>
+    </div>
+
+  <div class="tab-content">
+    <div id="Klub" class="tab-pane fade in active">
+        <div class="container over-x over-x-bg-g">
+            <div class="carousel slide t-30">
+                <div role="listbox" class="carousel-inner w-max">
+                    <div class="box item active">
+                        <div id="reqclub" class="loadclub" action="eyeprofile" loading="off" clean="clsprof">
+                            <div id="clsprof">
+                                <script>
+                                    $(document).ready(function () {
+                                        $(window).on('load', function () {
+                                            ajaxOnLoad('loadclub');
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <input type="hidden" name="fn" value="clubhome" class="cinput">
+                            <input type="hidden" name="page" value="<?php echo rand(1, 10) ?>" class="cinput">
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
                     </div>
-                    <input type="hidden" name="fn" value="clubhome" class="cinput">
-                    <input type="hidden" name="page" value="<?php echo rand(1, 10) ?>" class="cinput">
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-
-
                 </div>
             </div>
         </div>
     </div>
+    <div id="Pemain" class="tab-pane fade">
+        <div class="container over-x over-x-bg-g">
+            <div class="carousel slide t-30">
+                <div role="listbox" class="carousel-inner w-max">
+                    <div class="box item active">
+                        <div id="reqprofile" class="loadprofile" action="eyeprofile" loading="off" clean="clsprof">
+                            <div id="clsprof">
+                                <script>
+                                    $(document).ready(function () {
+                                        $(window).on('load', function () {
+                                            ajaxOnLoad('loadprofile');
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <input type="hidden" name="fn" value="playerhome" class="cinput">
+                            <input type="hidden" name="page" value="<?php echo rand(1, 10) ?>" class="cinput">
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div id="Pemain2" class="tab-pane fade">
+        <div class="container over-x over-x-bg-g">
+            <div class="carousel slide t-30">
+                <div role="listbox" class="carousel-inner w-max">
+                    <div class="box item active">
+                        <div id="reqprofilemostsee" class="loadprofilemostsee" action="eyeprofile" loading="off" clean="clsprof">
+                            <div id="clsprof">
+                                <script>
+                                    $(document).ready(function () {
+                                        $(window).on('load', function () {
+                                            ajaxOnLoad('loadprofilemostsee');
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <input type="hidden" name="fn" value="playermostsee" class="cinput">
+                            <input type="hidden" name="page" value="<?php echo abs(date('j') - date('n')) ?>" class="cinput">
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="ep-box-content">
+                                    <div class="img gr">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="ep-detail fafa gr">
+                                        <h1>Egy Maulana Vikry</h1>
+                                        <p>Posisi: Sayap Kanan<br>
+                                            Klub: -<br>
+                                            Tanggal Lahir: 7 Juli 2000</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>
+<!-- <a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Klub</h2></a> -->
+
+
 <!-- EYEPROFILE -->
-<a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain</h2></a>
-<div class="container over-x over-x-bg-g">
-    <div class="carousel slide t-30">
-        <div role="listbox" class="carousel-inner w-max">
-            <div class="box item active">
-                <div id="reqprofile" class="loadprofile" action="eyeprofile" loading="off" clean="clsprof">
-                    <div id="clsprof">
-                        <script>
-                            $(document).ready(function () {
-                                $(window).on('load', function () {
-                                    ajaxOnLoad('loadprofile');
-                                });
-                            });
-                        </script>
-                    </div>
-                    <input type="hidden" name="fn" value="playerhome" class="cinput">
-                    <input type="hidden" name="page" value="<?php echo rand(1, 10) ?>" class="cinput">
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
+<!-- <a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain</h2></a> -->
 
+<!-- <a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain Paling Banyak Dilihat</h2></a> -->
 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<a href="<?= base_url(); ?>eyeprofile/pemain"><h2 class="ep-h2">Pemain Paling Banyak Dilihat</h2></a>
-<div class="container over-x over-x-bg-g">
-    <div class="carousel slide t-30">
-        <div role="listbox" class="carousel-inner w-max">
-            <div class="box item active">
-                <div id="reqprofilemostsee" class="loadprofilemostsee" action="eyeprofile" loading="off" clean="clsprof">
-                    <div id="clsprof">
-                        <script>
-                            $(document).ready(function () {
-                                $(window).on('load', function () {
-                                    ajaxOnLoad('loadprofilemostsee');
-                                });
-                            });
-                        </script>
-                    </div>
-                    <input type="hidden" name="fn" value="playermostsee" class="cinput">
-                    <input type="hidden" name="page" value="<?php echo abs(date('j') - date('n')) ?>" class="cinput">
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="ep-box-content">
-                            <div class="img gr">
-                                <img src="" alt="">
-                            </div>
-                            <div class="ep-detail fafa gr">
-                                <h1>Egy Maulana Vikry</h1>
-                                <p>Posisi: Sayap Kanan<br>
-                                    Klub: -<br>
-                                    Tanggal Lahir: 7 Juli 2000</p>
-                            </div>
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 <!-- EYETUBE -->
 <a href="<?= base_url(); ?>eyetube">
