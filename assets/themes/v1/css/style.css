@@ -207,7 +207,7 @@ nav img{
     max-height: 130%;
     position: relative;
     bottom: 100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .vid-etube::before, .v-eyetube::before{
     content: '';
