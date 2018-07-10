@@ -37,66 +37,38 @@
 						</div>
 					</div>
 			</div>
-			<!-- <div class="head">
-				<div class="img-radius">
-					<img src="https://www.eyesoccer.id/systems/club_logo/2034LOGO UNTUK APLIKASI.jpg"
-						alt="">
-				</div>
-				<h2 class="h2-text-bottom"><?php echo urldecode($slug);?></h2>
-				<div class="container tab-eprofile">
-					<a class="active" href="#content1">Info</a>
-				</div>
-				<div class="table-scroll">
-					<table class="content-tab-eprofile">
-						<tr>
-							<td>Jumlah Klub</td>
-							<td>: 0</td>
-						</tr>
-						<tr>
-							<td>Jumlah Pemain</td>
-							<td>: 0</td>
-						</tr>
-						<tr>
-							<td>Pemain Asing</td>
-							<td>: 0</td>
-						</tr>
-					</table>
-				</div>
-			</div> -->
-			<div class="container">
-				<div class="container sub-menu">
-					<a href="#" class="active">Pemain</a>
-					<a href="#">Ofisial</a>
-					<a href="#">suporter</a>
-				</div>
-			</div>
-			<div class="container">
-				<div class="user-data">
-					<div class="subhead">
-						<div class="img-radius">
-							<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-						</div>
-						<b>#1</b>
-						<h3></h3>
-						<span>manager</span>
+			
+			<div id="tab-info" class="container" style="display: block;">
+					<div class="ep-des">
+					<!-- <h2 class="tx-c" style="font-weight: 400;">ABSTRAX FA (U11)</h2>	 -->
+										<table class="content-tab-eprofile mg-t15">
+							<tbody><tr>
+								<td>Julukan</td>
+								<td style="font-weight:bold">: </td>
+							</tr>
+							<tr>
+								<td>Tanggal Berdiri</td>
+								<td>: </td>
+							</tr>
+							<tr>
+								<td>Pemilik</td>
+								<td>: </td>
+							</tr>
+							<tr>
+								<td>Alamat Sekretariat</td>
+								<td>: </td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>: </td>
+							</tr>
+							<tr>
+								<td>Jumlah Pemain</td>
+								<td>: </td>
+							</tr>
+						</tbody></table>
 					</div>
-					<table>
-						<tr>
-							<td>kewarganegaraan</td>
-							<td>indonesia</td>
-						</tr>
-						<tr>
-							<td>tgl lahir/umur</td>
-							<td>lorem ipsum</td>
-						</tr>
-						<tr>
-							<td>lorem ipsum</td>
-							<td>lorem ipsum</td>
-						</tr>
-					</table>
-					<a href="">lihat detail pemain</a>
 				</div>
-			</div>
         </div>
 	</div>
         <div class="container box-jadwal" style="position: relative;display:none;">
@@ -288,57 +260,65 @@
 											});
 										});
 									</script>
-							 </div>
-							  <input type='hidden' name='fn' value='market' class='cinput'>
-							<div class="box item active">
-								<a href="">
-									<div class="em-box-content">
-										<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
-								<a href="">
-									<div class="em-box-content">
-										<img src="http://www.desktopimages.org/pictures/2014/0118/1/red-smoke-wallpaper-hd-5449.jpg" alt="">
-										<h1>lorem ipsum dolor sit</h1>
-										<p class="prices">Rp. 500.000</p>
-										<button type="text" class="beli">Beli</button>
-									</div>
-								</a>
+							</div>
+							<input type='hidden' name='fn' value='market' class='cinput'>
+							<div class="container over-x">
+								<div class="box item active w-max">
+									<a href="">
+										<div class="em-box-content">
+											<div class="container img-gr-emarket">
+											</div>
+											<h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+											<p class="gr prices w90m5">Rp. 500.000</p>
+											<button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+										</div>
+									</a>
+									<a href="">
+										<div class="em-box-content">
+											<div class="container img-gr-emarket">
+											</div>
+											<h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+											<p class="gr prices w90m5">Rp. 500.000</p>
+											<button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+										</div>
+									</a>
+									<a href="">
+										<div class="em-box-content">
+											<div class="container img-gr-emarket">
+											</div>
+											<h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+											<p class="gr prices w90m5">Rp. 500.000</p>
+											<button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+										</div>
+									</a>
+									<a href="">
+										<div class="em-box-content">
+											<div class="container img-gr-emarket">
+											</div>
+											<h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+											<p class="gr prices w90m5">Rp. 500.000</p>
+											<button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+										</div>
+									</a>
+									<a href="">
+										<div class="em-box-content">
+											<div class="container img-gr-emarket">
+											</div>
+											<h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+											<p class="gr prices w90m5">Rp. 500.000</p>
+											<button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+										</div>
+									</a>
+									<a href="">
+										<div class="em-box-content">
+											<div class="container img-gr-emarket">
+											</div>
+											<h1 class="gr w90m5" style="color:  transparent !important;">lorem ipsum dolor sit</h1>
+											<p class="gr prices w90m5">Rp. 500.000</p>
+											<button type="text" class="beli gr w90m5" style="color:  transparent !important;">Beli</button>
+										</div>
+									</a>
+								</div>
 							</div>
                         </div>
                     </div>
