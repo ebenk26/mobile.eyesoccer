@@ -9,7 +9,7 @@
 			foreach ($klublist->data as $dt)
 			{
 ?>
-				<table class="content-tab-eprofile">
+				<table class="content-tab-eprofile mg-t15">
 					<tr>
 						<td>Jumlah Klub</td>
 						<td>: <?php echo $dt->cc;?> klub</td>

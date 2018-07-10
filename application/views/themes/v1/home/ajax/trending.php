@@ -1,4 +1,4 @@
-<div class="container over-x">
+<div class="container over-x trnd">
 <span class="x-c">
     <x class="m-l-100"></x>
     <?php

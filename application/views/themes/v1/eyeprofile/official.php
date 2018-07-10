@@ -112,40 +112,64 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
                             <input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
                             <input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
                             <input type='hidden' name='submenu' value='official' class='cinput'>
-                            <div class="table-scroll-x" style="border: unset;border-radius: unset;">
-                                <table class="table-stripe gr fafa">
-                                    <tr>
-                                        <th>#</th>
-                                        <th>nama</th>
-                                        <th>klub</th>
-                                        <th>tgl lahir/umur</th>
-                                        <th>posisi</th>
-                                        <th>kewarganegaraan</th>
-                                        <th>bergabung</th>
-                                        <th>masa kontrak</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1 <img src="" alt=""></td>
-                                        <td>aji santoso</td>
-                                        <td><img src="" alt=""></td>
-                                        <td>12 mar 1993 (24)</td>
-                                        <td>manager</td>
-                                        <td>indonesia</td>
-                                        <td>7 sep 2017</td>
-                                        <td>31 des 2017</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1 <img src="" alt=""></td>
-                                        <td>aji santoso</td>
-                                        <td><img src="" alt=""></td>
-                                        <td>12 mar 1993 (24)</td>
-                                        <td>manager</td>
-                                        <td>indonesia</td>
-                                        <td>7 sep 2017</td>
-                                        <td>-</td>
-                                    </tr>
-                                </table>
-                            </div>
+                            <div class="container" style="border: unset;border-radius: unset;">
+                                    <div class="x-form-daftar-pemain row" style="margin:2px 2px 10px !important; background-color:#fafafa;">
+                                        <a href="" class="container">
+                                            <div class="col-xs-4 edits">
+                                                <div class="img-round" style="background-color: #f5f5f5;">
+                                                    <img src="" alt="" style="max-width:unset; max-height:unset;">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8 pd-t-19 edits dftr-pemain tx-r" style="padding: 8px 0;">
+                                                <span class="mh-unset gr">ANTON S.PD</span>
+                                                <span class="mh-unset gr">(Klub)</span>
+                                                <span class="mh-unset gr">PELATIH</span>
+                                            </div>
+                                        </a>
+                                    </div>          
+                                    <div class="x-form-daftar-pemain row" style="margin:2px 2px 10px !important; background-color:#fafafa;">
+                                        <a href="" class="container">
+                                            <div class="col-xs-4 edits">
+                                                <div class="img-round" style="background-color: #f5f5f5;">
+                                                    <img src="" alt="" style="max-width:unset; max-height:unset;">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8 pd-t-19 edits dftr-pemain tx-r" style="padding: 8px 0;">
+                                                <span class="mh-unset gr">ANTON S.PD</span>
+                                                <span class="mh-unset gr">(Klub)</span>
+                                                <span class="mh-unset gr">PELATIH</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="x-form-daftar-pemain row" style="margin:2px 2px 10px !important; background-color:#fafafa;">
+                                        <a href="" class="container">
+                                            <div class="col-xs-4 edits">
+                                                <div class="img-round" style="background-color: #f5f5f5;">
+                                                    <img src="" alt="" style="max-width:unset; max-height:unset;">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8 pd-t-19 edits dftr-pemain tx-r" style="padding: 8px 0;">
+                                                <span class="mh-unset gr">ANTON S.PD</span>
+                                                <span class="mh-unset gr">(Klub)</span>
+                                                <span class="mh-unset gr">PELATIH</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="x-form-daftar-pemain row" style="margin:2px 2px 10px !important; background-color:#fafafa;">
+                                        <a href="" class="container">
+                                            <div class="col-xs-4 edits">
+                                                <div class="img-round" style="background-color: #f5f5f5;">
+                                                    <img src="" alt="" style="max-width:unset; max-height:unset;">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8 pd-t-19 edits dftr-pemain tx-r" style="padding: 8px 0;">
+                                                <span class="mh-unset gr">ANTON S.PD</span>
+                                                <span class="mh-unset gr">(Klub)</span>
+                                                <span class="mh-unset gr">PELATIH</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </div>
                         </div>
                     </div>
                 <!-- </div> -->

@@ -12,7 +12,7 @@
             </script>
         </div>
         <input type='hidden' name='fn' value='trending' class='cinput'>
-        <div class="container over-x">
+        <div class="container over-x trnd">
             <span class="x-c fafa">
                 <x class="m-l-100"></x>
                 <a href="" class="gr">Choirul Huda</a>

@@ -15,8 +15,8 @@
                         <span class="hl">headline</span>
 						<img src="<?php echo $value->url_pic;?>" alt="">
 					</div>
-					<span style="bottom: 75px;"><?php echo relative_time($this->library->datenormal($value->createon))." lalu"?></span>
-					<h1  style="bottom: 70px;height: unset;"><?php echo $value->title;?></h1>
+					<span style="bottom: 75px;text-shadow: 1px 3px 10px rgba(0,0,0,.4);color: white;"><?php echo relative_time($this->library->datenormal($value->createon))." lalu"?></span>
+					<h1  style="bottom: 70px;height: unset;overflow: unset;"><?php echo $value->title;?></h1>
 				</div>
 			</a>
 			<div class="container news-headline" style="margin-bottom: 10px;top: unset;">
@@ -35,7 +35,7 @@
 					?>
 				</ul>
 			</div>
-			<span id='tab-populer' class="orange-active" active="true" style="bottom: 0;color: #FF5722;margin: 5px;font-weight: 600;">Terkini</span>
+			<span id='tab-populer' class="orange-active oacstm" active="true" style="bottom: 0;color: #FF5722;margin: 5px;font-weight: 600;">Terkini</span>
 <?php
 			break;
 		}

@@ -6,7 +6,7 @@
     }
 ?>
 
-<table class="content-tab-eprofile">
+<table class="content-tab-eprofile mg-t15">
     <tr>
         <td>Jumlah Klub</td>
         <td>: <?= $klublist->data[0]->cc; ?></td>

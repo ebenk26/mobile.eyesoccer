@@ -65,15 +65,48 @@ $league = ($this->uri->segment(4) ? urldecode($this->uri->segment(4)) : ($this->
 				<input type='hidden' name='slug' value='<?php echo $competition;?>' class='cinput'>
 				<input type='hidden' name='submenu' value='pemain' class='cinput'>
 				<input type='hidden' name='league' value='<?php echo $league;?>' class='cinput'>
-				<div class="user-pemain">
-					<div class="pemain-img fafa gr" style="border-color: white !important;border: 20px solid white;box-sizing: content-box;margin: -20px;">
-						<img src="" alt="" srcset="">
-					</div>
-					<div class="pemain-data gr">
-						<h3 class="gr">Nama Pemain</h3>
-						<span class="gr">Klub - posisi</span>
-					</div>
-				</div>
+				<div class="container">
+                    <div class="user-pemain">
+                        <div class="gr pemain-img">				
+                        </div>
+                        <div class="pemain-data">		
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                        </div>
+                    </div>
+                    <div class="user-pemain">
+                        <div class="gr pemain-img">				
+                        </div>
+                        <div class="pemain-data">		
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                        </div>
+                    </div>
+                    <div class="user-pemain">
+                        <div class="gr pemain-img">				
+                        </div>
+                        <div class="pemain-data">		
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                        </div>
+                    </div>
+                    <div class="user-pemain">
+                        <div class="gr pemain-img">				
+                        </div>
+                        <div class="pemain-data">		
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                        </div>
+                    </div>
+                    <div class="user-pemain">
+                        <div class="gr pemain-img">				
+                        </div>
+                        <div class="pemain-data">		
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                            <span class="gr">SSB NOSTALGIA ACADEMY LOADWRI (KOKAR) - Sayap Kiri</span>
+                        </div>
+                    </div>
+                </div>
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">

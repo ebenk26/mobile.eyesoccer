@@ -24,7 +24,7 @@
 				<div class="img-radius gr">
 					<img src="" alt="">
 				</div>
-				<h2 class="h2-text-bottom gr">Nama Pemain</h2>
+				<h2 class="h2-text-bottom gr" style="width:  50%;margin: 10px auto;padding: 5px;">Nama Pemain</h2>
 				<p style="display:none;">
 						ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain ini bio pemain 
 				</p>

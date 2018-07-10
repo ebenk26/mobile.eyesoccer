@@ -136,6 +136,12 @@ $league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->se
 					</div>
 					<h3 class="nama-klub gr">Nama Klub</h3>
 				</div>
+				<div class="klub-content">
+					<div class="img-klub-content gr">
+						<img src="" alt="" srcset="">
+					</div>
+					<h3 class="nama-klub gr">Nama Klub</h3>
+				</div>
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">
@@ -307,13 +313,13 @@ $league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->se
                     </div>
                 </div> -->
             </div>
-            <div class="container over-x" style="margin: 30px 0px">
+            <div class="container">
 			<a href="<?= base_url(); ?>eyemarket">
                 <div id="emSlide" class="carousel slide">
-                    <div role="listbox" class="carousel-inner w-max">
+                    <div role="listbox" class="carousel-inner">
 						<a href="<?= base_url(); ?>eyemarket">
 							<div id="emSlide" class="carousel slide">
-							<div role="listbox" class="carousel-inner w-max">
+							<div role="listbox" class="carousel-inner">
 							<div class="SvLSD yl">
 							<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyemarket@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -8px;padding-right: 5px;">
 								<h2>eyeMarket</h2>
@@ -335,7 +341,8 @@ $league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->se
                     </div>
                 </div>
 			</div>
-			<div class="section-box-popup">
+		</div></div>
+			<!-- <div class="section-box-popup">
 				<div class="box-popup">
 				<i class="material-icons sbpclose to-close">clear</i>
 						<div class="container data-profil mt20">
@@ -381,7 +388,7 @@ $league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->se
 						<div class="tx-c">
 							<button class="klik-dsn" style="font-size:.85em;">DAFTAR</button>
 						</div>
-					</div></div>
+					</div></div> -->
 					<script>
 						var buttonOpen = document.getElementsByClassName("button-open")[0];
 						var hd = document.getElementsByClassName("head")[0];

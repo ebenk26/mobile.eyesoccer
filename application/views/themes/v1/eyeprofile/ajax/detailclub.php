@@ -11,7 +11,7 @@
 ?>
 <style>
 /* div.user-data{background-color:#00000005} */
-div.user-data:hover{background-color:#ff990026}
+div.user-data:hover{background-color:#f5f5f5}
 .td-3-8 tr td{
 	padding: 3px 8px;
 }
@@ -40,7 +40,7 @@ div.user-data:hover{background-color:#ff990026}
 			<div class="ep-des">
 			<!-- <h2 class="tx-c" style="font-weight: 400;"><?php echo $dt->name;?></h2>	 -->
 				<?php echo $dt->description;?>
-				<table class="content-tab-eprofile">
+				<table class="content-tab-eprofile mg-t15">
 					<tr>
 						<td>Julukan</td>
 						<td style="font-weight:bold">: <?php echo $dt->nickname;?></td>
@@ -77,7 +77,7 @@ div.user-data:hover{background-color:#ff990026}
 				foreach($dt->players as $players){
 			?>
 			<div class="user-data">
-				<div class="img-radius" style="width:  80px;height: 80px;float:  left;margin:  10px;">
+				<div class="img-radius" style="width:  80px;height: 80px;float:  left;margin:  10px;background-color: white;">
 					<img src="<?php echo $players->url_pic;?>" alt="<?php echo $players->name;?>">
 				</div>
 				<table class="td-3-8" style="width: 180px;float:  left;margin: 10px -10px;">

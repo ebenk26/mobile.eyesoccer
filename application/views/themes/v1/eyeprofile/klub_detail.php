@@ -20,7 +20,24 @@
 			</div>
 			<input type='hidden' name='fn' value='detailclub' class='cinput'>
 			<input type='hidden' name='slug' value='<?php echo $slug;?>' class='cinput'>
-			<div class="head">
+			<div class="head" style="border-radius: 8px 8px 0px 0px;height: 210px;min-height:  unset;">
+				<div class="container tx-c">
+					<div class="img-radius" style="background-color: white;">
+						<img src="" alt="">
+					</div>
+				</div>
+				<h2 class="tx-c h2-pemain-top-head"><?php echo urldecode($slug);?></h2>
+					<div class="container over-x">
+						<div id="boxtab" class="container tab-sub-menu w-max m-0" style="float: unset;position: relative;bottom: unset;margin-top: 20px;">
+							<a style="padding: 0 8px;" class="active">Info</a>
+							<a style="border-left: 1px solid;padding: 0 8px;">Pemain</a>
+							<a style="border-left: 1px solid;border-right:  1px solid;border-color: white; padding: 0 8px;">Ofisial</a>
+							<a style="padding: 0 8px;border-right:  1px solid;">Prestasi</a>
+							<a style="padding: 0 8px;">Galeri</a>
+						</div>
+					</div>
+			</div>
+			<!-- <div class="head">
 				<div class="img-radius">
 					<img src="https://www.eyesoccer.id/systems/club_logo/2034LOGO UNTUK APLIKASI.jpg"
 						alt="">
@@ -45,7 +62,7 @@
 						</tr>
 					</table>
 				</div>
-			</div>
+			</div> -->
 			<div class="container">
 				<div class="container sub-menu">
 					<a href="#" class="active">Pemain</a>
@@ -250,12 +267,12 @@
                     </div>
                 </div>
             </div>
-            <div class="container over-x" style="margin: 30px 0px">
+            <div class="container">
                 <div id="emSlide" class="carousel slide">
-                    <div role="listbox" class="carousel-inner w-max">
+                    <div role="listbox" class="carousel-inner">
 						<a href="<?= base_url(); ?>eyemarket">
 							<div id="emSlide" class="carousel slide">
-							<div role="listbox" class="carousel-inner w-max">
+							<div role="listbox" class="carousel-inner">
 							<div class="SvLSD yl">
 							<img src="<?= base_url(); ?>assets/themes/v1/img/ic_eyemarket@2x.png" alt="" style="float:  left;background-color: white;margin-bottom: -8px;padding-right: 5px;">
 								<h2>eyeMarket</h2>

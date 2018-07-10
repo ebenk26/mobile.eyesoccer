@@ -88,7 +88,7 @@ nav{
         left: 0px;
     }
     .trending {
-        margin: 44px 0px -14px 0px !important;
+        margin: 44px 0 0 0 !important;
         border-top: 15px solid #f5f5f5 !important;
     }
 }
@@ -1472,10 +1472,10 @@ ul, li {
     font-size: .9em;
     font-weight: 400;
     /* margin: -32px 0px; */
-    margin-top: 49px;
+    margin-top: 45px;
     padding: 5px 0px;
     margin-bottom: -47px;
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     height: 100%;
     z-index: 1;
     /* position: relative; */
@@ -1886,7 +1886,7 @@ ul, li {
     padding-bottom: 20px;    
 }
 .eprofile{
-    margin-top: 70px;
+    margin-top: 62px;
     padding: 0 5%;
     width: 90%;
     float: left;
@@ -4422,7 +4422,7 @@ video::-webkit-media-controls-panel {
     color: white;
     padding: 0px;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 5px;
     font-size: .9em;
     font-weight: 600;
     box-shadow: 0 0 10px -3px #03A9F4;
@@ -5082,11 +5082,58 @@ select::after{
     body::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.18);
     }
-     
     body::-webkit-scrollbar-thumb {
       background-color: darkgrey;
       outline: 1px solid slategrey;
       border-radius: 10px;
+    }
+    .container.over-x.trnd{
+        background-color: #f5f5f5;
+    }
+    .trending-s{
+        border-right: 7px solid whitesmoke;
+    }
+    .trending .x-c a.gr{
+        background-color: #fafafa !important;
+        color: #fafafa !important;
+        border-color: #fafafa !important;
+    }
+    .container.over-x.over-x-bg-g{
+        padding: 5px 0;
+    }
+    .container.over-x.over-x-bg-g::-webkit-scrollbar{
+        height: 0px !important;
+    }
+    .x-c{
+        padding: 0px;
+    }
+    .x-form-daftar-pemain.row {
+        width: 320px;
+    }
+    .box-pertandingan{
+        width: 688px;
+        margin: 0px;
+    }
+    .etube-home {
+        background-color: #f5f5f5;
+    }
+    .top-menu-ketegori{
+        margin-top: 45px !important;
+        border: none !important;
+        background-color: #f5f5f5;
+        padding: 10px 0;
+        height: unset;
+    }
+    .container.top-menu-ketegori.over-x{
+        margin-bottom: unset !important;
+    }
+    .oacstm{
+        margin: 10px 0 -15px 2.5% !important;
+        display: block;
+        float: left;
+    }
+    .content-flyad * {
+        max-width: 690px !important;
     }
 }
 @media screen and (max-width: 768px){
@@ -5155,7 +5202,7 @@ select::after{
 .custom-nav-tabs > li.active > a, .custom-nav-tabs > li.active > a:hover, .custom-nav-tabs > li.active > a:focus{
     color: #555;
     cursor: default;
-    padding: 7px 13px 3px;
+    /* padding: 7px 13px 3px; */
     /* background-color: #fff; */
     /* border: 0px; */
     /* border-bottom: 4px solid #4a4a4a; */
@@ -5164,8 +5211,11 @@ select::after{
     font-size: .75em;
     /* margin: 10px; */
     font-family: Roboto, 'sans-serif';
-    padding: 5px;
+    padding: 5px 10px;
     letter-spacing: 2px;
     font-weight: 500;
     text-transform: uppercase;
+}
+.box-pertandingan.klasemen.disable-i-style{
+    box-shadow: none;
 }
