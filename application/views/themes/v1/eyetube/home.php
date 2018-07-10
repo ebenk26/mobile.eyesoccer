@@ -81,42 +81,34 @@
     <input type='hidden' name='fn' value='list_tube' class='cinput'>
     <div class="etube-home" style="padding: unset;">
     
-        <a href="etube-detail.html">
+        <a href="">
+            <div class="etube-mobile-thumb" style="margin-top: 90px;">
+                <div class="img" style="height: 45vw; max-height: 200px;background-color: #fafafa;">
+                </div>
+                <h2 style="visibility: hidden;" class="gr">title Video title Video title Video title Video title Video</h2>
+                <span style="visibility: hidden;" class="gr">2 jam lalu - 123 view</span>
+            </div>
+        </a>
+        <a href="">
             <div class="etube-mobile-thumb">
-                <div class="img gr" style="background-color: #f2f2f2;">
-                    <!-- <img src="http://modernartbuyer.com/wp-content/uploads/2014/10/Aqueous-II-278-web.jpg" alt="">                 -->
+                <div class="img" style="height: 45vw; max-height: 200px;background-color: #fafafa;">
                 </div>
-                <span class="kategori gr" style="visibility: hidden;">Liga Indonesia</span>
                 <h2 style="visibility: hidden;" class="gr">title Video title Video title Video title Video title Video</h2>
                 <span style="visibility: hidden;" class="gr">2 jam lalu - 123 view</span>
             </div>
         </a>
-        <a href="etube-detail.html">
-            <div class="etube-mobile-thumb fafa">
-                <div class="img gr" style="background-color: #f2f2f2;">
-                    <!-- <img src="http://modernartbuyer.com/wp-content/uploads/2014/10/Aqueous-II-278-web.jpg" alt="">                 -->
+        <a href="">
+            <div class="etube-mobile-thumb">
+                <div class="img" style="height: 45vw; max-height: 200px;background-color: #fafafa;">
                 </div>
-                <span class="kategori gr" style="visibility: hidden;">Liga Indonesia</span>
                 <h2 style="visibility: hidden;" class="gr">title Video title Video title Video title Video title Video</h2>
                 <span style="visibility: hidden;" class="gr">2 jam lalu - 123 view</span>
             </div>
         </a>
-        <a href="etube-detail.html">
-            <div class="etube-mobile-thumb fafa">
-                <div class="img gr" style="background-color: #f2f2f2;">
-                    <!-- <img src="http://modernartbuyer.com/wp-content/uploads/2014/10/Aqueous-II-278-web.jpg" alt="">                 -->
+        <a href="">
+            <div class="etube-mobile-thumb">
+                <div class="img" style="height: 45vw; max-height: 200px;background-color: #fafafa;">
                 </div>
-                <span class="kategori gr" style="visibility: hidden;">Liga Indonesia</span>
-                <h2 style="visibility: hidden;" class="gr">title Video title Video title Video title Video title Video</h2>
-                <span style="visibility: hidden;" class="gr">2 jam lalu - 123 view</span>
-            </div>
-        </a>
-        <a href="etube-detail.html">
-            <div class="etube-mobile-thumb fafa">
-                <div class="img gr" style="background-color: #f2f2f2;">
-                    <!-- <img src="http://modernartbuyer.com/wp-content/uploads/2014/10/Aqueous-II-278-web.jpg" alt="">                 -->
-                </div>
-                <span class="kategori gr" style="visibility: hidden;">Liga Indonesia</span>
                 <h2 style="visibility: hidden;" class="gr">title Video title Video title Video title Video title Video</h2>
                 <span style="visibility: hidden;" class="gr">2 jam lalu - 123 view</span>
             </div>
