@@ -1082,7 +1082,8 @@ a.m-reg span{
     margin-left: 2%;
     float: left;
     font-family: Roboto, 'sans-serif';
-    font-weight: 300;
+    font-weight: 400;
+    color: #505050;
 }
 .v-etube-detail{
     width: 130px;
