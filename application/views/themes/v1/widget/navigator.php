@@ -29,7 +29,7 @@
     <?php
 	if($this->session->member){
 	?>
-		<a href="<?= base_url(); ?>member/logout">Keluar</a>
+<!--		<a href="--><?//= base_url(); ?><!--member/logout">Keluar</a>-->
     <?php
 	}
 	?>

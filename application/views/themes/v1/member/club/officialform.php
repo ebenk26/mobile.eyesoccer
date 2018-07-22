@@ -55,7 +55,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>No Identitas</td>
+                        <td>No Identitas (KTP / SIM / Passport)</td>
                         <td>
                             <input type="text">
                         </td>
@@ -90,7 +90,7 @@
                             <input type="text">
                         </td>
                     </tr>
-                    <tr>
+                    <tr style="display: none;">
                         <td>Kontak</td>
                         <td>
                             <input type="text">

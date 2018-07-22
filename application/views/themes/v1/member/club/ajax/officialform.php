@@ -114,7 +114,8 @@
                     <span class="err msgemail"></span>
                 </td>
             </tr>
-            <tr>
+            <input type="hidden" name="contact" value="<?php echo ($official) ? $official->contact : ''; ?>">
+            <tr style="display: none;">
                 <td>Kontak</td>
                 <td>
                     <input type="text" name="contact" value="<?php echo ($official) ? $official->contact : ''; ?>">

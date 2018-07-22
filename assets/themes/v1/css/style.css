@@ -4443,10 +4443,10 @@ input[type="file"]{
     border: 2px solid #d8d8d8 !important;
 }
 @media screen and (min-width: 426px) {
-    .x-form-daftar-pemain.row{
-        width: 280px;
-        float: left;
-    }
+    /*.x-form-daftar-pemain.row{*/
+        /*width: 280px;*/
+        /*float: left;*/
+    /*}*/
 }
 @media screen and (min-width: 640px) {
     .max-640{
@@ -5112,9 +5112,9 @@ select::after{
     .x-c{
         padding: 0px;
     }
-    .x-form-daftar-pemain.row {
-        width: 320px;
-    }
+    /*.x-form-daftar-pemain.row {*/
+        /*width: 320px;*/
+    /*}*/
     .box-pertandingan{
         width: 688px;
         margin: 0px;

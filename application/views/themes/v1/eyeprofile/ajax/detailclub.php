@@ -24,7 +24,7 @@ div.user-data:hover{background-color:#f5f5f5}
 			</div>
 				<h2 class="tx-c h2-pemain-top-head"><?php echo $dt->name;?></h2>
 				<?php if($dt->competition == 'Liga Usia Muda'){?>
-				<a href="<?php echo ($this->session->member ? base_url().'member/regis_player' : base_url().'member/?from=member/regis_player/'.$dt->slug)?>"><span class="button-open sbpbtn unset-btn-white" style="max-height: unset;box-shadow: 1px 2px 3px 1px #0357b5;border-radius: 30px;max-width: max-content;font-size: .8em;">Daftar Sebagai Pemain <?php echo $dt->name;?></span></a>
+				<a href="<?php echo ($this->session->member) ? base_url().'member/regis_player/'.$dt->slug : base_url().'member/?from=member/regis_player/'.$dt->slug;?>"><span class="button-open sbpbtn unset-btn-white" style="max-height: unset;box-shadow: 1px 2px 3px 1px #0357b5;border-radius: 30px;max-width: max-content;font-size: .8em;">Daftar Sebagai Pemain <?php echo $dt->name;?></span></a>
 				<?php }?>
 				<div class="container over-x">
 							<div id="boxtab" class="container tab-sub-menu w-max m-0" style="float: unset;position: relative;bottom: unset;margin-top: 20px;">
@@ -57,7 +57,15 @@ div.user-data:hover{background-color:#f5f5f5}
 						<td>Alamat Sekretariat</td>
 						<td>: <?php echo strip_tags($dt->address);?></td>
 					</tr>
-					<tr>
+                    <tr>
+                        <td>No Telepon</td>
+                        <td>: <?php echo $dt->phone;?></td>
+                    </tr>
+                    <tr>
+                        <td>No Fax</td>
+                        <td>: <?php echo $dt->fax;?></td>
+                    </tr>
+                    <tr>
 						<td>Email</td>
 						<td>: <?php echo $dt->email;?></td>
 					</tr>
@@ -65,6 +73,14 @@ div.user-data:hover{background-color:#f5f5f5}
 						<td>Jumlah Pemain</td>
 						<td>: <?php echo $dt->number_of_player;echo ($dt->competition == 'Liga Usia Muda' ? ' Siswa' : ' Pemain')?></td>
 					</tr>
+                    <tr>
+                        <td>Alamat Latihan</td>
+                        <td>: <?php echo $dt->training_address;?></td>
+                    </tr>
+                    <tr>
+                        <td>Jadwal Latihan</td>
+                        <td>: <?php echo $dt->training_schedule;?></td>
+                    </tr>
 					<!-- <tr>
 						<td>Website</td>
 						<td>: <?php echo $dt->website;?></td>
