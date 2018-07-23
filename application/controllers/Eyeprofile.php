@@ -38,20 +38,21 @@ class Eyeprofile extends CI_Controller {
 	}
     }
 	
-	function klub()
+	function klub($slug = null)
     {
 		if(end($this->uri->segments) == 'SSB'){
 			redirect('/eyeprofile/klub/Liga-Usia-Muda/SSB-/-Akademi-Sepakbola', 'refresh');
 		} // redirect from desktop URL
-		//$data['slug'] = $slug;
+
 		$page = 1;
 	    $data['kanal'] = 'eyeprofile';
 
 	    $data['content'] = 'eyeprofile/home';
 	    $data['slugliga'] = $this->session->userdata('pageliga');
 
-	    $data['event'] = 'Liga Indonesia 1';
-	    if ($slug = 'Liga Indonesia 1')
+	    $league = str_replace('-', ' ', $slug);
+	    $data['event'] = $league;
+	    if ($league == 'Liga Indonesia 1')
 	    {
 	    	$data['event'] = 'LIGA 1 GOJEK 2018';
 	    }

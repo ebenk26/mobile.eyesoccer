@@ -1,7 +1,9 @@
 <?php
-$competition = ($this->uri->segment(3) ? urldecode(str_replace('-',' ',$this->uri->segment(3))) : 'Liga Usia Muda');
-$league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->segment(4))) : ($this->uri->segment(3) == 'Liga Usia Muda' ? 'Liga Santri Nusantara' : ''));?>
-	<!-- CONTENT BODY -->
+    $competition = ($this->uri->segment(3) ? urldecode(str_replace('-',' ',$this->uri->segment(3))) : 'Liga Usia Muda');
+    $league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->segment(4))) : ($this->uri->segment(3) == 'Liga Usia Muda' ? 'Liga Santri Nusantara' : ''));
+?>
+
+    <!-- CONTENT BODY -->
     <div class="crumb">
             <ul>
                 <li><a href="<?php echo base_url();?>" style="display:unset;">Home</a></li>
@@ -145,7 +147,7 @@ $league = ($this->uri->segment(4) ? urldecode(str_replace('-',' ',$this->uri->se
 			</div>
         </div>
         <div class="container box-jadwal" style="position: relative;">
-            <h3 class="h3-orange">Hasil Liga Indonesia 1</h3>
+            <h3 class="h3-orange">Hasil <?php echo $event; ?></h3>
 			<hr width="100%">
             <div class="jadwal">
 				<div id="reqmatchlist" class='loadmatchlist' action="eyeprofile" loading="off" clean="clsmatchlist">
