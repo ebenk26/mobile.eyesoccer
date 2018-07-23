@@ -805,3 +805,58 @@ function checkDate00($date = '')
         return $return;
     }
 }
+
+function datefo($date, $global = 'id')
+{
+    if ($date != '-') {
+        $d = substr($date, 8, 2);
+        $m = monthfo(substr($date, 5, 2), $global);
+        $y = substr($date, 0, 4);
+        return $d . ' ' . $m . ' ' . $y;
+    } else {
+        return $date;
+    }
+}
+
+function monthfo($month, $global)
+{
+    switch($month)
+    {
+        case 1:
+            return ($global != 'id') ? "January" : "Januari";
+            break;
+        case 2:
+            return ($global != 'id') ? "February" : "Februari";
+            break;
+        case 3:
+            return ($global != 'id') ? "March" : "Maret";
+            break;
+        case 4:
+            return ($global != 'id') ? "April" : "April";
+            break;
+        case 5:
+            return ($global != 'id') ? "May" : "Mei";
+            break;
+        case 6:
+            return ($global != 'id') ? "June" : "Juni";
+            break;
+        case 7:
+            return ($global != 'id') ? "July" : "Juli";
+            break;
+        case 8:
+            return ($global != 'id') ? "August" : "Agustus";
+            break;
+        case 9:
+            return ($global != 'id') ? "September" : "September";
+            break;
+        case 10:
+            return ($global != 'id') ? "October" : "Oktober";
+            break;
+        case 11:
+            return ($global != 'id') ? "November" : "November";
+            break;
+        case 12:
+            return ($global != 'id') ? "Desember" : "Desember";
+            break;
+    }
+}

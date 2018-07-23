@@ -101,7 +101,7 @@
 				</tr>
 				<tr <?php echo $dt->display_birth_date; ?>>
 					<td>Tanggal Lahir</td>
-					<td><?php echo $dt->birth_date;?></td>
+					<td><?php echo datefo(checkDate00($dt->birth_date));?></td>
 				</tr>
 				<tr <?php echo $dt->display_level;?>>
 					<td>Kategori Pemain</td>

@@ -19,7 +19,7 @@
         </tr>
         <tr>
             <td>Tanggal lahir</td>
-            <td>: <?= ($model->birth_date != "") ? $model->birth_date : "-"; ?></td>
+            <td>: <?= ($model->birth_date != "") ? datefo(checkDate00($model->birth_date)) : "-"; ?></td>
         </tr>
         <tr>
             <td>Kewarganegaraan</td>

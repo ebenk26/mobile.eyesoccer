@@ -43,46 +43,57 @@ div.user-data:hover{background-color:#f5f5f5}
 				<table class="content-tab-eprofile mg-t15">
 					<tr>
 						<td>Julukan</td>
-						<td style="font-weight:bold">: <?php echo $dt->nickname;?></td>
+                        <td>:</td>
+						<td style="font-weight:bold"><?php echo $dt->nickname;?></td>
 					</tr>
 					<tr>
 						<td>Tanggal Berdiri</td>
-						<td>: <?php echo checkDate00(formatDate($dt->establish_date));?></td>
+                        <td>:</td>
+						<td><?php echo datefo(checkDate00($dt->establish_date));?></td>
 					</tr>
 					<tr>
 						<td>Pemilik</td>
-						<td>: <?php echo $dt->owner;?></td>
+                        <td>:</td>
+						<td><?php echo $dt->owner;?></td>
 					</tr>
 					<tr>
 						<td>Alamat Sekretariat</td>
-						<td>: <?php echo strip_tags($dt->address);?></td>
+                        <td>:</td>
+						<td><?php echo strip_tags($dt->address);?></td>
 					</tr>
                     <tr>
                         <td>No Telepon</td>
-                        <td>: <?php echo $dt->phone;?></td>
+                        <td>:</td>
+                        <td><?php echo $dt->phone;?></td>
                     </tr>
                     <tr>
                         <td>No Fax</td>
-                        <td>: <?php echo $dt->fax;?></td>
+                        <td>:</td>
+                        <td><?php echo $dt->fax;?></td>
                     </tr>
                     <tr>
 						<td>Email</td>
-						<td>: <?php echo $dt->email;?></td>
+                        <td>:</td>
+						<td><?php echo $dt->email;?></td>
 					</tr>
 					<tr>
 						<td>Jumlah Pemain</td>
-						<td>: <?php echo $dt->number_of_player;echo ($dt->competition == 'Liga Usia Muda' ? ' Siswa' : ' Pemain')?></td>
+                        <td>:</td>
+						<td><?php echo $dt->number_of_player;echo ($dt->competition == 'Liga Usia Muda' ? ' Siswa' : ' Pemain')?></td>
 					</tr>
                     <tr>
                         <td>Alamat Latihan</td>
-                        <td>: <?php echo $dt->training_address;?></td>
+                        <td>:</td>
+                        <td><?php echo $dt->training_address;?></td>
                     </tr>
                     <tr>
                         <td>Jadwal Latihan</td>
-                        <td>: <?php echo $dt->training_schedule;?></td>
+                        <td>:</td>
+                        <td><?php echo $dt->training_schedule;?></td>
                     </tr>
 					<!-- <tr>
 						<td>Website</td>
+						<td>:</td>
 						<td>: <?php echo $dt->website;?></td>
 					</tr> -->
 				</table>
@@ -157,7 +168,7 @@ div.user-data:hover{background-color:#f5f5f5}
 				<table>
 					<tr>
 						<td>Tanggal Lahir</td>
-						<td><?php echo checkDate00(formatDate($officials->birth_date));?></td>
+						<td><?php echo datefo(checkDate00($officials->birth_date));?></td>
 					</tr>
 					<tr>
 						<td>Lisensi</td>
